@@ -1,3 +1,11 @@
+.heading-1 {
+  font-size: 4rem;
+  color: #424242;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: "futur", sans-serif;
+  margin-bottom: 3rem; }
+
 * {
   box-sizing: inherit;
   margin: 0px;
@@ -28,18 +36,13 @@ html {
 @font-face {
   font-family: futurMedium;
   src: url(../fonts/futuraMedium.ttf); }
-.section-services {
+.section-services, .section-clients {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin: 5rem 0; }
 
-.services__heading {
-  font-size: 4rem;
-  color: #424242;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-family: "futur", sans-serif; }
 .services__row {
   width: 100%;
   margin: 2rem 0;
@@ -99,5 +102,25 @@ html {
 
 .simage-6 {
   background-image: url("../images/campus.jpg"); }
+
+.client {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 2rem 0; }
+  .client__box {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 300%;
+    overflow: hidden;
+    transition: all .3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    .client__box:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 10px rgba(0, 0, 0, 0.23); }
+  .client__image {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    transform-origin: center; }
 
 /*# sourceMappingURL=style.css.map */
