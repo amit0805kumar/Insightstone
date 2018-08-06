@@ -7,6 +7,97 @@ body {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: "futurBook"; }
+
+@font-face {
+  font-family: brooklyn;
+  src: url(../fonts/TheBrooklyn.otf); }
+@font-face {
+  font-family: brooklynBold;
+  src: url(../fonts/TheBrooklynBold.otf); }
+@font-face {
+  font-family: futur;
+  src: url(../fonts/futur.ttf); }
+@font-face {
+  font-family: futurBook;
+  src: url(../fonts/FuturaBookfont.ttf); }
+@font-face {
+  font-family: futurHeavy;
+  src: url(../fonts/FuturaHeavy.ttf); }
+@font-face {
+  font-family: futurMedium;
+  src: url(../fonts/futuraMedium.ttf); }
+.section-services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.services__heading {
+  font-size: 4rem;
+  color: #424242;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: "futur", sans-serif; }
+.services__row {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around; }
+.services__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35rem;
+  background: #e0e0e0;
+  padding: 1rem;
+  height: 40rem;
+  overflow: hidden;
+  transition: all 0.3s;
+  backface-visibility: hidden; }
+  .services__box-image {
+    width: 32rem;
+    height: 32rem;
+    background-size: cover;
+    transition: all 0.3s;
+    z-index: 2;
+    backface-visibility: hidden; }
+  .services__box-heading {
+    font-size: 2rem;
+    font-family: "cabin", sans-serif;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    z-index: 3;
+    transition: all 0.3s;
+    letter-spacing: 3px;
+    white-space: nowrap; }
+  .services__box:hover {
+    box-shadow: 0 10px 23px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: translateY(-0.5rem); }
+  .services__box:hover .services__box-heading {
+    letter-spacing: 4px;
+    font-weight: 700;
+    transform: translateY(1rem); }
+  .services__box:hover .services__box-image {
+    transform: scale(1.1); }
+
+.simage-1 {
+  background-image: url("../images/socialMarketing.jpg"); }
+
+.simage-2 {
+  background-image: url("../images/intern.jpg"); }
+
+.simage-3 {
+  background-image: url("../images/influencer.jpg"); }
+
+.simage-4 {
+  background-image: url("../images/eventPromotion.jpg"); }
+
+.simage-5 {
+  background-image: url("../images/workshop.jpg"); }
+
+.simage-6 {
+  background-image: url("../images/campus.jpg"); }
 
 /*# sourceMappingURL=style.css.map */
