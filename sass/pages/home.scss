@@ -1,7 +1,16 @@
-.section-services,.section-clients,.section-about{
+.section-services,.section-clients,.section-about,.section-form{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5rem 0;
+}
+.section-form{
+background-image: url(../images/form-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    background-attachment: fixed;
 }

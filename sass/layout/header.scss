@@ -10,11 +10,79 @@
     width: 100%;
     height: 100%;
     position: relative;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__heading {
         color: #fff;
-        position: absolute;
-        @include middle;
-        top: 50%;
+        font-family: "Caveat", sans-serif;
+        font-weight: 600;
         font-size: 6rem;
+        margin-top: 25rem;
+        animation-name: moveDown;
+        animation-duration: 2s;
+        white-space: nowrap;
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        top: 40%;
+    }
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}
+@keyframes moveD {
+    0% {
+        margin-top: 5rem;
+    }
+    100% {
+        margin-top: 10rem;
+    }
+}
+.btn,
+.btn:visited,
+.btn:link {
+    text-decoration: none;
+    color: white;
+    font-family: "cabin", sans-serif;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 10rem;
+    letter-spacing: 3px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    animation-name: moveD;
+    animation-duration: 2s;
+    &:hover {
+        color: black;
+        border: 2px solid black;
+        background: #ff9100;
+    }
+    &::before {
+        background: #ff9100;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        transition: all .3s ease-in-out;
+        left: 0;
+    }
+    &:hover {
+        transform: translateY(-0.4rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+        &::before {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
     }
 }

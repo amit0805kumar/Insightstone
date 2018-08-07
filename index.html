@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="shotcut icon" type="img/png" href="Images/icon.png">
-    <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700|Caveat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Insightstone</title>
 </head>
@@ -29,19 +29,20 @@
                 <div class="collapse navbar-collapse" id="main">
                     <ul class="nav navbar-nav navbar-right" id="nav">
                         <li><a id="l1">HOME</a></li>
-                        <li><a id="l2" >COLLEGES</a></li>
-                        <li><a id="l3" >BLOG</a></li>
-                        <li><a id="l4" >EVENTS</a></li>
+                        <li><a id="l2">COLLEGES</a></li>
+                        <li><a id="l3">BLOG</a></li>
+                        <li><a id="l4">EVENTS</a></li>
                         <li><a id="l5">INTERNSHIPS</a></li>
                         <li><a id="l6">TEAM</a></li>
-                        <li><a id="l7" >ABOUT US</a></li>
+                        <li><a id="l7">ABOUT US</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!--Intro-->
         <div class="main">
-            <h1 class="main__heading">Bring sight with vision!</h1>
+            <h1 class="main__heading"><i>Bring sight with vision!</i></h1>
+            <a href="#" class="btn"><span class="btn-join">Join Us</span></a>
         </div>
     </header>
 
@@ -88,6 +89,36 @@
             </div>
         </div>
     </div>
+    <div class="section-form">
+        <div class="form-left">
+            <div class="left-text">
+                <div class="left-text-tag">#InsightoneInfluencer</div>
+                <div class="left-text-tag">your culture is our brand!</div>
+                <div class="left-text-tag">Join us today </div>
+            </div>
+        </div>
+        <div class="form-right">
+
+            <div class="right__container">
+                <form action="#" method="post" class="right__form">
+                    <div class="right__form-inputs">
+                        <div class="right__form-left">
+                            <input type="text" placeholder="Name" class="right__form-input">
+                            <input type="email" placeholder="E-Mail" class="right__form-input">
+                            <input type="number" placeholder="Contact Number" class="right__form-input">
+                        </div>
+                        <div class="right__form-right">
+                            <input type="text" placeholder="College" class="right__form-input">
+                            <input type="text" placeholder="Instagram profile link" class="right__form-input">
+                            <input type="number" placeholder="Number of followers on Instagram" class="right__form-input">
+                        </div>
+                    </div>
+                    <button class="register" type="submit">Register</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
     <div class="section-clients">
         <div class="heading-1">our clients</div>
         <div class="client">
@@ -120,7 +151,7 @@
                 $('#l5').addClass('show2');
                 $('#l6').addClass('show2');
                 $('#l7').addClass('show2');
-                $('#logo').attr("src","/images/logo.png");
+                $('#logo').attr("src", "/images/logo.png");
 
             } else {
 
@@ -132,7 +163,7 @@
                 $('#l5').removeClass('show2');
                 $('#l6').removeClass('show2');
                 $('#l7').removeClass('show2');
-                $('#logo').attr("src","/images/logo1.png");
+                $('#logo').attr("src", "/images/logo1.png");
 
             };
         });

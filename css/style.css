@@ -44,12 +44,21 @@ h1 {
 @font-face {
   font-family: futurMedium;
   src: url(../fonts/futuraMedium.ttf); }
-.section-services, .section-clients, .section-about {
+.section-services, .section-clients, .section-about, .section-form {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5rem 0; }
+
+.section-form {
+  background-image: url(../images/form-pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+  background-attachment: fixed; }
 
 .header {
   background-image: url(../images/bulbImages.png);
@@ -61,14 +70,77 @@ h1 {
 .main {
   width: 100%;
   height: 100%;
-  position: relative; }
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .main__heading {
     color: #fff;
+    font-family: "Caveat", sans-serif;
+    font-weight: 600;
+    font-size: 6rem;
+    margin-top: 25rem;
+    animation-name: moveDown;
+    animation-duration: 2s;
+    white-space: nowrap; }
+
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    top: 40%; }
+  100% {
+    opacity: 1;
+    top: 50%; } }
+@keyframes moveD {
+  0% {
+    margin-top: 5rem; }
+  100% {
+    margin-top: 10rem; } }
+.btn,
+.btn:visited,
+.btn:link {
+  text-decoration: none;
+  color: white;
+  font-family: "cabin", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-top: 10rem;
+  letter-spacing: 3px;
+  transition: all .3s ease-in-out;
+  position: relative;
+  animation-name: moveD;
+  animation-duration: 2s; }
+  .btn:hover,
+  .btn:visited:hover,
+  .btn:link:hover {
+    color: black;
+    border: 2px solid black;
+    background: #ff9100; }
+  .btn::before,
+  .btn:visited::before,
+  .btn:link::before {
+    background: #ff9100;
+    content: "";
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50%;
-    font-size: 6rem; }
+    z-index: -1;
+    top: 0;
+    transition: all .3s ease-in-out;
+    left: 0; }
+  .btn:hover,
+  .btn:visited:hover,
+  .btn:link:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::before,
+    .btn:visited:hover::before,
+    .btn:link:hover::before {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
 
 .logo-img {
   width: 15rem; }
@@ -229,5 +301,70 @@ h1 {
     left: 0;
     top: 0;
     color: #bdbdbd; }
+
+.form-right,
+.form-left {
+  width: 50%;
+  height: 100%; }
+
+.form-left {
+  padding: 3rem;
+  background: rgba(54, 53, 53, 0.3); }
+
+.right__container {
+  width: 100%;
+  height: 100%;
+  background: rgba(74, 71, 71, 0.56);
+  padding: 3rem; }
+.right__form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .right__form-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .right__form-left, .right__form-right {
+    display: flex;
+    flex-direction: column;
+    width: 45%; }
+  .right__form-input {
+    margin: 3rem 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding: .4rem .5rem;
+    transition: all .2s ease-in-out; }
+    .right__form-input::placeholder {
+      color: #efebeb;
+      letter-spacing: 1px;
+      font-size: 1.4rem; }
+    .right__form-input:focus {
+      outline: none;
+      transform: translateY(-0.2rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.register {
+  align-self: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  align-self: stretch;
+  border: 2px solid white;
+  border-radius: 3px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: "cabin", sans-serif;
+  font-weight: 600;
+  transition: all .2s ease-in-out; }
+  .register:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=style.css.map */
