@@ -4,7 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="shotcut icon" type="img/png" href="Images/icon.png">
     <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -12,7 +14,36 @@
 </head>
 
 <body>
-
+    <header class="header">
+        <!--Navbar-->
+        <nav class="navbar navbar-default" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo" class="logo-img" id="logo"></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" onclick="move()" data-toggle="collapse" data-target="#main" id="cmd">
+                    <span class="icon-bar" id="bar1"></span>
+                    <span class="icon-bar" id="bar2"></span>
+                    <span class="icon-bar" id="bar3"></span>
+                </button>
+                </div>
+                <div class="collapse navbar-collapse" id="main">
+                    <ul class="nav navbar-nav navbar-right" id="nav">
+                        <li><a id="l1">HOME</a></li>
+                        <li><a id="l2" >COLLEGES</a></li>
+                        <li><a id="l3" >BLOG</a></li>
+                        <li><a id="l4" >EVENTS</a></li>
+                        <li><a id="l5">INTERNSHIPS</a></li>
+                        <li><a id="l6">TEAM</a></li>
+                        <li><a id="l7" >ABOUT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Intro-->
+        <div class="main">
+            <h1 class="main__heading">Bring sight with vision!</h1>
+        </div>
+    </header>
 
     <div class="section-services">
         <div class="heading-1">our Services</div>
@@ -67,6 +98,45 @@
             <div class="client__box"><img src="images/c5.png" class="client__image" alt="client-5"></div>
         </div>
     </div>
+    <div class="section-about">
+        <div class="heading-1">about us</div>
+
+        <div class="about__text">An online media company and leading youth organization, which covers all events and gives an insight to all major events, in and around campus, working in the field of influencer marketing and soft skills training through internships.</div>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+        //Navbar
+        $(window).scroll(function() {
+            // 150 = The point you would like to fade the nav in.
+
+            if ($(window).scrollTop() > 150) {
+
+                $('#navbar').addClass('show');
+                $('#l1').addClass('show2');
+                $('#l2').addClass('show2');
+                $('#l3').addClass('show2');
+                $('#l4').addClass('show2');
+                $('#l5').addClass('show2');
+                $('#l6').addClass('show2');
+                $('#l7').addClass('show2');
+                $('#logo').attr("src","/images/logo.png");
+
+            } else {
+
+                $('#navbar').removeClass('show');
+                $('#l1').removeClass('show2');
+                $('#l2').removeClass('show2');
+                $('#l3').removeClass('show2');
+                $('#l4').removeClass('show2');
+                $('#l5').removeClass('show2');
+                $('#l6').removeClass('show2');
+                $('#l7').removeClass('show2');
+                $('#logo').attr("src","/images/logo1.png");
+
+            };
+        });
+    </script>
 </body>
 
 </html>
