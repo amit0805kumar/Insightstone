@@ -22,7 +22,7 @@
       font-size: 1.5rem;
       list-style-position: 2px;
       margin-bottom: 2rem;
-      letter-spacing: .8px;
+      letter-spacing: 1px;
       font-family: "futurmedium",sans-serif; } }
 
 * {
@@ -284,6 +284,12 @@ input[type=number]::-webkit-outer-spin-button {
       width: 9rem;
       font-size: .8rem;
       padding: 1rem; } }
+  @media only screen and (max-width: 50em) {
+    #nav li a {
+      width: 100%;
+      border: none;
+      font-size: 1.5rem;
+      text-align: left; } }
 
 #nav li:hover a {
   color: #b9b6b6; }
@@ -404,15 +410,23 @@ input[type=number]::-webkit-outer-spin-button {
   letter-spacing: 1.5px;
   overflow: hidden; }
   .about__text::before {
-    content: "    \0482";
+    content: "\0482";
     position: absolute;
     font-family: 'cabin',sans-serif;
     font-size: 18rem;
     color: black;
-    z-index: 1;
+    z-index: -1;
     left: 0;
     top: 0;
     color: #bdbdbd; }
+  @media only screen and (max-width: 50em) {
+    .about__text {
+      font-weight: 300;
+      padding: 4rem 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .about__text {
+      font-size: 1.8rem;
+      line-height: 3rem; } }
 
 .form-right,
 .form-left {
@@ -552,7 +566,7 @@ input[type=number]::-webkit-outer-spin-button {
       .team__row {
         flex-direction: column;
         align-items: center;
-        margin: 2rem 0; } }
+        margin: 0; } }
   .team__mem {
     width: 35rem;
     height: 42rem;
@@ -576,12 +590,20 @@ input[type=number]::-webkit-outer-spin-button {
     @media only screen and (max-width: 56.25em) {
       .team__mem {
         margin: 2rem 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .team__mem {
+        width: 30rem;
+        height: 38rem; } }
   .team__image-box {
     width: 35rem;
     height: 35rem;
     overflow: hidden;
     transition: all .3s ease-in-out;
     backface-visibility: hidden; }
+    @media only screen and (max-width: 37.5em) {
+      .team__image-box {
+        width: 30rem;
+        height: 30rem; } }
   .team__image {
     width: 35rem;
     transition: all .3s ease-in-out;
