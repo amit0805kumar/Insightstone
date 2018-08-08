@@ -524,7 +524,21 @@ input[type=number]::-webkit-outer-spin-button {
     height: 42rem;
     display: flex;
     flex-direction: column;
-    margin: 0 3rem; }
+    margin: 0 3rem;
+    transition: all .3s ease-in-out;
+    position: relative; }
+    .team__mem:hover .team__image-box .team__image {
+      transform: scale(1.2);
+      filter: blur(2px) grayscale(50); }
+    .team__mem:hover .team__cap .team__cap-name {
+      margin-left: 50%;
+      transform: translateX(-50%); }
+    .team__mem:hover .team__cap .team__cap-desg {
+      margin-left: 50%;
+      transform: translateX(-50%); }
+    .team__mem:hover .social {
+      top: 45%;
+      opacity: 1; }
     @media only screen and (max-width: 56.25em) {
       .team__mem {
         margin: 2rem 0; } }
@@ -532,24 +546,51 @@ input[type=number]::-webkit-outer-spin-button {
     width: 35rem;
     height: 35rem;
     overflow: hidden;
+    transition: all .3s ease-in-out;
     backface-visibility: hidden; }
   .team__image {
     width: 35rem;
-    height: 35rem; }
+    transition: all .3s ease-in-out;
+    height: 35rem;
+    z-index: 5; }
   .team__cap {
-    background: #1f1fd4;
+    background: #002073;
     color: white;
     flex: 1;
-    padding: 1rem; }
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+    white-space: nowrap; }
     .team__cap-name {
       text-transform: uppercase;
-      font-family: "cabin",sans-serif;
+      font-family: "cabin", sans-serif;
       font-weight: 500;
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      transition: all .3s ease-in-out;
+      transition-timing-function: cubic-bezier(0.73, 0.46, 0.13, 0.74);
+      display: inline-block; }
     .team__cap-desg {
       text-transform: uppercase;
-      font-family: "cabin",sans-serif;
+      font-family: "cabin", sans-serif;
       font-weight: 300;
-      font-size: 2; }
+      font-size: 2;
+      display: inline-block;
+      transition: all .3s ease-in-out;
+      transition-timing-function: cubic-bezier(0.73, 0.46, 0.13, 0.74); }
+
+.social,
+.social:link,
+.social:visited {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 10;
+  transition: all .3s ease-in-out;
+  opacity: 0; }
+  .social:hover,
+  .social:link:hover,
+  .social:visited:hover {
+    color: #002073; }
 
 /*# sourceMappingURL=style.css.map */
