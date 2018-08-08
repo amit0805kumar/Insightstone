@@ -4,8 +4,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    @include respond(800) {
-    }
+    @include respond(800) {}
 }
 
 .main {
@@ -26,11 +25,21 @@
         animation-duration: 2s;
         white-space: nowrap;
         @include respond(800) {
-            
+
             margin-top: 20rem;
             font-size: 4rem;
             letter-spacing: 2px;
-            
+
+        }
+        @include respond(phone) {
+            font-size: 3rem;
+
+        }
+        @include respond(tab-port){
+        margin-top: 15rem;
+        }
+          @include respond(1100){
+        margin-top: 17rem;
         }
     }
 
@@ -40,6 +49,7 @@
     0% {
         opacity: 0;
         top: 40%;
+
     }
     100% {
         opacity: 1;
@@ -53,6 +63,16 @@
     }
     100% {
         margin-top: 10rem;
+     
+    }
+}
+@keyframes moveDs {
+    0% {
+        margin-top: 3rem;
+    }
+    100% {
+        margin-top: 5rem;
+     
     }
 }
 
@@ -72,6 +92,13 @@
     position: relative;
     animation-name: moveD;
     animation-duration: 2s;
+    @include respond(phone) {
+        margin-top: 5rem;
+        animation-name: moveDs;
+        letter-spacing: 2px;
+        border-width: 1px;
+        padding: .5rem 1rem;
+    }
     &:hover {
         color: black;
         border: 2px solid black;

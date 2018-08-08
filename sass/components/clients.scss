@@ -13,6 +13,10 @@
         &:hover{
 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 2px 10px rgba(0,0,0,0.23);
         }
+        @include respond(800){
+            width: 7rem;
+            height: 7rem;
+        }
     }
     &__image {
         width: 100%;
