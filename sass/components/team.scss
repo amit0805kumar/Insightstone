@@ -5,6 +5,11 @@
         margin: 4rem 0;
         display: flex;
         justify-content: center;
+         @include respond(tab-port){
+             flex-direction: column;
+            align-items: center;
+             margin: 2rem 0;
+        }
     }
     &__mem {
         width: 35rem;
@@ -12,6 +17,9 @@
         display: flex;
         flex-direction: column;
         margin: 0 3rem;
+          @include respond(tab-port){
+             margin: 2rem 0;
+        }
     }
     &__image-box {
         width: 35rem;

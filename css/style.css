@@ -4,7 +4,19 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   font-family: "futur", sans-serif;
+  white-space: nowrap;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 62.5em) {
+    .heading-1 {
+      font-size: 3rem;
+      list-style-position: 2px;
+      margin-bottom: 2rem; } }
+  @media only screen and (max-width: 50em) {
+    .heading-1 {
+      font-size: 2rem;
+      list-style-position: 2px;
+      margin-bottom: 2rem;
+      letter-spacing: 1px; } }
 
 * {
   box-sizing: inherit;
@@ -86,8 +98,12 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   flex-direction: row;
   background-attachment: fixed;
-  position: relative;
   align-items: center; }
+  @media only screen and (max-width: 62.5em) {
+    .section-form-container {
+      flex-direction: column;
+      align-items: center;
+      height: 80rem; } }
 
 .header {
   background-image: url(../images/bulbImages.png);
@@ -113,6 +129,11 @@ input[type=number]::-webkit-outer-spin-button {
     animation-name: moveDown;
     animation-duration: 2s;
     white-space: nowrap; }
+    @media only screen and (max-width: 50em) {
+      .main__heading {
+        margin-top: 20rem;
+        font-size: 4rem;
+        letter-spacing: 2px; } }
 
 @keyframes moveDown {
   0% {
@@ -173,6 +194,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .logo-img {
   width: 15rem; }
+  @media only screen and (max-width: 56.25em) {
+    .logo-img {
+      width: 9rem; } }
 
 .navbar-brand {
   padding: 1rem; }
@@ -213,7 +237,24 @@ input[type=number]::-webkit-outer-spin-button {
   border-bottom: 2px solid white;
   margin: 0 .3rem;
   width: 12rem;
-  text-align: center; }
+  text-align: center;
+  white-space: nowrap; }
+  @media only screen and (max-width: 68.75em) {
+    #nav li a {
+      margin: 0 .2rem;
+      width: 10rem;
+      font-size: 1.1rem; } }
+  @media only screen and (max-width: 62.5em) {
+    #nav li a {
+      margin: 0 .2rem;
+      width: 9rem;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 56.25em) {
+    #nav li a {
+      margin: 0 .1rem;
+      width: 9rem;
+      font-size: .8rem;
+      padding: 1rem; } }
 
 #nav li:hover a {
   color: #b9b6b6; }
@@ -232,7 +273,13 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   margin: 2rem 0;
   display: flex;
+  flex-direction: row;
   justify-content: space-around; }
+  @media only screen and (max-width: 62.5em) {
+    .services__row {
+      flex-direction: column;
+      align-items: center;
+      margin: 0; } }
 .services__box {
   display: flex;
   flex-direction: column;
@@ -244,6 +291,9 @@ input[type=number]::-webkit-outer-spin-button {
   overflow: hidden;
   transition: all 0.3s;
   backface-visibility: hidden; }
+  @media only screen and (max-width: 62.5em) {
+    .services__box {
+      margin: 3rem 0; } }
   .services__box-image {
     width: 28rem;
     height: 28rem;
@@ -335,32 +385,56 @@ input[type=number]::-webkit-outer-spin-button {
 .form-left {
   width: 50%;
   height: 100%; }
+  @media only screen and (max-width: 62.5em) {
+    .form-right,
+    .form-left {
+      width: 100%; } }
 
 .form-left {
   padding: 3rem;
   background: rgba(54, 53, 53, 0.3); }
+  @media only screen and (max-width: 50em) {
+    .form-left {
+      padding: 5rem; } }
 
 .left-text {
   color: #fff;
   text-align: center; }
+  @media only screen and (max-width: 50em) {
+    .left-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; } }
   .left-text__tag {
     font-size: 4rem;
     font-family: "futurheavy", sans-serif;
     margin-top: 2rem; }
+    @media only screen and (max-width: 50em) {
+      .left-text__tag {
+        font-size: 3rem; } }
   .left-text__quote {
     text-transform: uppercase;
     font-size: 3.5rem;
     letter-spacing: 3px;
     margin: 2rem 0; }
+    @media only screen and (max-width: 50em) {
+      .left-text__quote {
+        font-size: 2rem; } }
   .left-text__btn {
     font-size: 2rem;
-    font-family: "brooklynBold",sans-serif;
+    font-family: "brooklynBold", sans-serif;
     color: #ff9100;
     background: #fff;
     padding: 1rem 2rem;
     display: inline-block;
     margin: 2rem 1rem;
     transition: all .2s ease-in-out; }
+    @media only screen and (max-width: 50em) {
+      .left-text__btn {
+        font-size: 3rem;
+        padding: .5rem 1rem;
+        font-size: 1.5rem; } }
     .left-text__btn:hover {
       cursor: pointer;
       transform: translateY(-0.4rem);
@@ -370,7 +444,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .right__container {
   width: 100%;
-  height: 100%;
   background: rgba(74, 71, 71, 0.56);
   padding: 3rem; }
 .right__form {
@@ -401,6 +474,10 @@ input[type=number]::-webkit-outer-spin-button {
       color: #efebeb;
       letter-spacing: 1px;
       font-size: 1.4rem; }
+      @media only screen and (max-width: 50em) {
+        .right__form-input::placeholder {
+          font-size: 1rem;
+          letter-spacing: .2px; } }
     .right__form-input:focus {
       outline: none;
       transform: translateY(-0.2rem);
@@ -434,12 +511,20 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 4rem 0;
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 56.25em) {
+      .team__row {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0; } }
   .team__mem {
     width: 35rem;
     height: 42rem;
     display: flex;
     flex-direction: column;
     margin: 0 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .team__mem {
+        margin: 2rem 0; } }
   .team__image-box {
     width: 35rem;
     height: 35rem;

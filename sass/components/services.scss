@@ -3,7 +3,13 @@
         width: 100%;
         margin: 2rem 0;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
+         @include respond(1000){
+             flex-direction: column;
+            align-items: center;
+             margin: 0;
+        }
     }
     &__box {
         display: flex;
@@ -16,6 +22,10 @@
         overflow: hidden;
         transition: all 0.3s;
         backface-visibility: hidden;
+         @include respond(1000){
+             margin: 3rem 0;
+        }
+        
         &-image {
             width: 28rem;
             height: 28rem;

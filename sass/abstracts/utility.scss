@@ -4,5 +4,17 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: "futur", sans-serif;
+    white-space: nowrap;
     margin-bottom: 3rem;
+     @include respond(1000){
+          font-size: 3rem;
+         list-style-position: 2px;
+         margin-bottom: 2rem;
+        }
+      @include respond(800){
+          font-size: 2rem;
+         list-style-position: 2px;
+         margin-bottom: 2rem;
+          letter-spacing: 1px;
+        }
 }

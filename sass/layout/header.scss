@@ -4,6 +4,8 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    @include respond(800) {
+    }
 }
 
 .main {
@@ -23,7 +25,15 @@
         animation-name: moveDown;
         animation-duration: 2s;
         white-space: nowrap;
+        @include respond(800) {
+            
+            margin-top: 20rem;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            
+        }
     }
+
 }
 
 @keyframes moveDown {
@@ -36,6 +46,7 @@
         top: 50%;
     }
 }
+
 @keyframes moveD {
     0% {
         margin-top: 5rem;
@@ -44,6 +55,7 @@
         margin-top: 10rem;
     }
 }
+
 .btn,
 .btn:visited,
 .btn:link {
