@@ -427,4 +427,41 @@ input[type=number]::-webkit-outer-spin-button {
 .active-form {
   background: rgba(47, 144, 99, 0.56); }
 
+.team {
+  width: 100%; }
+  .team__row {
+    width: 100%;
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center; }
+  .team__mem {
+    width: 35rem;
+    height: 42rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem; }
+  .team__image-box {
+    width: 35rem;
+    height: 35rem;
+    overflow: hidden;
+    backface-visibility: hidden; }
+  .team__image {
+    width: 35rem;
+    height: 35rem; }
+  .team__cap {
+    background: #1f1fd4;
+    color: white;
+    flex: 1;
+    padding: 1rem; }
+    .team__cap-name {
+      text-transform: uppercase;
+      font-family: "cabin",sans-serif;
+      font-weight: 500;
+      font-size: 2.5rem; }
+    .team__cap-desg {
+      text-transform: uppercase;
+      font-family: "cabin",sans-serif;
+      font-weight: 300;
+      font-size: 2; }
+
 /*# sourceMappingURL=style.css.map */

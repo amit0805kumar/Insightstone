@@ -1,0 +1,45 @@
+.team {
+    width: 100%;
+    &__row {
+        width: 100%;
+        margin: 4rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    &__mem {
+        width: 35rem;
+        height: 42rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+    }
+    &__image-box {
+        width: 35rem;
+        height: 35rem;
+        overflow: hidden;
+        backface-visibility: hidden;
+    }
+    &__image {
+        width: 35rem;
+        height: 35rem;
+    }
+    &__cap {
+        background: #1f1fd4;
+        color: white;
+        flex: 1;
+        padding: 1rem;
+        &-name{
+            text-transform: uppercase;
+            font-family:"cabin",sans-serif;
+            font-weight: 500;
+            font-size: 2.5rem;
+        }
+        &-desg{
+            text-transform: uppercase;
+            font-family: "cabin",sans-serif;
+            font-weight: 300;
+            font-size: 2;
+        }
+    }
+
+}
