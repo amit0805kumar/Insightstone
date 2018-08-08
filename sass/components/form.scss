@@ -6,10 +6,47 @@
 
 .form-left {
     padding: 3rem;
-    background: rgba(54, 53, 53, 0.3)
+    background: rgba(54, 53, 53, 0.3);
+
 }
 
-.form-right {}
+.left-text {
+    color: #fff;
+    text-align: center;
+    &__tag {
+        font-size: 4rem;
+        font-family: "futurheavy", sans-serif;
+        margin-top: 2rem;
+    }
+    &__quote {
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        letter-spacing: 3px;
+        margin: 2rem 0;
+    }
+    &__btn {
+        font-size: 2rem;
+        font-family: "brooklynBold",sans-serif;
+        color: #ff9100;
+        background: #fff;
+        padding: 1rem 2rem;   
+        display: inline-block;
+        margin: 2rem 1rem;    
+        transition: all .2s ease-in-out;
+           &:hover {
+               cursor: pointer;
+        transform: translateY(-0.4rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+    }
+        
+    &:active{
+        transform: translateY(-0.2rem);
+        
+    }
+    }
+
+}
 
 .right {
     &__container {
@@ -53,7 +90,7 @@
             }
             &:focus {
                 outline: none;
-                 transform: translateY(-0.2rem);
+                transform: translateY(-0.2rem);
                 box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
             }
         }
@@ -79,4 +116,7 @@
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 
     }
+}
+.active-form{
+    background:rgba(47, 144, 99, 0.56);
 }

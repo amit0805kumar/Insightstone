@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="shotcut icon" type="img/png" href="Images/icon.png">
+    <link rel="shotcut icon" type="img/png" href="images/icon.png">
     <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700|Caveat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Insightstone</title>
@@ -42,7 +42,7 @@
         <!--Intro-->
         <div class="main">
             <h1 class="main__heading"><i>Bring sight with vision!</i></h1>
-            <a href="#" class="btn"><span class="btn-join">Join Us</span></a>
+            <a href="#" class="btn"><span class="btn-join noselect">Join Us</span></a>
         </div>
     </header>
 
@@ -89,34 +89,40 @@
             </div>
         </div>
     </div>
+
+
     <div class="section-form">
-        <div class="form-left">
-            <div class="left-text">
-                <div class="left-text-tag">#InsightoneInfluencer</div>
-                <div class="left-text-tag">your culture is our brand!</div>
-                <div class="left-text-tag">Join us today </div>
+        <div class="heading-1">Influencer marketting programme</div>
+        <div class="section-form-container">
+            <div class="form-left">
+                <div class="left-text">
+                    <div class="left-text__tag">#InsightoneInfluencer</div>
+                    <div class="left-text__quote">your culture is our brand!</div>
+                    <div class="left-text__btn noselect">Know More </div>
+                    <div class="left-text__btn noselect" onclick="active()">Join us today </div>
+                </div>
             </div>
-        </div>
-        <div class="form-right">
+            <div class="form-right">
 
-            <div class="right__container">
-                <form action="#" method="post" class="right__form">
-                    <div class="right__form-inputs">
-                        <div class="right__form-left">
-                            <input type="text" placeholder="Name" class="right__form-input">
-                            <input type="email" placeholder="E-Mail" class="right__form-input">
-                            <input type="number" placeholder="Contact Number" class="right__form-input">
+                <div class="right__container">
+                    <form action="#" method="post" class="right__form">
+                        <div class="right__form-inputs">
+                            <div class="right__form-left">
+                                <input type="text" placeholder="Name" class="right__form-input">
+                                <input type="email" placeholder="E-Mail" class="right__form-input">
+                                <input type="number" placeholder="Contact Number" class="right__form-input">
+                            </div>
+                            <div class="right__form-right">
+                                <input type="text" placeholder="College" class="right__form-input">
+                                <input type="text" placeholder="Instagram profile link" class="right__form-input">
+                                <input type="number" placeholder="Number of followers on Instagram" class="right__form-input">
+                            </div>
                         </div>
-                        <div class="right__form-right">
-                            <input type="text" placeholder="College" class="right__form-input">
-                            <input type="text" placeholder="Instagram profile link" class="right__form-input">
-                            <input type="number" placeholder="Number of followers on Instagram" class="right__form-input">
-                        </div>
-                    </div>
-                    <button class="register" type="submit">Register</button>
-                </form>
+                        <button class="register noselect" type="submit">Register</button>
+                    </form>
+                </div>
+
             </div>
-
         </div>
     </div>
     <div class="section-clients">
@@ -133,6 +139,30 @@
         <div class="heading-1">about us</div>
 
         <div class="about__text">An online media company and leading youth organization, which covers all events and gives an insight to all major events, in and around campus, working in the field of influencer marketing and soft skills training through internships.</div>
+    </div>
+
+    <div class="section-team">
+        <div class="heading-1">our team</div>
+        <div class="team">
+            <div class="team__row">
+                <div class="team__mem">
+                    <div class="team__image-box"><img src="assets/pic1.jpg" alt="Co-Founder" class="team__image">
+                        <div class="team__cap">
+                            <div class="team__cap-name">ABC ABC</div>
+                            <div class="team___cap-desg">Co-Founder</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__mem">
+                    <div class="team__image-box"><img src="assets/pic2.jpg" alt="Co-Founder" class="team__image"></div>
+                    <div class="team__cap">
+                        <div class="team__cap-name">ABC ABC</div>
+                        <div class="team___cap-desg">Co-Founder</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 
@@ -151,7 +181,7 @@
                 $('#l5').addClass('show2');
                 $('#l6').addClass('show2');
                 $('#l7').addClass('show2');
-                $('#logo').attr("src", "/images/logo.png");
+                $('#logo').attr("src", "images/logo.png");
 
             } else {
 
@@ -163,10 +193,11 @@
                 $('#l5').removeClass('show2');
                 $('#l6').removeClass('show2');
                 $('#l7').removeClass('show2');
-                $('#logo').attr("src", "/images/logo1.png");
+                $('#logo').attr("src", "images/logo1.png");
 
             };
         });
+
     </script>
 </body>
 
