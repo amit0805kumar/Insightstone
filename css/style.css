@@ -5,7 +5,8 @@
   text-transform: uppercase;
   font-family: "futur", sans-serif;
   white-space: nowrap;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  position: relative; }
   @media only screen and (max-width: 62.5em) {
     .heading-1 {
       font-size: 3rem;
@@ -24,6 +25,22 @@
       margin-bottom: 2rem;
       letter-spacing: 1px;
       font-family: "futurmedium",sans-serif; } }
+  .heading-1::before {
+    content: "";
+    position: absolute;
+    height: .2rem;
+    width: 300%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-100%);
+    background: #e0e0e0; }
+  .heading-1::after {
+    content: "";
+    position: absolute;
+    height: .2rem;
+    width: 300%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e0e0e0; }
 
 * {
   box-sizing: inherit;
@@ -606,6 +623,8 @@ input[type=number]::-webkit-outer-spin-button {
     .team__mem:hover .social {
       top: 45%;
       opacity: 1; }
+    .team__mem:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
     @media only screen and (max-width: 56.25em) {
       .team__mem {
         margin: 2rem 0; } }

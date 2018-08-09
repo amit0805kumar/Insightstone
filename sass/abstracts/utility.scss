@@ -6,7 +6,8 @@
     font-family: "futur", sans-serif;
     white-space: nowrap;
     margin-bottom: 3rem;
-     @include respond(1000){
+        position: relative;
+    @include respond(1000){
           font-size: 3rem;
          list-style-position: 2px;
          margin-bottom: 2rem;
@@ -24,4 +25,23 @@
           letter-spacing: 1px;
          font-family: "futurmedium",sans-serif;
         }
+    &::before{
+        content: "";
+        position: absolute;
+        height: .2rem;
+        width: 300%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-100%);
+        background: $color-grey-light-1;
+    }
+    
+    &::after{
+        content: "";
+        position: absolute;
+        height: .2rem;
+        width: 300%;
+        top: 50%;
+        transform: translateY(-50%);
+        background: $color-grey-light-1;
+    }
 }
