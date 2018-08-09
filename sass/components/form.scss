@@ -16,6 +16,7 @@
 
 }
 
+
 .left-text {
     color: #fff;
     text-align: center;
@@ -79,7 +80,7 @@
         padding: 3rem;
         height: 100%;
         @include respond(1000){
-            height: 40rem;
+            height: 50rem;
         }
     }
     &__form {

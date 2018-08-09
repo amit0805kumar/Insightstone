@@ -100,7 +100,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-image: url(../images/form-pic.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40rem;
+  height: 50rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -109,7 +109,7 @@ input[type=number]::-webkit-outer-spin-button {
     .section-form-container {
       flex-direction: column;
       align-items: center;
-      height: 80rem; } }
+      height: 90rem; } }
 
 .scrollUp {
   position: fixed;
@@ -119,13 +119,24 @@ input[type=number]::-webkit-outer-spin-button {
   transform: translateX(-100%);
   margin-left: -2rem;
   background: none;
-  border: none; }
-  .scrollUp:active {
-    outline: none; }
+  border: none;
+  border-radius: 50%;
+  display: none;
+  opacity: 0;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .scrollUp:focus {
+    outline: 0; }
+  @media only screen and (max-width: 37.5em) {
+    .scrollUp {
+      left: 102%; } }
+
+.showUp {
+  opacity: 1;
+  display: block; }
 
 .header {
   background-image: url(../images/bulbImages.png);
-  height: 90vh;
+  height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -200,8 +211,8 @@ input[type=number]::-webkit-outer-spin-button {
     color: black;
     border: 2px solid black;
     background: #ff9100; }
-  .btn:active {
-    outline: none; }
+  .btn:focus {
+    outline: 0; }
   .btn::before {
     background: #ff9100;
     content: "";
@@ -212,14 +223,18 @@ input[type=number]::-webkit-outer-spin-button {
     top: 0;
     transition: all .3s ease-in-out;
     left: 0; }
-    .btn::before:active {
-      outline: none; }
+    .btn::before:focus {
+      outline: 0; }
   .btn:hover {
     transform: translateY(-0.4rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn:hover:focus {
+      outline: 0; }
     .btn:hover::before {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
+      .btn:hover::before:focus {
+        outline: 0; }
 
 .logo-img {
   width: 15rem; }
@@ -391,6 +406,10 @@ input[type=number]::-webkit-outer-spin-button {
       .client__box {
         width: 7rem;
         height: 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .client__box {
+        width: 5rem;
+        height: 5rem; } }
   .client__image {
     width: 100%;
     height: 100%;
@@ -496,7 +515,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 100%; }
   @media only screen and (max-width: 62.5em) {
     .right__container {
-      height: 40rem; } }
+      height: 50rem; } }
 .right__form {
   width: 100%;
   height: 100%;

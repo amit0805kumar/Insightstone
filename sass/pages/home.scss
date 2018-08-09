@@ -14,7 +14,7 @@
     background-image: url(../images/form-pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40rem;
+    height: 50rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -23,7 +23,7 @@
     @include respond(1000) {
         flex-direction: column;
         align-items: center;
-        height: 80rem;
+        height: 90rem;
     }
 }
 .scrollUp{
@@ -35,7 +35,18 @@
     margin-left: -2rem;
     background: none;
     border: none; 
-    &:active{
-        outline: none;
+    border-radius: 50%;
+    display: none;
+    opacity: 0;
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    &:focus{
+        outline: 0;
     }
+    @include respond(phone){
+        left: 102%;
+    }
+}
+.showUp{
+    opacity: 1;
+    display: block;
 }

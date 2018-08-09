@@ -187,7 +187,7 @@
             </div>
         </div>
     </div>
-    <button class="scrollUp">
+    <button class="scrollUp" id="up">
         <i class="fas fa-chevron-circle-up fa-3x scrollUp__icon"></i>
     </button>
     <script src="script.js"></script>
@@ -207,6 +207,7 @@
                 $('#l5').addClass('show2');
                 $('#l6').addClass('show2');
                 $('#l7').addClass('show2');
+                $('#up').addClass('showUp');
                 $('#logo').attr("src", "images/logo.png");
 
             } else {
@@ -219,6 +220,7 @@
                 $('#l5').removeClass('show2');
                 $('#l6').removeClass('show2');
                 $('#l7').removeClass('show2');
+                $('#up').removeClass('showUp');
                 $('#logo').attr("src", "images/logo1.png");
 
             };
