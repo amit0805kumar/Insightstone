@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shotcut icon" type="img/png" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700|Caveat:400,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="shotcut icon" type="img/png" href="images/icon.png">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700|Caveat:400,700" rel="stylesheet">
+     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/additional-methods.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
     <title>Insightstone</title>
 </head>
 
@@ -19,7 +24,7 @@
         <!--Navbar-->
         <nav class="navbar navbar-default" id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo" class="logo-img" id="logo"></a>
+                <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo" class="logo-img fadeIn animated delay1" id="logo"></a>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" onclick="move()" data-toggle="collapse" data-target="#main" id="cmd">
                     <span class="icon-bar" id="bar1"></span>
@@ -43,46 +48,46 @@
         <!--Intro-->
         <div class="main">
             <h1 class="main__heading noselect"><i>Bring sight with vision!</i></h1>
-            <button class="btn"><span class="btn-join noselect">Join Us</span></button>
+            <button class="btn" id="join_us_button"><span class="btn-join noselect" style="color: white;">Join Us</span></button>
         </div>
     </header>
 
     <div class="section-services">
-        <div class="heading-1">our Services</div>
+        <div class="heading-1 wow fadeIn">our Services</div>
         <div class="services__row">
-            <div class="services__box">
+            <div class="services__box wow zoomIn delay1">
                 <div class="services__box-image simage-1"></div>
                 <div class="services__box-heading">
                     Social Marketing
                 </div>
             </div>
-            <div class="services__box">
+            <div class="services__box wow zoomIn delay1">
                 <div class="services__box-image simage-2"></div>
                 <div class="services__box-heading">
                     Internships
                 </div>
             </div>
-            <div class="services__box">
+            <div class="services__box wow zoomIn delay1">
                 <div class="services__box-image simage-3"></div>
                 <div class="services__box-heading">
                     Influencer Marketing
                 </div>
             </div>
         </div>
-        <div class="services__row">
+        <div class="services__row wow zoomIn delay1">
             <div class="services__box">
                 <div class="services__box-image simage-4"></div>
                 <div class="services__box-heading">
                     Event Promotion
                 </div>
             </div>
-            <div class="services__box">
+            <div class="services__box wow zoomIn delay1">
                 <div class="services__box-image simage-5"></div>
                 <div class="services__box-heading">
                     Event/Workshops
                 </div>
             </div>
-            <div class="services__box">
+            <div class="services__box wow zoomIn delay1">
                 <div class="services__box-image simage-6"></div>
                 <div class="services__box-heading">
                     Campus Insights
@@ -93,30 +98,30 @@
 
 
     <div class="section-form">
-        <div class="heading-1">Influencer marketting programme</div>
+        <div class="heading-1 wow fadeIn delay1">Influencer marketting programme</div>
         <div class="section-form-container">
-            <div class="form-left">
+            <div class="form-left wow slideInLeft delay1">
                 <div class="left-text">
-                    <div class="left-text__tag">#InsightoneInfluencer</div>
+                    <div class="left-text__tag wow ">#InsightoneInfluencer</div>
                     <div class="left-text__quote">your culture is our brand!</div>
                     <div class="left-text__btn noselect">Know More </div>
                     <div class="left-text__btn noselect" onclick="active()">Join us today </div>
                 </div>
             </div>
-            <div class="form-right">
+            <div class="form-right wow slideInRight delay1">
 
                 <div class="right__container">
-                    <form action="#" method="post" class="right__form">
+                    <form action="#" method="post" id="join_us_form" class="right__form">
                         <div class="right__form-inputs">
                             <div class="right__form-left">
-                                <input type="text" placeholder="Name" class="right__form-input">
-                                <input type="email" placeholder="E-Mail" class="right__form-input">
-                                <input type="number" placeholder="Contact Number" class="right__form-input">
+                                <input type="text" placeholder="Name" name="name" id="name" class="right__form-input">
+                                <input type="email" placeholder="E-Mail" name="email" id="email" class="right__form-input">
+                                <input type="number" placeholder="Contact Number" name="contact_number" id="contact_number" class="right__form-input">
                             </div>
                             <div class="right__form-right">
-                                <input type="text" placeholder="College" class="right__form-input">
-                                <input type="text" placeholder="Instagram profile link" class="right__form-input">
-                                <input type="number" placeholder="Number of followers on Instagram" class="right__form-input">
+                                <input type="text" placeholder="College" name="college" id="college" class="right__form-input">
+                                <input type="text" placeholder="Instagram profile link" name="profile_link" id="profile_link" class="right__form-input">
+                                <input type="number" placeholder="Number of followers on Instagram" name="followers" id="followers" class="right__form-input">
                             </div>
                         </div>
                         <button class="register noselect" type="submit">Register</button>
@@ -127,9 +132,9 @@
         </div>
     </div>
     <div class="section-clients">
-        <div class="heading-1">our clients</div>
-        <div class="client">
-            <div class="client__box"><img src="images/c1.png" class="client__image" alt="client-1"></div>
+        <div class="heading-1 wow fadeIn delay1">our clients</div>
+        <div class="client wow fadeInUp">
+            <div class="client__box "><img src="images/c1.png" class="client__image" alt="client-1"></div>
             <div class="client__box"><img src="images/c2.png" class="client__image" alt="client-2"></div>
             <div class="client__box"><img src="images/c3.png" class="client__image" alt="client-3"></div>
             <div class="client__box"><img src="images/c4.png" class="client__image" alt="client-4"></div>
@@ -137,17 +142,17 @@
         </div>
     </div>
     <div class="section-about">
-        <div class="heading-1">about us</div>
+        <div class="heading-1 wow fadeIn delay1">about us</div>
 
-        <div class="about__text">An online media company and leading youth organization, which covers all events and gives an insight to all major events, in and around campus, working in the field of influencer marketing and soft skills training through internships.</div>
+        <div class="about__text wow slideInUp delay1">An online media company and leading youth organization, which covers all events and gives an insight to all major events, in and around campus, working in the field of influencer marketing and soft skills training through internships.</div>
     </div>
 
     <div class="section-team">
-        <div class="heading-1">our team</div>
+        <div class="heading-1 wow fadeIn delay1">our team</div>
         <div class="team">
             <div class="team__row">
-                <div class="team__mem">
-                   <a href="https://www.instagram.com/akshitakatyal/" class="social" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                <div class="team__mem wow flipInX delay1">
+                   <a href="https://www.instagram.com/akshitakatyal/" class="social" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
                     <div class="team__image-box"><img src="assets/pic1.jpg" alt="Co-Founder" class="team__image">
                     
                     </div>
@@ -156,8 +161,8 @@
                             <div class="team__cap-desg">Co-Founder</div>
                         </div>
                 </div>
-                <div class="team__mem">
-                   <a href="https://www.instagram.com/_akshaykumar_official/" class="social" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                <div class="team__mem wow flipInX delay1">
+                   <a href="https://www.instagram.com/_akshaykumar_official/" class="social" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
                     <div class="team__image-box"><img src="assets/pic2.jpg" alt="Co-Founder" class="team__image"></div>
                     <div class="team__cap">
                         <div class="team__cap-name">Akshay Kumar</div><br>
@@ -166,8 +171,8 @@
                 </div>
             </div>
                   <div class="team__row">
-                <div class="team__mem">
-                   <a href="https://www.instagram.com/mehak2110/" class="social" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                <div class="team__mem wow flipInX delay1">
+                   <a href="https://www.instagram.com/mehak2110/" class="social" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
                     <div class="team__image-box"><img src="assets/pic1.jpg" alt="Co-Founder" class="team__image">
                      
                     </div>
@@ -176,8 +181,8 @@
                             <div class="team__cap-desg">Manager</div>
                         </div>
                 </div>
-                <div class="team__mem">
-                   <a href="https://www.instagram.com/samridhi_malhotra/" class="social" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                <div class="team__mem wow flipInX delay1">
+                   <a href="https://www.instagram.com/samridhi_malhotra/" class="social" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
                     <div class="team__image-box"><img src="assets/pic2.jpg" alt="Co-Founder" class="team__image"></div>
                     <div class="team__cap">
                         <div class="team__cap-name">Samridhi Malhotra</div><br>
@@ -187,18 +192,37 @@
             </div>
         </div>
     </div>
-    <button class="scrollUp" id="up">
-        <i class="fas fa-chevron-circle-up fa-3x scrollUp__icon"></i>
+    <button class="scrollUp">
+        <i class="fa fa-chevron-circle-up fa-3x scrollUp__icon"></i>
     </button>
-    <script src="script.js"></script>
+
+    <div class="footer container-fluid" >
+        <div class="social-media col-md-12" style="text-align: center; margin-bottom: 20px;">
+        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #F10E15;"></i></a>
+        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #4267B2;"></i></a>
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #0077B5;"></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #E13D62;"></i></a>
+        </div>
+
+        <div class="container logo col-md-6">
+            <img src="images/logo1.png" class="img-responsive" style="width: 350px;height: auto;margin-top: 40px ;">
+        </div>
+        <div class="mailsection col-md-6">
+            <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px;padding-top:50px; padding-bottom: 10px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> info@insightone.in</a><span> - For Internship and Tie-Ups</span><br>
+             <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> influencers@insightone.in</a><span> - For Influencers Marketing Programme</span>
+        </div><br>
+        
+        <hr>   
+        <p style="text-align: center;color:#C6C3C2;">&copy 2018 Insightone, All rights reserved</p>
+    </div>
+
+    <script src="js/script.js"></script>
 
     <script>
         //Navbar
-        $(window).scroll(function() {
+       $(window).scroll(function() {
             // 150 = The point you would like to fade the nav in.
-
             if ($(window).scrollTop() > 150) {
-
                 $('#navbar').addClass('show');
                 $('#l1').addClass('show2');
                 $('#l2').addClass('show2');
@@ -209,9 +233,7 @@
                 $('#l7').addClass('show2');
                 $('#up').addClass('showUp');
                 $('#logo').attr("src", "images/logo.png");
-
             } else {
-
                 $('#navbar').removeClass('show');
                 $('#l1').removeClass('show2');
                 $('#l2').removeClass('show2');
@@ -222,10 +244,27 @@
                 $('#l7').removeClass('show2');
                 $('#up').removeClass('showUp');
                 $('#logo').attr("src", "images/logo1.png");
-
             };
         });
+        new WOW().init();
 
+         var scroll = new Scroll(document.body);
+         var scrollButton = document.getElementById("join_us_button");
+         var join_us_form = document.querySelector(".section-form");
+        scrollButton.onclick = function () {
+    scroll.toElement(join_us_form, {duration: 1100}).then(function () {
+
+         });
+        };
+
+        var scroll = new Scroll(document.body);
+         var scrollButton_team = document.getElementById("l6");
+         var section_team = document.querySelector(".section-team");
+        scrollButton_team.onclick = function () {
+    scroll.toElement(section_team, {duration: 1100}).then(function () {
+
+         });
+        };
     </script>
 </body>
 

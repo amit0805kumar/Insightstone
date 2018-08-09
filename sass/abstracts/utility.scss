@@ -25,23 +25,15 @@
           letter-spacing: 1px;
          font-family: "futurmedium",sans-serif;
         }
-    &::before{
-        content: "";
-        position: absolute;
-        height: .2rem;
-        width: 300%;
-        top: 50%;
-        transform: translateY(-50%) translateX(-100%);
-        background: $color-grey-light-1;
-    }
     
     &::after{
         content: "";
         position: absolute;
         height: .2rem;
-        width: 300%;
-        top: 50%;
+        width: 100%;
+        top: 100%;
         transform: translateY(-50%);
         background: $color-grey-light-1;
+        left: 0;
     }
 }

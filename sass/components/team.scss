@@ -106,7 +106,12 @@
     transition: all .3s ease-in-out;
     opacity: 0;
     &:hover {
-        color: #002073;
+        color: #E13D62;
 
     }
+}
+/*team page fa icons */
+.team>fa-instagram:hover{
+  color: #E13D62;
+  transition-duration: 0.7s;
 }

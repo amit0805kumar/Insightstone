@@ -5,8 +5,7 @@
   text-transform: uppercase;
   font-family: "futur", sans-serif;
   white-space: nowrap;
-  margin-bottom: 3rem;
-  position: relative; }
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 62.5em) {
     .heading-1 {
       font-size: 3rem;
@@ -25,15 +24,6 @@
       margin-bottom: 2rem;
       letter-spacing: 1px;
       font-family: "futurmedium",sans-serif; } }
-  .heading-1::after {
-    content: "";
-    position: absolute;
-    height: .2rem;
-    width: 100%;
-    top: 100%;
-    transform: translateY(-50%);
-    background: #e0e0e0;
-    left: 0; }
 
 * {
   box-sizing: inherit;
@@ -245,54 +235,6 @@ input[type=number]::-webkit-outer-spin-button {
       opacity: 0; }
       .btn:hover::before:focus {
         outline: 0; }
-
-.footer {
-  background-color: #1C1B1B;
-  height: auto; }
-
-.mailsection {
-  height: 226px; }
-
-.mailsection a, span {
-  font-size: 15px;
-  color: grey;
-  text-decoration: none; }
-
-.mailsection a:hover {
-  color: #D1CFCE;
-  transition-duration: .6s; }
-
-.social-media {
-  margin-top: 20px; }
-
-.fa-facebook-square:hover {
-  transition-duration: 1.2s;
-  transform: rotateY(360deg); }
-
-.fa-youtube-play:hover {
-  transition-duration: 1.2s;
-  transform: rotateY(360deg); }
-
-.fa-linkedin-square:hover {
-  transition-duration: 1.2s;
-  transform: rotateY(360deg); }
-
-.fa-instagram:hover {
-  transition-duration: 1.2s;
-  transform: rotateY(360deg); }
-
-hr {
-  display: block;
-  border-color: grey;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px; }
-
-.delay1 {
-  animation-delay: .5s; }
 
 .logo-img {
   width: 15rem; }
@@ -664,8 +606,6 @@ hr {
     .team__mem:hover .social {
       top: 45%;
       opacity: 1; }
-    .team__mem:hover {
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
     @media only screen and (max-width: 56.25em) {
       .team__mem {
         margin: 2rem 0; } }
@@ -729,8 +669,61 @@ hr {
     color: #E13D62; }
 
 /*team page fa icons */
-.team > fa-instagram:hover {
+.team>fa-instagram:hover{
   color: #E13D62;
-  transition-duration: 0.7s; }
+  transition-duration: 0.7s;
+}
+
+ /*Footer Css*/
+
+.footer{
+  background-color: #1C1B1B;
+  height: auto;
+}
+.mailsection{
+  height: 226px;
+}
+.mailsection a,span{
+  font-size: 15px;
+  color: grey;
+  text-decoration: none;
+}
+.mailsection a:hover{
+  color: #D1CFCE;
+  transition-duration: .6s;
+}
+.social-media{
+  margin-top: 20px;
+}
+.fa-facebook-square:hover{
+   transition-duration: 1.2s;
+    transform: rotateY(360deg);
+}
+.fa-youtube-play:hover{
+   transition-duration: 1.2s;
+    transform: rotateY(360deg);
+}
+.fa-linkedin-square:hover{
+   transition-duration: 1.2s;
+    transform: rotateY(360deg);
+}
+.fa-instagram:hover{
+   transition-duration: 1.2s;
+    transform: rotateY(360deg);
+}
+hr { 
+    display: block;
+    border-color: grey;
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+ 
+ .delay1{
+  animation-delay: .5s;
+ }
 
 /*# sourceMappingURL=style.css.map */

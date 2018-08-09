@@ -1,0 +1,49 @@
+.footer{
+  background-color: #1C1B1B;
+  height: auto;
+}
+.mailsection{
+  height: 226px;
+}
+.mailsection a,span{
+  font-size: 15px;
+  color: grey;
+  text-decoration: none;
+}
+.mailsection a:hover{
+  color: #D1CFCE;
+  transition-duration: .6s;
+}
+.social-media{
+  margin-top: 20px;
+}
+.fa-facebook-square:hover{
+   transition-duration: 1.2s;
+    transform: rotateY(360deg);
+}
+.fa-youtube-play:hover{
+   transition-duration: 1.2s;
+    transform: rotateY(360deg);
+}
+.fa-linkedin-square:hover{
+   transition-duration: 1.2s;
+    transform: rotateY(360deg);
+}
+.fa-instagram:hover{
+   transition-duration: 1.2s;
+    transform: rotateY(360deg);
+}
+hr { 
+    display: block;
+    border-color: grey;
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+ 
+ .delay1{
+  animation-delay: .5s;
+ }
