@@ -31,16 +31,12 @@
             letter-spacing: 2px;
 
         }
+
         @include respond(phone) {
             font-size: 3rem;
+            margin-top: 20rem;
+        }
 
-        }
-        @include respond(tab-port){
-        margin-top: 15rem;
-        }
-          @include respond(1100){
-        margin-top: 17rem;
-        }
     }
 
 }
@@ -63,22 +59,21 @@
     }
     100% {
         margin-top: 10rem;
-     
+
     }
 }
+
 @keyframes moveDs {
     0% {
         margin-top: 3rem;
     }
     100% {
         margin-top: 5rem;
-     
+
     }
 }
 
-.btn,
-.btn:visited,
-.btn:link {
+.btn {
     text-decoration: none;
     color: white;
     font-family: "cabin", sans-serif;
@@ -92,6 +87,7 @@
     position: relative;
     animation-name: moveD;
     animation-duration: 2s;
+    background: none;
     @include respond(phone) {
         margin-top: 5rem;
         animation-name: moveDs;
@@ -104,6 +100,9 @@
         border: 2px solid black;
         background: #ff9100;
     }
+    &:active{
+        outline: none;
+    }
     &::before {
         background: #ff9100;
         content: "";
@@ -114,6 +113,9 @@
         top: 0;
         transition: all .3s ease-in-out;
         left: 0;
+         &:active{
+        outline: none;
+    }
     }
     &:hover {
         transform: translateY(-0.4rem);

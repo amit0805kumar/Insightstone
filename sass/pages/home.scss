@@ -26,3 +26,16 @@
         height: 80rem;
     }
 }
+.scrollUp{
+    position: fixed;
+   top: 92%;
+    z-index: 500;
+    left: 100%;
+    transform: translateX(-100%);
+    margin-left: -2rem;
+    background: none;
+    border: none; 
+    &:active{
+        outline: none;
+    }
+}
