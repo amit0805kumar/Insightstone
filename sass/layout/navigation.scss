@@ -1,7 +1,10 @@
 .logo-img {
     width: 15rem;
-     @include respond(tab-port){
-      width: 9rem;
+    @include respond(tab-port) {
+        width: 9rem;
+    }
+     @include respond(767) {
+       
     }
 }
 
@@ -20,6 +23,14 @@
     }
     background: transparent;
     position: fixed;
+    @include respond(767) {
+        position: relative;
+        background: $color-grey-light-1;
+        -webkit-box-shadow: 0 1px 2px rgba(119, 119, 119, 0.3);
+        -moz-box-shadow: 0 2px 1px rgba(119, 119, 119, 0.3);
+        box-shadow: 0 2px 1px rgba(119, 119, 119, 0.3);
+        margin-bottom: 0 !important;
+    }
     top: 0;
     left: 0;
     width: 100%;
@@ -39,6 +50,8 @@
     -moz-box-shadow: 0 2px 1px rgba(119, 119, 119, 0.3);
     box-shadow: 0 2px 1px rgba(119, 119, 119, 0.3);
 
+
+
 }
 
 #nav li a {
@@ -52,27 +65,31 @@
     width: 12rem;
     text-align: center;
     white-space: nowrap;
-    @include respond(1100){
-      margin: 0 .2rem;
+    @include respond(1100) {
+        margin: 0 .2rem;
         width: 10rem;
         font-size: 1.1rem;
     }
-     @include respond(1000){
-          margin: 0 .2rem;
+    @include respond(1000) {
+        margin: 0 .2rem;
         width: 9rem;
         font-size: 1rem;
     }
-       @include respond(tab-port){
-      margin: 0 .1rem;
+    @include respond(tab-port) {
+        margin: 0 .1rem;
         width: 9rem;
         font-size: .8rem;
-           padding: 1rem;
+        padding: 1rem;
     }
-      @include respond(800){
-         width: 100%;
-          border: none;
-          font-size: 1.5rem;
-          text-align: left;
+    @include respond(800) {
+        width: 100%;
+        border: none;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    @include respond(767) {
+        color: black !important;
+        border-bottom: 2px solid transparent !important;
     }
 }
 
@@ -92,4 +109,20 @@
         color: #6f6e6e !important;
     }
 
+}
+
+.navbar-btn {
+    background: none;
+    border: none;
+    &:hover {
+        background: none !important;
+        border: none !important;
+
+    }
+}
+.expandNav{
+    padding: .8rem 0;
+       @include respond(767) {
+        padding: 0;
+    }
 }

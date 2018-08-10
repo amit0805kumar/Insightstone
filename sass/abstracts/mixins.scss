@@ -13,6 +13,11 @@
             @content
         }
     }
+      @if $breakpoint==767 {
+        @media only screen and (max-width: 47.93em) {    //767
+            @content
+        }
+    }
      @if $breakpoint==800 {
         @media only screen and (max-width: 50em) {    //800
             @content

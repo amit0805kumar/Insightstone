@@ -20,31 +20,32 @@
 </head>
 
 <body>
-    <header class="header">
-        <!--Navbar-->
-        <nav class="navbar navbar-default" id="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo" class="logo-img fadeIn animated delay1" id="logo"></a>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" onclick="move()" data-toggle="collapse" data-target="#main" id="cmd">
+    <!--Navbar-->
+    <nav class="navbar navbar-default" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo" class="logo-img fadeIn animated delay1" id="logo"></a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-btn" onclick="move()" data-toggle="collapse" data-target="#main" id="cmd">
                     <span class="icon-bar" id="bar1"></span>
                     <span class="icon-bar" id="bar2"></span>
                     <span class="icon-bar" id="bar3"></span>
                 </button>
-                </div>
-                <div class="collapse navbar-collapse" id="main">
-                    <ul class="nav navbar-nav navbar-right" id="nav">
-                        <li><a id="l1">HOME</a></li>
-                        <li><a id="l2">COLLEGES</a></li>
-                        <li><a id="l3">BLOG</a></li>
-                        <li><a id="l4">EVENTS</a></li>
-                        <li><a id="l5">INTERNSHIPS</a></li>
-                        <li><a id="l6">TEAM</a></li>
-                        <li><a id="l7">ABOUT US</a></li>
-                    </ul>
-                </div>
             </div>
-        </nav>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="nav navbar-nav navbar-right" id="nav">
+                    <li><a id="l1">HOME</a></li>
+                    <li><a id="l2">COLLEGES</a></li>
+                    <li><a id="l3">BLOG</a></li>
+                    <li><a id="l4">EVENTS</a></li>
+                    <li><a id="l5">INTERNSHIPS</a></li>
+                    <li><a id="l6">TEAM</a></li>
+                    <li><a id="l7">ABOUT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+
         <!--Intro-->
         <div class="main">
             <h1 class="main__heading noselect"><i>Bring sight with vision!</i></h1>
@@ -222,7 +223,7 @@
         //Navbar
         $(window).scroll(function() {
             // 150 = The point you would like to fade the nav in.
-            if ($(window).scrollTop() > 150) {
+            if ($(window).scrollTop() > 20) {
                 $('#navbar').addClass('show');
                 $('#l1').addClass('show2');
                 $('#l2').addClass('show2');
@@ -232,7 +233,10 @@
                 $('#l6').addClass('show2');
                 $('#l7').addClass('show2');
                 $('#up').addClass('showUp');
+                if($(window).width()>=767){
+
                 $('#logo').attr("src", "images/logo.png");
+                }
             } else {
                 $('#navbar').removeClass('show');
                 $('#l1').removeClass('show2');
@@ -243,8 +247,10 @@
                 $('#l6').removeClass('show2');
                 $('#l7').removeClass('show2');
                 $('#up').removeClass('showUp');
+                if($(window).width()>=767){
                 $('#logo').attr("src", "images/logo1.png");
-            };
+                }
+                };
         });
         new WOW().init();
 
@@ -259,7 +265,7 @@
             });
         };
 
-  
+
         var scrollButton_team = document.getElementById("l6");
         var section_team = document.querySelector(".section-team");
         scrollButton_team.onclick = function() {
@@ -269,7 +275,7 @@
 
             });
         };
-        
+
         var scrollButton_about_us = document.getElementById("l7");
         var section_about = document.querySelector(".section-about");
         scrollButton_about_us.onclick = function() {
@@ -279,8 +285,31 @@
 
             });
         };
+        
+         var scrollButton_header = document.getElementById("header");
+        var headerPart = document.querySelector(".header");
+        scrollButton_about_us.onclick = function() {
+            scroll.toElement(headerPart, {
+                duration: 1100
+            }).then(function() {
 
-       
+            });
+        };
+
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 document.querySelector("#navbar").classList.add("expandNav");
+            
+            } else {
+                document.querySelector("#navbar").classList.remove("expandNav");
+            }
+        }
+        
     </script>
 </body>
 
