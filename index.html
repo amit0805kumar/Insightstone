@@ -224,33 +224,32 @@
         $(window).scroll(function() {
             // 150 = The point you would like to fade the nav in.
             if ($(window).scrollTop() > 20) {
-                $('#navbar').addClass('show');
-                $('#l1').addClass('show2');
-                $('#l2').addClass('show2');
-                $('#l3').addClass('show2');
-                $('#l4').addClass('show2');
-                $('#l5').addClass('show2');
-                $('#l6').addClass('show2');
-                $('#l7').addClass('show2');
+                if ($(window).width() >= 767) {
+                    $('#navbar').addClass('show');
+                    $('#l1').addClass('show2');
+                    $('#l2').addClass('show2');
+                    $('#l3').addClass('show2');
+                    $('#l4').addClass('show2');
+                    $('#l5').addClass('show2');
+                    $('#l6').addClass('show2');
+                    $('#l7').addClass('show2');
+                    $('#logo').attr("src", "images/logo.png");
+                }
                 $('#up').addClass('showUp');
-                if($(window).width()>=767){
-
-                $('#logo').attr("src", "images/logo.png");
-                }
             } else {
-                $('#navbar').removeClass('show');
-                $('#l1').removeClass('show2');
-                $('#l2').removeClass('show2');
-                $('#l3').removeClass('show2');
-                $('#l4').removeClass('show2');
-                $('#l5').removeClass('show2');
-                $('#l6').removeClass('show2');
-                $('#l7').removeClass('show2');
-                $('#up').removeClass('showUp');
-                if($(window).width()>=767){
-                $('#logo').attr("src", "images/logo1.png");
+                if ($(window).width() >= 767) {
+                    $('#navbar').removeClass('show');
+                    $('#l1').removeClass('show2');
+                    $('#l2').removeClass('show2');
+                    $('#l3').removeClass('show2');
+                    $('#l4').removeClass('show2');
+                    $('#l5').removeClass('show2');
+                    $('#l6').removeClass('show2');
+                    $('#l7').removeClass('show2');
+                    $('#logo').attr("src", "images/logo1.png");
                 }
-                };
+                $('#up').removeClass('showUp');
+            };
         });
         new WOW().init();
 
@@ -285,8 +284,8 @@
 
             });
         };
-        
-         var scrollButton_header = document.getElementById("header");
+
+        var scrollButton_header = document.getElementById("header");
         var headerPart = document.querySelector(".header");
         scrollButton_about_us.onclick = function() {
             scroll.toElement(headerPart, {
@@ -303,13 +302,12 @@
 
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                 document.querySelector("#navbar").classList.add("expandNav");
-            
+                document.querySelector("#navbar").classList.add("expandNav");
+
             } else {
                 document.querySelector("#navbar").classList.remove("expandNav");
             }
         }
-        
     </script>
 </body>
 
