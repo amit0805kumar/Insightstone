@@ -51,8 +51,6 @@
     -moz-box-shadow: 0 2px 1px rgba(119, 119, 119, 0.3);
     box-shadow: 0 2px 1px rgba(119, 119, 119, 0.3);
 
-
-
 }
 
 #nav li a {
@@ -61,7 +59,7 @@
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    border-bottom: 2px solid white;
+   // border-bottom: 2px solid white;
     margin: 0 .3rem;
     width: 12rem;
     text-align: center;
@@ -90,7 +88,7 @@
     }
     @include respond(767) {
         color: #fff !important;
-        border-bottom: 2px solid transparent !important;
+     //   border-bottom: 2px solid transparent !important;
     }
 }
 
@@ -105,7 +103,7 @@
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    border-bottom: 2px solid transparent !important;
+   // border-bottom: 2px solid transparent !important;
     &:hover {
         color: #6f6e6e !important;
     }

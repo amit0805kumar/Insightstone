@@ -40,6 +40,18 @@
     display: none;
     z-index: 1000;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    @include respond(1100){
+        top: 88%;
+        left: 94%;
+    }
+      @include respond(800){
+        top: 89%;
+        left: 93%;
+    }
+      @include respond(phone){
+        top: 91%;
+        left: 90%;
+    }
     &__icon {
         
     }
