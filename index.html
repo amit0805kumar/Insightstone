@@ -25,7 +25,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo" class="logo-img fadeIn animated delay1" id="logo"></a>
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle navbar-btn"  data-toggle="collapse" data-target="#main" id="cmd">
+                <button type="button" class="navbar-toggle navbar-btn" data-toggle="collapse" data-target="#main" id="cmd">
                     <span class="icon-bar" id="bar1"></span>
                     <span class="icon-bar" id="bar2"></span>
                     <span class="icon-bar" id="bar3"></span>
@@ -44,10 +44,10 @@
             </div>
         </div>
     </nav>
-    <header class="header">
+    <header class="header" id="header">
 
         <!--Intro-->
-        <div class="main">
+        <div class="main img-responsive">
             <h1 class="main__heading noselect"><i>Bring sight with vision!</i></h1>
             <button class="btn" id="join_us_button"><span class="btn-join noselect" style="color: white;">Join Us</span></button>
         </div>
@@ -195,12 +195,12 @@
     </div>
 
 
-    <div class="footer container-fluid">
+    <footer class="footer container-fluid">
         <div class="social-media col-md-12" style="text-align: center; margin-bottom: 20px;">
-            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #F10E15;"></i></a>
-            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #4267B2;"></i></a>
-            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #0077B5;"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #E13D62;"></i></a>
+            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #fff;"></i></a>
+            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #fff;"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
         </div>
 
         <div class="container logo col-md-6">
@@ -213,10 +213,12 @@
 
         <hr>
         <p style="text-align: center;color:#C6C3C2;">&copy; 2018 Insightone, All rights reserved</p>
+    </footer>
+
+
+    <div class="scrollUp" id="up" title="Back To Top">
+       <a href="#header"><i class="fa fa-chevron-circle-up fa-3x scrollUp__icon"></i></a> 
     </div>
-    <button class="scrollUp" id="up">
-        <i class="fa fa-chevron-circle-up fa-3x scrollUp__icon"></i>
-    </button>
     <script src="js/script.js"></script>
 
     <script>
@@ -285,15 +287,32 @@
             });
         };
 
-        var scrollButton_header = document.getElementById("header");
-        var headerPart = document.querySelector(".header");
-        scrollButton_about_us.onclick = function() {
-            scroll.toElement(headerPart, {
-                duration: 1100
-            }).then(function() {
 
+
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("#up").on('click', function(event) {
+                console.log(this.hash);
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = document.getElementById("header");
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1100, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                       // window.location.hash = hash;
+                    });
+                } // End if
             });
-        };
+        });
 
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
         window.onscroll = function() {
@@ -308,6 +327,7 @@
                 document.querySelector("#navbar").classList.remove("expandNav");
             }
         }
+
     </script>
 </body>
 

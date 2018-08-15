@@ -109,6 +109,12 @@ body {
   align-items: center;
   margin: 5rem 0; }
 
+a,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: inherit; }
+
 .section-form-container {
   background-image: url(../images/form-pic.jpg);
   background-repeat: no-repeat;
@@ -127,19 +133,18 @@ body {
 .scrollUp {
   border-radius: 50%;
   border: none;
-  background: none;
+  background: transparent;
   position: fixed;
-  top: 90%;
+  top: 89%;
   left: 96%;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   opacity: 0;
   display: none;
-  z-index: 1000;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  z-index: 1000; }
   @media only screen and (max-width: 68.75em) {
     .scrollUp {
-      top: 88%;
+      top: 89%;
       left: 94%; } }
   @media only screen and (max-width: 50em) {
     .scrollUp {
@@ -151,6 +156,8 @@ body {
       left: 90%; } }
   .scrollUp:focus {
     outline: 0; }
+  .scrollUp:hover {
+    cursor: pointer; }
 
 .showUp {
   opacity: 1;
@@ -283,7 +290,8 @@ body {
 .mailsection {
   height: 226px; }
 
-.mailsection a, span {
+.mailsection a,
+span {
   font-size: 15px;
   color: grey;
   text-decoration: none; }
@@ -295,21 +303,24 @@ body {
 .social-media {
   margin-top: 20px; }
 
+.fa-facebook-square,
+.fa-youtube-play,
+.fa-linkedin-square,
+.fa-instagram {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-origin: center; }
+
 .fa-facebook-square:hover {
-  transition-duration: 1.2s;
-  transform: rotateY(360deg); }
+  transform: translateY(-3px) scale(1.05); }
 
 .fa-youtube-play:hover {
-  transition-duration: 1.2s;
-  transform: rotateY(360deg); }
+  transform: translateY(-3px) scale(1.05); }
 
 .fa-linkedin-square:hover {
-  transition-duration: 1.2s;
-  transform: rotateY(360deg); }
+  transform: translateY(-3px) scale(1.05); }
 
 .fa-instagram:hover {
-  transition-duration: 1.2s;
-  transform: rotateY(360deg); }
+  transform: translateY(-3px) scale(1.05); }
 
 hr {
   display: block;

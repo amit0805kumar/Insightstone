@@ -1,49 +1,64 @@
-.footer{
-  background-color: #1C1B1B;
-  height: auto;
+.footer {
+    background-color: #1C1B1B;
+    height: auto;
 }
-.mailsection{
-  height: 226px;
+
+.mailsection {
+    height: 226px;
 }
-.mailsection a,span{
-  font-size: 15px;
-  color: grey;
-  text-decoration: none;
+
+.mailsection a,
+span {
+    font-size: 15px;
+    color: grey;
+    text-decoration: none;
 }
-.mailsection a:hover{
-  color: #D1CFCE;
-  transition-duration: .6s;
+
+.mailsection a:hover {
+    color: #D1CFCE;
+    transition-duration: .6s;
 }
-.social-media{
-  margin-top: 20px;
+
+.social-media {
+    margin-top: 20px;
 }
-.fa-facebook-square:hover{
-   transition-duration: 1.2s;
-    transform: rotateY(360deg);
+.fa-facebook-square,
+.fa-youtube-play,
+.fa-linkedin-square,
+.fa-instagram
+{
+    transition: all .3s  cubic-bezier(.25,.8,.25,1);
+    transform-origin: center;
 }
-.fa-youtube-play:hover{
-   transition-duration: 1.2s;
-    transform: rotateY(360deg);
+.fa-facebook-square:hover {
+   
+    transform: translateY(-3px) scale(1.05);
 }
-.fa-linkedin-square:hover{
-   transition-duration: 1.2s;
-    transform: rotateY(360deg);
+
+.fa-youtube-play:hover {
+   
+    transform: translateY(-3px) scale(1.05);
 }
-.fa-instagram:hover{
-   transition-duration: 1.2s;
-    transform: rotateY(360deg);
+
+.fa-linkedin-square:hover {
+    transform: translateY(-3px) scale(1.05);
 }
-hr { 
+
+.fa-instagram:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+hr {
     display: block;
     border-color: grey;
-    margin-top:0.5em;
+    margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-} 
- 
- .delay1{
-  animation-delay: .5s;
- }
+}
+
+.delay1 {
+    animation-delay: .5s;
+}
