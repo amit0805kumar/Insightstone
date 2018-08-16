@@ -22,7 +22,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        animation: grow 60s linear 10ms infinite; //  z-index: -1;
+        animation: grow 40s linear 10ms infinite; //  z-index: -1;
         @include respond(800) {
 
             background-attachment: fixed;

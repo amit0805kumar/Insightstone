@@ -1,0 +1,62 @@
+   #loader {
+       display: block;
+       position: fixed;
+       z-index: 5000;
+       width: 30%;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%);
+       transition: all .3s;
+   }
+
+   .loader-container {
+       background: #fff;
+       position: fixed;
+       top: 0;
+       left: 0;
+       height: 100vh;
+       width: 100%;
+       z-index: 4500;
+
+   }
+
+   .loaderFade {
+       animation: loaderFader 0.3s ease-in-out forwards;
+
+   }
+
+   @keyframes loaderFader {
+       from {
+           opacity: 1;
+           display: block;
+       }
+       to {
+           opacity: 0;
+           display: none;
+           height: 0;
+       }
+   }
+
+   .shakeAnimate {
+       animation: shk 1.5s infinite ease-in-out both;
+   }
+
+   @keyframes shk {
+       0%,
+       100% {
+           transform: translateX(-50%);
+       }
+       10%,
+       30%,
+       50%,
+       70%,
+       90% {
+           transform: translateX(-55%);
+       }
+       20%,
+       40%,
+       60%,
+       80% {
+           transform: translateX(-45%);
+       }
+   }

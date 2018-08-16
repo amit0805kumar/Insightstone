@@ -63,3 +63,11 @@ $("#join_us_form").validate({
 		}
     });
 });
+     function loaderFun() {
+            var test = setTimeout(loadPage, 3000);
+        }
+
+        function loadPage() {
+            document.getElementById("loader-c").classList.add("loaderFade");
+            document.getElementById("loader").style.width="0";
+        }
