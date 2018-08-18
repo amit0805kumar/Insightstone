@@ -64,7 +64,7 @@ $("#join_us_form").validate({
     });
 });
      function loaderFun() {
-            var test = setTimeout(loadPage, 3000);
+            var test = setTimeout(loadPage, 500);
         }
 
         function loadPage() {

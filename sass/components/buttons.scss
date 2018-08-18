@@ -1,0 +1,17 @@
+.btn{
+    border: none;
+    &-addBlog{
+        padding: 1rem 2rem;
+        border-radius: 300px;
+        border: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+.addBtn{
+    margin-bottom: 5rem;
+}

@@ -64,6 +64,19 @@
     width: 12rem;
     text-align: center;
     white-space: nowrap;
+    position: relative;
+    &::after{
+    content: "";
+    position: absolute;
+        width: 0%;
+        height: 2px;
+        border-radius: 400px;
+        background: #fff;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s ease-in-out;
+    }
     @include respond(1100) {
         margin: 0 .2rem;
         width: 10rem;
@@ -92,8 +105,8 @@
     }
 }
 
-#nav li:hover a {
-    color: #b9b6b6;
+#nav li:hover a:after  {
+  width: 80%;
 }
 
 .show2 {

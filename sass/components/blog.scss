@@ -1,0 +1,14 @@
+      .header_image {
+          background-image: linear-gradient(to right,rgba(0, 0, 0, 0.53),rgba(0, 0, 0, 0.16)),url(../images/blog.jpg);
+          min-height: 600px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+      }
+
+     

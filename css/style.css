@@ -180,7 +180,7 @@ a:link {
     content: "";
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(237, 116, 50, 0.55), rgba(0, 0, 0, 0.4)), url(../images/arch.jpg);
+    background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/arch.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -198,23 +198,44 @@ a:link {
     transform: scale(1.2); } }
   .main__heading {
     color: #fff;
-    font-family: "Caveat", sans-serif;
+    font-family: "brooklynBold",sans-serif;
     font-weight: 600;
     font-size: 6rem;
     margin-top: 25rem;
     z-index: 200;
     animation-name: moveDown;
     animation-duration: 2s;
-    white-space: nowrap; }
+    white-space: nowrap;
+    letter-spacing: 4px;
+    text-transform: uppercase; }
     @media only screen and (max-width: 50em) {
       .main__heading {
         margin-top: 20rem;
         font-size: 4rem;
-        letter-spacing: 2px; } }
+        letter-spacing: 3px; } }
     @media only screen and (max-width: 37.5em) {
       .main__heading {
-        font-size: 3rem;
-        margin-top: 20rem; } }
+        font-size: 2.5rem;
+        margin-top: 20rem;
+        letter-spacing: 2px; } }
+  .main__icon-box {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    margin-top: auto;
+    margin-bottom: 1rem; }
+    .main__icon-box .svg__icon {
+      fill: #fff;
+      width: 3rem;
+      height: 3rem;
+      transition: all .3s ease-in-out;
+      margin: 0 1rem; }
+      .main__icon-box .svg__icon:hover {
+        cursor: pointer;
+        fill: rgba(252, 138, 6, 0.6);
+        transform: rotateY(360deg); }
 
 @keyframes moveDown {
   0% {
@@ -233,14 +254,14 @@ a:link {
     margin-top: 3rem; }
   100% {
     margin-top: 5rem; } }
-.btn {
+.header-btn {
   text-decoration: none;
   color: white;
   font-family: "cabin", sans-serif;
   text-transform: uppercase;
   padding: 1rem 2rem;
   border: 2px solid #fff;
-  border-radius: 5px;
+  border-radius: 500px;
   margin-top: 10rem;
   letter-spacing: 3px;
   transition: all .3s ease-in-out;
@@ -249,39 +270,38 @@ a:link {
   animation-duration: 2s;
   background: none; }
   @media only screen and (max-width: 37.5em) {
-    .btn {
+    .header-btn {
       margin-top: 5rem;
       animation-name: moveDs;
       letter-spacing: 2px;
       border-width: 1px;
       padding: .5rem 1rem; } }
-  .btn:hover {
-    color: black;
-    border: 2px solid black;
-    background: #ff9100; }
-  .btn:focus {
+  .header-btn:hover {
+    border: 2px solid #fff; }
+  .header-btn:focus {
     outline: 0; }
-  .btn::before {
-    background: #ff9100;
+  .header-btn::before {
+    background: #1a237e;
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
     top: 0;
-    transition: all .3s ease-in-out;
-    left: 0; }
-    .btn::before:focus {
+    transition: all .2s ease-in-out;
+    left: 0;
+    border-radius: 500px; }
+    .header-btn::before:focus {
       outline: 0; }
-  .btn:hover {
+  .header-btn:hover {
     transform: translateY(-0.4rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    .btn:hover:focus {
+    .header-btn:hover:focus {
       outline: 0; }
-    .btn:hover::before {
+    .header-btn:hover::before {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
-      .btn:hover::before:focus {
+      .header-btn:hover::before:focus {
         outline: 0; }
 
 .footer {
@@ -389,7 +409,19 @@ hr {
   margin: 0 .3rem;
   width: 12rem;
   text-align: center;
-  white-space: nowrap; }
+  white-space: nowrap;
+  position: relative; }
+  #nav li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    border-radius: 400px;
+    background: #fff;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s ease-in-out; }
   @media only screen and (max-width: 68.75em) {
     #nav li a {
       margin: 0 .2rem;
@@ -416,8 +448,8 @@ hr {
     #nav li a {
       color: #fff !important; } }
 
-#nav li:hover a {
-  color: #b9b6b6; }
+#nav li:hover a:after {
+  width: 80%; }
 
 .show2 {
   color: black !important;
@@ -811,7 +843,7 @@ hr {
   transition: all .3s; }
 
 .loader-container {
-  background: #fff;
+  background-image: linear-gradient(to right bottom, #cd87e0, #6e75b4);
   position: fixed;
   top: 0;
   left: 0;
@@ -848,5 +880,31 @@ hr {
        60%,
        80% {
     transform: translateX(-45%); } }
+.header_image {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg);
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+.btn {
+  border: none; }
+  .btn-addBlog {
+    padding: 1rem 2rem;
+    border-radius: 300px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    transition: all .3s ease-in-out; }
+    .btn-addBlog:hover {
+      color: #fff; }
+
+.addBtn {
+  margin-bottom: 5rem; }
 
 /*# sourceMappingURL=style.css.map */
