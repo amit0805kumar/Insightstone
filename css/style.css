@@ -459,6 +459,8 @@ hr {
   transition: all .3s ease-in-out; }
   .show2:hover {
     color: #6f6e6e !important; }
+  .show2::after {
+    background: black !important; }
 
 .navbar-btn {
   background: none;
@@ -891,6 +893,33 @@ hr {
   display: flex;
   align-items: flex-end;
   justify-content: center; }
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row; }
+
+.blog {
+  background: #e0e0e0;
+  margin: 3rem 3rem;
+  display: inline-block;
+  width: 30rem;
+  overflow: hidden;
+  border-radius: 4px; }
+  .blog__image {
+    height: 30rem; }
+  .blog__main {
+    padding: 1rem 1rem; }
+  .blog__date {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: "barlow",sans-serif;
+    font-weight: 500; }
+
+h2, h3, h1, h4 {
+  margin: 0; }
 
 .btn {
   border: none; }

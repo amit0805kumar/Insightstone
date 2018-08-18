@@ -120,6 +120,9 @@
     &:hover {
         color: #6f6e6e !important;
     }
+    &::after{
+        background: black !important;
+    }
 
 }
 

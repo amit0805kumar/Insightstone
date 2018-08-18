@@ -8,12 +8,12 @@ $storeArray_images = Array();
 $storeArray_blog_name = Array();
 $storeArray_blog_content = Array();
 $storeArray_date = Array();
-$counter = 0;
+$counter=0;
 while ($row = mysqli_fetch_array($result)){
     $storeArray_images[] =  $row['image'];
     $storeArray_blog_name[] = $row['blog_name'];
     $storeArray_blog_content[] = $row['blog_content'];
-    $storeArray_date[] = $row['date_of_blog'];
+    $storeArray_date[] =  date("d/m/Y", strtotime($row['date_of_blog']));
     $counter++;
 }
 ?>
@@ -36,7 +36,7 @@ while ($row = mysqli_fetch_array($result)){
         <script type="text/javascript" src="js/scroll.js"></script>
         <title>Insightstone</title>
         <style type="text/css">
-      
+
 
         </style>
         <link rel="stylesheet" href="css/style.css">
@@ -45,13 +45,13 @@ while ($row = mysqli_fetch_array($result)){
     <body onload="loaderFun()">
 
 
-        <!--LOADER-->
+        <!--LOADER
         <div class="loader-container" id="loader-c">
             <img src="images/logo.png" alt="loader" id="loader" class="shakeAnimate">
         </div>
-
+-->
         <div id="myDiv">
-           <div id="top"></div>
+            <div id="top"></div>
             <!--Navbar-->
             <nav class="navbar navbar-default" id="navbar">
                 <div class="container-fluid">
@@ -76,38 +76,50 @@ while ($row = mysqli_fetch_array($result)){
                     </div>
                 </div>
             </nav>
-            
-            
+
+
             <div class="header_image">
 
-           
                 <a href="admin_login.php" class="addBtn"><button class="btn btn-addBlog">ADD BLOG</button></a>
-            
+
             </div>
-            <div class="container-fluid">
+
+            <div class="blog-container">
+
+
                 <?php
          $blog_no = 0;
         for ($i=0; $i < $counter; $i++) { 
            
           ?>
-                    <div class="col-md-4">
-                        <h3>
-                            <?php echo $storeArray_blog_name[$blog_no];?>
-                        </h3>
-                        <h4>Posted On:
-                            <?php echo $storeArray_date[$blog_no];?>
-                        </h4>
-                        <img src="<?php echo($storeArray_images[$blog_no]) ?>" class="img-responsive" style="width: 300px;height: 300px;" alt="image"><br>
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Read About It...</button>
+                    <div class="blog">
+
+                        <img src="<?php echo($storeArray_images[$blog_no]) ?>" class="blog__image" alt="image">
+                        <div class="blog__main">
+                            <h3>
+                                <?php echo $storeArray_blog_name[$blog_no];?>
+                            </h3>
+                            <div class="blog-date">Posted On:
+                                <?php echo $storeArray_date[$blog_no];?>
+                            </div>
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Read About It...</button>
+                        </div>
                     </div>
 
                     <?php
-         $blog_no++;
-        }
-        ?>
+                        $blog_no++;
+            
+                        }
+                        ?>
+
+
 
             </div>
-            <!--MODAL-->
+
+
+
+
+            <!--/////////////////////////////////////////////////////////////////MODAL-->
             <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
 
@@ -168,7 +180,7 @@ while ($row = mysqli_fetch_array($result)){
                     $('#up').removeClass('showUp');
                 };
             });
-         
+
 
 
 
