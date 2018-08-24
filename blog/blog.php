@@ -7,6 +7,7 @@ $result = mysqli_query($connect,$query);
 $storeArray_images = Array();
 $storeArray_blog_name = Array();
 $storeArray_blog_content = Array();
+$storeArray_s_no = Array();
 $storeArray_date = Array();
 $counter=0;
 while ($row = mysqli_fetch_array($result)){
@@ -14,6 +15,7 @@ while ($row = mysqli_fetch_array($result)){
     $storeArray_blog_name[] = $row['blog_name'];
     $storeArray_blog_content[] = $row['blog_content'];
     $storeArray_date[] =  date("d/m/Y", strtotime($row['date_of_blog']));
+     $storeArray_s_no[] = $row['s_no'];
     $counter++;
 }
 ?>
@@ -25,15 +27,16 @@ while ($row = mysqli_fetch_array($result)){
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" type="img/png" href="images/icon.png">
+        <link rel="icon" type="img/png" href="../images/icon.png">
         <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700|Caveat:400,700" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/additional-methods.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <script type="text/javascript" src="js/scroll.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/animate.css">
+        <script type="text/javascript" src="../js/wow.min.js"></script>
+        <script type="text/javascript" src="../js/scroll.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
         <title>Insightstone</title>
         <style type="text/css">
 
@@ -55,7 +58,7 @@ while ($row = mysqli_fetch_array($result)){
             <!--Navbar-->
             <nav class="navbar navbar-default" id="navbar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo" class="logo-img fadeIn animated delay1" id="logo"></a>
+                    <a class="navbar-brand" href="#"><img src="../images/logo1.png" alt="logo" class="logo-img fadeIn animated delay1" id="logo"></a>
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle navbar-btn" data-toggle="collapse" data-target="#main" id="cmd">
                     <span class="icon-bar" id="bar1"></span>
@@ -93,15 +96,19 @@ while ($row = mysqli_fetch_array($result)){
            
           ?>
                     <div class="blog">
-
+                        <div class="blog__image-box">
                         <img src="<?php echo($storeArray_images[$blog_no]) ?>" class="blog__image" alt="image">
+                        </div>
                         <div class="blog__main">
-                            <h3>
-                                <?php echo $storeArray_blog_name[$blog_no];?>
-                            </h3>
-                            <div class="blog-date">Posted On:
+                               <div class="blog-date">Posted On:
                                 <?php echo $storeArray_date[$blog_no];?>
                             </div>
+                            <h3 class="blog-heading">
+                                <?php echo $storeArray_blog_name[$blog_no];?>
+                            </h3>
+                            <p class="blog-showcase">
+                              <?php echo $storeArray_blog_content[$blog_no];?>
+                            </p>
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Read About It...</button>
                         </div>
                     </div>
@@ -141,12 +148,35 @@ while ($row = mysqli_fetch_array($result)){
 
                 </div>
             </div>
+            
+            
+        <footer class="footer container-fluid">
+            <div class="social-media col-md-12" style="text-align: center; margin-bottom: 20px;">
+                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #fff;"></i></a>
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #fff;"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
+            </div>
+
+            <div class="container logo col-md-6">
+                <img src="../images/logo1.png" class="img-responsive" style="width: 350px;height: auto;margin-top: 40px ;">
+            </div>
+            <div class="mailsection col-md-6">
+                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px;padding-top:50px; padding-bottom: 10px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> info@insightone.in</a><span> - For Internship and Tie-Ups</span><br>
+                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> influencers@insightone.in</a><span> - For Influencers Marketing Programme</span>
+            </div><br>
+
+            <hr>
+            <p style="text-align: center;color:#C6C3C2;">&copy; 2018 Insightone, All rights reserved</p>
+        </footer>
+           
+           
             <div class="scrollUp" id="up" title="Back To Top">
                 <a href="#header"><i class="fa fa-chevron-circle-up fa-3x scrollUp__icon"></i></a>
             </div>
         </div>
 
-        <script src="js/script.js"></script>
+        <script src="../js/script.js"></script>
 
         <script>
             //Navbar
@@ -162,7 +192,7 @@ while ($row = mysqli_fetch_array($result)){
                         $('#l5').addClass('show2');
                         $('#l6').addClass('show2');
                         $('#l7').addClass('show2');
-                        $('#logo').attr("src", "images/logo.png");
+                        $('#logo').attr("src", "../images/logo.png");
                     }
                     $('#up').addClass('showUp');
                 } else {
@@ -175,7 +205,7 @@ while ($row = mysqli_fetch_array($result)){
                         $('#l5').removeClass('show2');
                         $('#l6').removeClass('show2');
                         $('#l7').removeClass('show2');
-                        $('#logo').attr("src", "images/logo1.png");
+                        $('#logo').attr("src", "../images/logo1.png");
                     }
                     $('#up').removeClass('showUp');
                 };

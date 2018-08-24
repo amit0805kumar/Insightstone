@@ -62,3 +62,51 @@ hr {
 .delay1 {
     animation-delay: .5s;
 }
+.csi{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  
+    &__image{
+        backface-visibility: hidden;
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+    }
+    &__text{
+        color: white;
+        text-transform: uppercase;
+        font-family: 'cabin',ans-serif;
+        font-weight: 500;
+        letter-spacing: 3px;
+        position: relative;
+        &::after{
+            content: "";
+            left: 50%;
+            position: absolute;
+            top: 100%;
+            width: 50%;
+            height: .2rem;
+            background: #fff;
+            border-radius: 200px;
+            transition: all .3s ease-in-out;
+        }
+        
+    }
+    
+}
+.csi__text:hover{
+    color: $color-grey-light-2;
+}
+.csi__text:hover::after{
+    width: 100%;
+    left: 0;
+}
+.csitext{
+    color: #fff;
+    &:hover{
+        color: #fff;
+    }
+}
