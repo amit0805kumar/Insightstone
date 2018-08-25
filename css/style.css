@@ -36,7 +36,14 @@
     left: 0; }
 
 .heading-size-1 {
-  font-size: 4rem !important; }
+  font-size: 4rem !important;
+  text-transform: uppercase;
+  margin-bottom: 6rem !important; }
+
+.heading-size-2 {
+  font-size: 2rem !important;
+  text-transform: uppercase;
+  margin-bottom: 4rem !important; }
 
 * {
   box-sizing: inherit;
@@ -1006,44 +1013,51 @@ h2, h3, h1, h4 {
   background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/influence.jpg); }
 
 .isp__container-1 {
-  padding: 2rem;
-  background: #e0e0e0; }
+  padding: 8rem 2rem;
+  background: #eeeeee;
+  position: relative;
+  overflow: hidden; }
 .isp__intro {
   line-height: 3rem;
   font-size: 1.8rem;
   text-align: center;
   padding: 1rem; }
 
-.heading-details, .isp__container-1-heading {
+.heading-details,
+.container-1__heading {
   font-size: 2rem;
   color: #424242;
   letter-spacing: 3px;
   display: inline-block;
-  margin-left: 50%;
-  transform: translateX(-50%);
   font-family: "futur", sans-serif;
   white-space: nowrap;
   margin-bottom: 2rem;
-  position: relative; }
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%); }
   @media only screen and (max-width: 62.5em) {
-    .heading-details, .isp__container-1-heading {
+    .heading-details,
+    .container-1__heading {
       font-size: 1.5rem;
       list-style-position: 2px;
       margin-bottom: 1.5rem; } }
   @media only screen and (max-width: 50em) {
-    .heading-details, .isp__container-1-heading {
+    .heading-details,
+    .container-1__heading {
       font-size: 1rem;
       list-style-position: 2px;
       margin-bottom: .8rem;
       letter-spacing: .8px; } }
   @media only screen and (max-width: 37.5em) {
-    .heading-details, .isp__container-1-heading {
+    .heading-details,
+    .container-1__heading {
       font-size: 1rem;
       list-style-position: 2px;
       margin-bottom: .6rem;
       letter-spacing: .5px;
-      font-family: "futurmedium",sans-serif; } }
-  .heading-details::after, .isp__container-1-heading::after {
+      font-family: "futurmedium", sans-serif; } }
+  .heading-details::after,
+  .container-1__heading::after {
     content: "";
     position: absolute;
     height: .2rem;
@@ -1071,7 +1085,7 @@ h2, h3, h1, h4 {
   .isp__container-2__text {
     width: 60%;
     padding: 1rem 3rem;
-    font-family: 'futurBook',sans-serif;
+    font-family: 'futurBook', sans-serif;
     color: #424242;
     letter-spacing: 2px; }
     .isp__container-2__text ul {
@@ -1084,17 +1098,14 @@ h2, h3, h1, h4 {
   height: 1.5rem !important; }
 
 .isp__container-3 {
-  margin-top: 2rem;
+  margin: 6rem 0;
   overflow: hidden;
-  width: 100%;
-  margin-bottom: 5rem; }
+  width: 100%; }
 
 .titles__box {
   width: 60rem;
-  background-image: linear-gradient(to right, #8e24aa, #1a237e);
   margin-left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
   border-radius: 3px;
@@ -1104,20 +1115,53 @@ h2, h3, h1, h4 {
   display: flex;
   flex-direction: row;
   margin: 1rem 0rem;
-  border-radius: 3px;
   overflow: hidden;
-  color: #fff; }
+  color: #fff;
+  background: #00bcd4;
+  padding: .2rem;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 .titles__title {
   flex: 1;
+  color: black;
   padding: 1rem;
-  margin-right: 1rem;
-  background: blue;
-  border-radius: 3px; }
+  background: #fff; }
 .titles__icon {
-  border-radius: 500px;
-  background: yellow;
-  border-radius: 300px;
   padding: 1rem;
-  width: 5rem; }
+  flex: 1;
+  letter-spacing: 2px; }
+.titles__note {
+  color: #c30c28;
+  margin: 2rem 0; }
+
+.isp__container-4 {
+  width: 100%;
+  padding: 3rem;
+  margin: 5rem 0;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row; }
+
+.instruct__bar {
+  width: .5rem;
+  background: #00bcd4; }
+
+.instruct__text {
+  padding: 0 2rem;
+  color: #000000;
+  letter-spacing: 2px; }
+
+.email {
+  color: #161688; }
+
+.isp__join {
+  width: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 0; }
+  .isp__join-button {
+    background: #00bcd4;
+    color: #fff !important; }
 
 /*# sourceMappingURL=style.css.map */
