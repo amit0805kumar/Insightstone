@@ -2,26 +2,24 @@
 include 'db.php';
 include 'validate_input.php';
 require_once('ImageManipulator.php');
-
 $blog_name = vi($_POST['blog_name']);
 $blog_content = vi($_POST['blog_content']);
-$file = $_FILES['file'];
-$file_name = $_FILES['file']['name'];
-$file_tmp_name = $_FILES['file']['tmp_name'];
-$file_size = $_FILES['file']['size'];
-$file_error = $_FILES['file']['error'];
-$file_type = $_FILES['file']['type'];
-print_r($file);
+$file = $_FILES['blog_image'];
+$file_name = $_FILES['blog_image']['name'];
+$file_tmp_name = $_FILES['blog_image']['tmp_name'];
+$file_size = $_FILES['blog_image']['size'];
+$file_error = $_FILES['blog_image']['error'];
+$file_type = $_FILES['blog_image']['type'];
 
 if ($file_error === 0 && $file_size > 0) {
     $newNamePrefix = time() . '_';
-	$file_destination = '../uploads/'.$file_name;
+	$file_destination = '../uploads/blog/'.$file_name;
     
     $manipulator = new ImageManipulator($file_tmp_name);
-        // resizing to 200x200
+        // resizing to 400x400
     $newImage = $manipulator->resample(400, 400);
     
-    $manipulator->save('../uploads/'.$file_name);
+    $manipulator->save('../uploads/blog/'.$file_name);
     
 //	move_uploaded_file($file_tmp_name, $file_destination);
     

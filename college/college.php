@@ -1,21 +1,21 @@
 <?php
 include 'db.php';
-$query = "SELECT * FROM blog_data";
+$query = "SELECT * FROM college_data";
 $result = mysqli_query($connect,$query);
 //$row=mysqli_fetch_array($result);
 
-$storeArray_images = Array();
-$storeArray_blog_name = Array();
-$storeArray_blog_content = Array();
+$storeArray_college_image = Array();
+$storeArray_college_name = Array();
+$storeArray_about_college = Array();
 $storeArray_s_no = Array();
-$storeArray_date = Array();
+$storeArray_link_to_college = Array();
 $counter=0;
 while ($row = mysqli_fetch_array($result)){
-    $storeArray_images[] =  $row['image'];
-    $storeArray_blog_name[] = $row['blog_name'];
-    $storeArray_blog_content[] = $row['blog_content'];
-    $storeArray_date[] =  date("d/m/Y", strtotime($row['date_of_blog']));
-     $storeArray_s_no[] = $row['s_no'];
+    $storeArray_college_image[] =  $row['college_image'];
+    $storeArray_college_name[] = $row['college_name'];
+    $storeArray_about_college[] = $row['about_college'];
+    $storeArray_link_to_college[] = $row['link_to_college'];
+    $storeArray_s_no[] = $row['s_no'];
     $counter++;
 }
 ?>
@@ -42,16 +42,17 @@ while ($row = mysqli_fetch_array($result)){
 
 
         </style>
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body onload="loaderFun()">
 
 
-        
+        <!--LOADER
         <div class="loader-container" id="loader-c">
-            <img src="../images/logo.png" alt="loader" id="loader" class="shakeAnimate">
+            <img src="images/logo.png" alt="loader" id="loader" class="shakeAnimate">
         </div>
-
+-->
         <div id="myDiv">
             <div id="top"></div>
             <!--Navbar-->
@@ -69,7 +70,7 @@ while ($row = mysqli_fetch_array($result)){
                         <ul class="nav navbar-nav navbar-right" id="nav">
                             <li><a href="../index.html" id="l1">HOME</a></li>
                             <li><a id="l2">COLLEGES</a></li>
-                            <li><a href="blog.php" id="l3">BLOG</a></li>
+                            <li><a href="../blog/blog.php" id="l3">BLOG</a></li>
                             <li><a id="l4">EVENTS</a></li>
                             <li><a id="l5">INTERNSHIPS</a></li>
                             <li><a id="l6">TEAM</a></li>
@@ -82,7 +83,7 @@ while ($row = mysqli_fetch_array($result)){
 
             <div class="header_image">
 
-                <a href="admin_login.php" class="addBtn"><button class="btn btn-addBlog">ADD BLOG</button></a>
+                <a href="../blog/admin_login.php" class="addBtn"><button class="btn btn-addBlog">ADD BLOG</button></a>
 
             </div>
 
@@ -96,22 +97,19 @@ while ($row = mysqli_fetch_array($result)){
           ?>
                     <div class="blog">
                         <div class="blog__image-box">
-                        <img src="<?php echo($storeArray_images[$blog_no]) ?>" class="blog__image" alt="image">
+                        <img src="<?php echo($storeArray_college_image[$blog_no]); ?>" class="blog__image" alt="image">
                         </div>
                         <div class="blog__main">
-                            <div class="blog-date">Posted On:
-                                <?php echo $storeArray_date[$blog_no];?>
+                            <div class="blog-date">
+                               <a href="<?php echo ($storeArray_link_to_college[$blog_no]);?>" style="font-size: 18px;">Link to College</a> 
                             </div>
                             <h3 class="blog-heading">
-                                <?php echo $storeArray_blog_name[$blog_no];?>
+                                <?php echo $storeArray_college_name[$blog_no];?>
                             </h3>
                             <p class="blog-showcase">
-                              <?php echo $storeArray_blog_content[$blog_no];?>
+                              <?php echo $storeArray_about_college[$blog_no];?>
                             </p>
-                            <form id="blog_name_form" method="post" action="blog_details.php">
-                                <input type="hidden" name="hidden_blog_name" value="<?php echo ($storeArray_blog_name[$blog_no]);?>">
-                            <button type="submit" name="read_about_button" class="btn btn-info read_about_button">Read About It...</button>
-                            </form>
+                            
                         </div>
                     </div>
 
@@ -124,6 +122,9 @@ while ($row = mysqli_fetch_array($result)){
 
 
             </div>
+
+
+
             
             
         <footer class="footer container-fluid">
@@ -153,7 +154,6 @@ while ($row = mysqli_fetch_array($result)){
         </div>
 
         <script src="../js/script.js"></script>
-        <script type="text/javascript" src="add_blog_ajax.js"></script>
 
         <script>
             //Navbar
