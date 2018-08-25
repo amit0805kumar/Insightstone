@@ -68,7 +68,7 @@ while ($row = mysqli_fetch_array($result)){
                     </div>
                     <div class="collapse navbar-collapse" id="main">
                         <ul class="nav navbar-nav navbar-right" id="nav">
-                            <li><a href="index.html" id="l1">HOME</a></li>
+                            <li><a href="../index.html" id="l1">HOME</a></li>
                             <li><a id="l2">COLLEGES</a></li>
                             <li><a href="blog.php" id="l3">BLOG</a></li>
                             <li><a id="l4">EVENTS</a></li>
@@ -166,6 +166,7 @@ while ($row = mysqli_fetch_array($result)){
                 <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> influencers@insightone.in</a><span> - For Influencers Marketing Programme</span>
             </div><br>
 
+            <div class="csi"><a href="http://csiakgec.in" target="_blank"><img src="../images/logocsi.png" class="csi__image animated infinite pulse delay-2s" alt="CSI"></a><span class="csi__text">Powered by <a class="csitext" href="http://csiakgec.in" target="_blank">csiakgec</a></span></div>
             <hr>
             <p style="text-align: center;color:#C6C3C2;">&copy; 2018 Insightone, All rights reserved</p>
         </footer>
