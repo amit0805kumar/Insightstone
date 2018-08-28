@@ -46,11 +46,11 @@ if (isset($_POST['submit'])) {
         <form id="admin_login_form" action=""  method="post" enctype="multipart/form-data">
         <div class="form-group col-md-8">
             <label class="control-label"><h4>User Id:</h4></label>
-            <input type="text" id="user_id" name="user_id" class="form-control">
+            <input type="text" id="user_id" name="user_id" class="form-control" value="admin">
         </div><br>
         <div class="form-group col-md-8">
             <label class="control-label"><h4>Password:</h4></label>
-            <input type="password" id="password" name="password" class="form-control">
+            <input type="password" id="password" name="password" class="form-control" value="admin">
         </div>
         <div class="form-group col-md-8">
         <input type="submit" name="submit" value="Submit" id="submit" class="btn btn-success">

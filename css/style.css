@@ -1050,6 +1050,16 @@ h4 {
   background: #bdbdbd;
   margin: 2rem 0rem; }
 
+.info {
+  background: #333030;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  color: #fff;
+  position: fixed;
+  left: 3rem;
+  top: 90%; }
+
 .btn {
   border: none; }
   .btn-addBlog {
