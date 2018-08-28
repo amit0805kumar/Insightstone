@@ -1,3 +1,15 @@
+<?php
+session_start();
+if (isset($_SESSION['userid'])) {
+  # code...
+
+}
+else{
+  header("Location: admin_login.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -147,6 +159,9 @@
 </body>
 <script type="text/javascript">
     function log_out(){
+      <?php
+      session_destroy();
+      ?>
          window.location.replace('blog.php');
          return false;
 

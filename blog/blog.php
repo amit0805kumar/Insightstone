@@ -68,7 +68,7 @@ while ($row = mysqli_fetch_array($result)){
                     <div class="collapse navbar-collapse" id="main">
                         <ul class="nav navbar-nav navbar-right" id="nav">
                             <li><a href="../index.html" id="l1">HOME</a></li>
-                            <li><a id="l2">COLLEGES</a></li>
+                            <li><a id="l2" href="../college/college.php">COLLEGES</a></li>
                             <li><a href="blog.php" id="l3">BLOG</a></li>
                             <li><a id="l4">EVENTS</a></li>
                             <li><a id="l5">INTERNSHIPS</a></li>
@@ -108,7 +108,7 @@ while ($row = mysqli_fetch_array($result)){
                             <p class="blog-showcase">
                               <?php echo $storeArray_blog_content[$blog_no];?>
                             </p>
-                            <form id="blog_name_form" method="post" action="blog_details.php">
+                            <form id="blog_name_form" method="post" action="blog_details.php" target="_blank">
                                 <input type="hidden" name="hidden_blog_name" value="<?php echo ($storeArray_blog_name[$blog_no]);?>">
                             <button type="submit" name="read_about_button" class="btn btn-info read_about_button">Read About It...</button>
                             </form>

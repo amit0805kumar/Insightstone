@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+session_start();
 if (isset($_POST['submit'])) {
     # code...
     $user_id = $_POST['user_id'];
@@ -10,13 +11,13 @@ if (isset($_POST['submit'])) {
     $row=mysqli_fetch_assoc($result);
     if ($row['password']==$password) {
         # code...
+    	$_SESSION['userid'] = $user_id;
         header("Location: add_blog.php"); /* Redirect browser */
         exit();
     }
     else{
-        echo "User Id OR Password is incorrect";
+        echo "<p style='text-align: center;color: #D10505;font-size: 20px;font-weight: 500;'>User Id OR Password is incorrect</p>";
     }
-    
 }
 }
 
@@ -43,19 +44,18 @@ if (isset($_POST['submit'])) {
 <body>
     <div class="container">
         <form id="admin_login_form" action=""  method="post" enctype="multipart/form-data">
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-8">
             <label class="control-label"><h4>User Id:</h4></label>
             <input type="text" id="user_id" name="user_id" class="form-control">
-        </div>
-        <div class="form-group col-md-4">
+        </div><br>
+        <div class="form-group col-md-8">
             <label class="control-label"><h4>Password:</h4></label>
             <input type="password" id="password" name="password" class="form-control">
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-8">
         <input type="submit" name="submit" value="Submit" id="submit" class="btn btn-success">
         </div>
         </form>
     </div>
-    <p id="msg"></p>
 </body>
 </html>

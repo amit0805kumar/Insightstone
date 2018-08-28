@@ -15,6 +15,8 @@ $(document).ready(function(){
 			{	
 				$("#add_blog_form")[0].reset();
 				$('#msg_blog').html(data);
+				$('#fetch_blog_details').DataTable().destroy();
+				fetch_blog_details();
 				 
 			}
 		});
@@ -52,10 +54,6 @@ $(document).ready(function(){
 		event.preventDefault();
 		$("input[type=submit]").attr("disabled","disabled");
 		$(".add_more_content").removeAttr("disabled");
-		var more_blog_name=$('.more_blog_name').val();
-		var more_blog_image=$('.more_blog_image').val();
-		var more_blog_content=$('.more_blog_content').val();
-		console.log(more_blog_name,more_blog_image,more_blog_content);
 		$.ajax({
 			url:"insert_more_content.php",
 			method:'POST',
@@ -122,6 +120,11 @@ $(document).ready(function(){
 				fetch_blog_details();
 			}
 		});
+
+		setInterval(function(){
+			$('#delete_blog_msg').html('');
+		},5000);
+
 	});
 
 
@@ -150,7 +153,6 @@ $(document).ready(function(){
 
 	$(document).on('submit','#add_college_form',function(event){
 		event.preventDefault();
-		console.log("svhgsv");
 		$.ajax({
 			url:"../college/insert_college.php",
 			method:'POST',
@@ -161,6 +163,8 @@ $(document).ready(function(){
 			{	
 				$("#add_college_form")[0].reset();
 				$('#msg_college').html(data);
+				$('#fetch_college_details').DataTable().destroy();
+				fetch_college_details();
 				 
 			}
 		});
@@ -170,6 +174,30 @@ $(document).ready(function(){
 		},10000);
 		
 		
+	});
+
+
+
+	$(document).on('click','.college_delete_button',function(){ 
+		var delete_college_id=$(this).attr("id");
+		$.ajax({
+			url:"../college/delete_college.php",
+			method:"POST",
+			data:{
+				delete_college_id:delete_college_id
+			},
+			success:function(data)
+			{	
+				$('#delete_college_msg').html(data);
+				$('#fetch_college_details').DataTable().destroy();
+				fetch_college_details();
+			}
+		});
+
+		setInterval(function(){
+			$('#delete_college_msg').html('');
+		},5000);
+
 	});
 
 

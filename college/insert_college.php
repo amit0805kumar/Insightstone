@@ -12,7 +12,6 @@ $file_tmp_name = $_FILES['college_image']['tmp_name'];
 $file_size = $_FILES['college_image']['size'];
 $file_error = $_FILES['college_image']['error'];
 $file_type = $_FILES['college_image']['type'];
-echo "ahgcahgcag";
 if ($file_error === 0 && $file_size > 0) {
     $newNamePrefix = time() . '_';
 	$file_destination = '../uploads/college/'.$file_name;

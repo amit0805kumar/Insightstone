@@ -1,0 +1,4 @@
+create table admin(s_no int auto_increment primary key,user_id varchar(255),password varchar(255));
+create table blog_data(s_no int auto_increment primary key,blog_name varchar(255),date_of_blog timestamp on update current_timestamp default current_timestamp,image varchar(255),blog_content text);
+insert into admin values (1,"admin","admin");
+create table college_data(s_no int PRIMARY key AUTO_INCREMENT,college_name varchar(150),college_image varchar(255),about_college varchar(1000),link_to_college varchar(1000));
