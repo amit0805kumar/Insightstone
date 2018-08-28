@@ -36,11 +36,11 @@ if ($file_error === 0 && $file_size > 0) {
     
 	mysqli_stmt_bind_param($query_prepare_statement,"sss",$more_blog_name,$file_destination,$more_blog_content);
 	if (mysqli_stmt_execute($query_prepare_statement)) {
-		 	echo "<div class='alert alert-success'>Inserted Successfully</div>";
+		 	echo "<div style='background: #B8F9B4;color: #11C606;border-radius: 3px;padding: 1.2rem 3rem;'>New Blog Added</div>";
 		 }
 }
 else{
-	echo "<div class='alert alert-danger'>There was a error in uploading your file</div>";
+	echo "<div style='background:#FCAD9D;color:#D12805;border-radius: 3px;padding: 1.2rem 3rem;'>Blog not Added</div>";
 }
 
 ?>

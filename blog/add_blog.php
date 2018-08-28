@@ -33,8 +33,16 @@ else{
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/additional-methods.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="../css/animate.css">
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
         <title>Insightstone</title>
+        <style type="text/css">
+          .info {
+         display: none;
+         font-weight: 550;
+         position: fixed;
+         left: 2.5rem;
+         top: 87%; }
+        </style>
 
     </head>
 
@@ -89,7 +97,6 @@ else{
                             $('<div class="form-group gallery_images"><label class="control-label"><h4>Choose Gallery Images</h4></label> <input type="file"  accept="image/*" name="more_blog_image" class="more_blog_image"></div>').appendTo(scntDiv);
                             $('<div class="form-group content"><label class="control-label"><h4>Enter The Content</h4></label><input type="text" name="more_blog_content" class="form-control more_blog_content"/></div>').appendTo(scntDiv);
                             $('<input type="submit" name="add_more_content" value="Submit" class="btn btn-success" style="margin-left: 6px;">').appendTo(scntDiv);
-                            $('<p class="more_blog_msg"></p>').appendTo(scntDiv);
                         });
 
                     </script>
@@ -153,7 +160,7 @@ else{
             </div>
         </div>
 
-        <div class="info">New Blog Added!</div>
+        <div class="info"></div>
 
         <script type="text/javascript" src="add_blog_ajax.js"></script>
     </body>

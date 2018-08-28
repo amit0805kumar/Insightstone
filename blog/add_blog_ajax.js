@@ -44,7 +44,9 @@ $(document).ready(function(){
 			}
 		});
 
-		
+		setInterval(function(){
+			$('#msg_blog').html('');
+		},5000);
 		
 	});
 
@@ -63,7 +65,9 @@ $(document).ready(function(){
    			processData:false,
 			success:function(data)
 			{	
-				$('.more_blog_msg').html(data);
+				$('.info').css('display','inline-block');
+				$('.info').html(data);
+				$('.info').addClass('animated bounceIn');
 				 
 			}
 		});
@@ -73,7 +77,7 @@ $(document).ready(function(){
 		$('.content').remove();
 		
 		setTimeout(function(){
-			$('.more_blog_msg').remove();
+			$('.info').css('display','none');
 		},5000);
 		
 		
