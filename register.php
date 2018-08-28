@@ -1,4 +1,5 @@
 <?php
+//vbbvhjebhvbrhghrvrgv
 include 'blog/db.php';
 include 'blog/validate_input.php';
 
