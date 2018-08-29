@@ -1,0 +1,82 @@
+.intern {
+    &__intro {
+        width: 100;
+        border-left: 1rem solid $color-grey-light-3;
+        margin: 4rem 2rem;
+        padding-left: 1rem;
+    }
+    &__para {
+        margin: 1rem 0;
+        font-family: 'Cabin', sans-serif;
+        font-size: 2rem;
+        color: $color-grey-light-3;
+    }
+    
+    
+    &__list-container {
+        margin: 7rem 4rem;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 3px;
+        overflow: hidden;
+        padding: 2rem;
+    }
+    &__list-main {
+        font-size: 1.8rem;
+        margin: 3rem 0;
+    }
+      &__list-req {
+        font-size: 1.8rem;
+        margin: 3rem 0;
+    }
+    
+    &__list-heading {
+        text-transform: uppercase;
+        font-family: 'Anton', sans-serif;
+        font-size: 2rem;
+        margin: .5rem 0;
+        
+    }
+      
+    &__list-subheading {
+        font-family: 'Cabin', sans-serif;
+        font-size: 2rem;
+        margin: .5rem 0;
+        font-weight: 500;
+    }
+  
+    &__task {
+        margin-left: 2rem;
+        font-family: 'Barlow', sans-serif;
+    }
+    &__req {
+        font-family: 'Barlow', sans-serif;
+        margin-left: 2rem;
+    }
+}
+.intern{
+    &__steps{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__step{
+        display: flex;
+        flex-direction: row;
+        margin: 2rem 0;
+    }
+    &__stepL{
+        background: #fff;
+        color:$color-grey-light-3;
+        padding: 1rem 1.5rem;
+        font-family: 'Anton',sans-serif;
+    }
+    &__stepR{
+        padding: 1rem 1.5rem;
+        color: #fff;
+        font-family: 'cabin',sans-serif;
+        letter-spacing: 1.5px;
+        background: $color-grey-light-3;
+        width: 30rem;
+    }
+}
