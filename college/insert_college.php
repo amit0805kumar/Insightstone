@@ -18,7 +18,7 @@ if ($file_error === 0 && $file_size > 0) {
     
     $manipulator = new ImageManipulator($file_tmp_name);
         // resizing to 600x600
-    $newImage = $manipulator->resample(600, 600);
+    $newImage = $manipulator->resample(900, 600);
     
     $manipulator->save('../uploads/college/'.$file_name);
     

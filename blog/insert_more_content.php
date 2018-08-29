@@ -24,7 +24,7 @@ if ($file_error === 0 && $file_size > 0) {
     
     $manipulator = new ImageManipulator($file_tmp_name);
         // resizing to 400x400
-    $newImage = $manipulator->resample(400, 400);
+    $newImage = $manipulator->resample(900, 500);
     
     $manipulator->save($file_destination);
     
@@ -36,7 +36,7 @@ if ($file_error === 0 && $file_size > 0) {
     
 	mysqli_stmt_bind_param($query_prepare_statement,"sss",$more_blog_name,$file_destination,$more_blog_content);
 	if (mysqli_stmt_execute($query_prepare_statement)) {
-		 	echo "<div style='background: #B8F9B4;color: #11C606;border-radius: 3px;padding: 1.2rem 3rem;'>New Blog Added</div>";
+		 	echo "<div style='background: #333030;color: #fff;border-radius: 3px;padding: 1.2rem 3rem;'>New Blog Added</div>";
 		 }
 }
 else{

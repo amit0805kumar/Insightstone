@@ -1,0 +1,54 @@
+
+.header_image-blog{
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg);
+}
+
+.college-container {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          justify-content: space-around;
+          ;
+          flex-direction: row;
+          align-items: flex-start;
+      }
+
+      .college {
+          background: #fff;
+          margin: 3rem 3rem;
+          display: inline-block;
+          width: 80%;
+          padding: 1rem;
+          border-radius: 4px;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          &__image {
+              &-box {
+                  overflow: hidden;
+                   height: 35rem;
+                  width: 100%;
+              }
+                width: 100%;
+              //height: 35rem;
+          }
+          &__main {
+              padding: 1rem 1rem;
+          }
+          &-link {
+              font-size: 1.8rem;
+              margin-bottom: 1rem;
+              font-family: "barlow", sans-serif;
+              font-weight: 500;
+              color: #151576;
+              text-decoration: underline;
+          }
+          &-heading{
+              margin: 2rem 0;
+              font-family: 'Anton',sans-serif;
+          }
+      }
+
+    
+
+    
+
+      

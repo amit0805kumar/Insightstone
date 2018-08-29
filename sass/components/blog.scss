@@ -1,5 +1,4 @@
       .header_image {
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg);
           min-height: 600px;
           background-attachment: fixed;
           background-position: center;
@@ -11,7 +10,16 @@
           justify-content: center;
       }
 
-      .blog-container {
+.header_image-colllege{
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/colleges.jpg);
+}
+ 
+
+.header_image-blog{
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg);
+}
+
+.blog-container {
           display: flex;
           flex-wrap: wrap;
           width: 100%;
@@ -45,6 +53,9 @@
               font-family: "barlow", sans-serif;
               font-weight: 500;
               color: $color-grey-light-3;
+          }
+          &-heading{
+              font-family: 'Anton',sans-serif;
           }
       }
 
@@ -86,9 +97,7 @@
           width: 100%;
           padding: 1rem;
           border-radius: 4px;
-          overflow: hidden;
-         // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
+          overflow: hidden; // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           &__main {
               display: flex;
               flex-direction: column;
@@ -108,29 +117,29 @@
               font-size: 4rem;
               margin: 2rem 0;
               white-space: nowrap;
-              
+
           }
-          &__headings{
+          &__headings {
               margin: 2rem 0;
               font-family: 'Anton', sans-serif;
           }
-          &__contents{
+          &__contents {
               margin: 2rem 0;
-                font-family: 'cabin', sans-serif;
+              font-family: 'cabin', sans-serif;
               font-size: 1.5rem;
               color: $color-grey-light-3;
               letter-spacing: 1.8px;
           }
-          &__images{
+          &__images {
               margin: 2rem 0;
               overflow: hidden;
-              width:100%;
+              width: 100%;
               height: 40rem;
               border-radius: 3px;
               background: #6befb2;
           }
-          &__imagesIn{
-        
+          &__imagesIn {
+              width: 100%;
           }
       }
 
@@ -140,13 +149,15 @@
           background: $color-grey-light-2;
           margin: 2rem 0rem;
       }
-.info{
-    background: #333030;
-    border-radius: 3px;
-    display: inline-block;
-    padding: 1.2rem 3rem;
-    color: #fff;
-    position: fixed;
-    left: 3rem;
-    top: 90%;
-}
+
+      .info {
+          background: #333030;
+          border-radius: 3px;
+          display: inline-block;
+          padding: 1.2rem 3rem;
+          color: #fff;
+          position: fixed;
+          left: 3rem;
+          top: 90%;
+          display: none;
+      }

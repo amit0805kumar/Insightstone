@@ -28,7 +28,7 @@ while ($row = mysqli_fetch_array($result)){
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="img/png" href="../images/icon.png">
-        <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700|Caveat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700|Caveat:400,700" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
@@ -74,20 +74,19 @@ while ($row = mysqli_fetch_array($result)){
                             <li><a id="l4">EVENTS</a></li>
                             <li><a id="l5">INTERNSHIPS</a></li>
                             <li><a id="l6">TEAM</a></li>
-                            <li><a id="l7">ABOUT US</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
 
-            <div class="header_image">
+            <div class="header_image header_image-colllege">
 
                 <a href="../blog/admin_login.php" class="addBtn"><button class="btn btn-addBlog">ADD BLOG</button></a>
 
             </div>
 
-            <div class="blog-container">
+            <div class="college-container">
 
 
                 <?php
@@ -95,18 +94,18 @@ while ($row = mysqli_fetch_array($result)){
         for ($i=0; $i < $counter; $i++) { 
            
           ?>
-                    <div class="blog">
-                        <div class="blog__image-box">
-                        <img src="<?php echo($storeArray_college_image[$blog_no]); ?>" class="blog__image" alt="image">
+                    <div class="college">
+                        <div class="college__image-box">
+                        <img src="<?php echo($storeArray_college_image[$blog_no]); ?>"  class="college__image" alt="image">
                         </div>
-                        <div class="blog__main">
-                            <div class="blog-date">
-                               <a href="<?php echo ($storeArray_link_to_college[$blog_no]);?>" style="font-size: 18px;">Link to College</a> 
+                        <div class="college__main">
+                            <div class="college-link">
+                               <a href="http://<?php echo ($storeArray_link_to_college[$blog_no]);?>" target="_blank" >Link to College</a> 
                             </div>
-                            <h3 class="blog-heading">
+                            <h3 class="college-heading">
                                 <?php echo $storeArray_college_name[$blog_no];?>
                             </h3>
-                            <p class="blog-showcase">
+                            <p class="college-showcase">
                               <?php echo $storeArray_about_college[$blog_no];?>
                             </p>
                             

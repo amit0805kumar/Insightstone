@@ -934,7 +934,6 @@ hr {
        80% {
     transform: translateX(-45%); } }
 .header_image {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg);
   min-height: 600px;
   background-attachment: fixed;
   background-position: center;
@@ -944,6 +943,12 @@ hr {
   display: flex;
   align-items: flex-end;
   justify-content: center; }
+
+.header_image-colllege {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/colleges.jpg); }
+
+.header_image-blog {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg); }
 
 .blog-container {
   display: flex;
@@ -973,6 +978,8 @@ hr {
     font-family: "barlow", sans-serif;
     font-weight: 500;
     color: #424242; }
+  .blog-heading {
+    font-family: 'Anton',sans-serif; }
 
 h2,
 h3,
@@ -1043,12 +1050,25 @@ h4 {
     height: 40rem;
     border-radius: 3px;
     background: #6befb2; }
+  .blogs__imagesIn {
+    width: 100%; }
 
 .break {
   width: 100%;
   height: 2px;
   background: #bdbdbd;
   margin: 2rem 0rem; }
+
+.info {
+  background: #333030;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  color: #fff;
+  position: fixed;
+  left: 3rem;
+  top: 90%;
+  display: none; }
 
 .btn {
   border: none; }
@@ -1219,5 +1239,43 @@ h4 {
   .isp__join-button {
     background: #00bcd4;
     color: #fff !important; }
+
+.header_image-blog {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg); }
+
+.college-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start; }
+
+.college {
+  background: #fff;
+  margin: 3rem 3rem;
+  display: inline-block;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .college__image {
+    width: 100%; }
+    .college__image-box {
+      overflow: hidden;
+      height: 35rem;
+      width: 100%; }
+  .college__main {
+    padding: 1rem 1rem; }
+  .college-link {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-family: "barlow", sans-serif;
+    font-weight: 500;
+    color: #151576;
+    text-decoration: underline; }
+  .college-heading {
+    margin: 2rem 0;
+    font-family: 'Anton',sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
