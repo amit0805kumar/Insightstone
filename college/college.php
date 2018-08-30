@@ -38,11 +38,7 @@ while ($row = mysqli_fetch_array($result)){
         <script type="text/javascript" src="../js/scroll.js"></script>
         <link rel="stylesheet" href="../css/style.css">
         <title>Insightstone</title>
-        <style type="text/css">
-
-
-        </style>
-        <link rel="stylesheet" href="css/style.css">
+      
     </head>
 
     <body onload="loaderFun()">
@@ -81,9 +77,7 @@ while ($row = mysqli_fetch_array($result)){
 
 
             <div class="header_image header_image-college">
-
-                <a href="../blog/admin_login.php" class="addBtn"><button class="btn btn-addBlog">ADD BLOG</button></a>
-
+                 <h1 class="main__heading noselect">COLLEGES</h1>
             </div>
 
             <div class="college-container">
@@ -141,14 +135,14 @@ while ($row = mysqli_fetch_array($result)){
                 <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px;padding-top:50px; padding-bottom: 10px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> info@insightone.in</a><span> - For Internship and Tie-Ups</span><br>
                 <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> influencers@insightone.in</a><span> - For Influencers Marketing Programme</span>
             </div><br>
-
+<div class="csi"><a href="http://csiakgec.in" target="_blank"><img src="../images/logocsi.png" class="csi__image animated infinite pulse delay-2s" alt="CSI"></a><span class="csi__text">Powered by <a class="csitext" href="http://csiakgec.in" target="_blank">csiakgec</a></span></div>
             <hr>
             <p style="text-align: center;color:#C6C3C2;">&copy; 2018 Insightone, All rights reserved</p>
         </footer>
            
            
             <div class="scrollUp" id="up" title="Back To Top">
-                <a href="#header"><i class="fa fa-chevron-circle-up fa-3x scrollUp__icon"></i></a>
+                <a href="#header"><i class="fafa-angle-double-up fa-2x scrollUp__icon"></i></a>
             </div>
         </div>
 

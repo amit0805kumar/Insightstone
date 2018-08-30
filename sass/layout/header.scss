@@ -22,12 +22,12 @@
         position: absolute;
         top: 0;
         left: 0;
-        animation: grow 40s linear 10ms infinite; //  z-index: -1;
-        @include respond(800) {
-
-            background-attachment: fixed;
-
+        animation: grow 40s linear 10ms infinite;
+        
+        @include respond(767){
+        animation: none;
         }
+        //  z-index: -1;
     }
 
     &__home-image::before{
@@ -36,9 +36,11 @@
     @keyframes grow {
         0% {
             transform: scale(1);
+         
         }
         50% {
             transform: scale(1.2);
+          
         }
 
     }

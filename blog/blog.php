@@ -147,7 +147,7 @@ while ($row = mysqli_fetch_array($result)){
            
            
             <div class="scrollUp" id="up" title="Back To Top">
-                <a href="#header"><i class="fa fa-chevron-circle-up fa-3x scrollUp__icon"></i></a>
+                <a href="#header"><i class="fa fa-angle-double-up fa-2x scrollUp__icon"></i></a>
             </div>
         </div>
 

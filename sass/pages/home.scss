@@ -24,7 +24,7 @@ a:link{
     display: flex;
     flex-direction: row;
     background-attachment: fixed;
-
+    overflow: hidden;
     @include respond(1000) {
         flex-direction: column;
         align-items: center;

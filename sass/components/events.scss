@@ -11,5 +11,9 @@
     &__message{
         font-size: 4rem;
         font-family: 'cabin',sans-serif;
+          @include respond(phone){
+        font-size: 3rem;
     }
+    }
+  
 } 
