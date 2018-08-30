@@ -1,0 +1,15 @@
+.events{
+    &__container{
+        background: $color-grey-light-3;
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+        color: #fff;
+        height: 50rem;
+        align-items: center;
+    }
+    &__message{
+        font-size: 4rem;
+        font-family: 'cabin',sans-serif;
+    }
+} 

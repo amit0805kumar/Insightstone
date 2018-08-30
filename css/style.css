@@ -1391,4 +1391,16 @@ h4 {
   margin: 1.5rem 0;
   letter-spacing: 2px; }
 
+.events__container {
+  background: #424242;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  height: 50rem;
+  align-items: center; }
+.events__message {
+  font-size: 4rem;
+  font-family: 'cabin',sans-serif; }
+
 /*# sourceMappingURL=style.css.map */

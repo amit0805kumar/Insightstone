@@ -70,10 +70,9 @@ while ($row = mysqli_fetch_array($result)){
                             <li><a href="../index.html" id="l1">HOME</a></li>
                             <li><a id="l2" href="../college/college.php">COLLEGES</a></li>
                             <li><a href="blog.php" id="l3">BLOG</a></li>
-                            <li><a id="l4">EVENTS</a></li>
-                            <li><a id="l5">INTERNSHIPS</a></li>
+                            <li><a href="../events.html" id="l4">EVENTS</a></li>
+                            <li><a href="../internship.html" id="l5">INTERNSHIPS</a></li>
                             <li><a id="l6">TEAM</a></li>
-                            <li><a id="l7">ABOUT US</a></li>
                         </ul>
                     </div>
                 </div>
