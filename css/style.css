@@ -46,6 +46,27 @@
   text-transform: uppercase;
   margin-bottom: 4rem !important; }
 
+.php__heading {
+  color: #fff;
+  font-family: "brooklynBold",sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
+  z-index: 200;
+  -webkit-animation-name: moveDown;
+          animation-name: moveDown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  white-space: nowrap;
+  letter-spacing: 4px; }
+  @media only screen and (max-width: 50em) {
+    .php__heading {
+      font-size: 4rem;
+      letter-spacing: 3px; } }
+  @media only screen and (max-width: 37.5em) {
+    .php__heading {
+      font-size: 2.5rem;
+      letter-spacing: 2px; } }
+
 * {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -1570,7 +1591,28 @@ h4 {
 
 .header_image-college {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.73)), to(rgba(0, 0, 0, 0.16))), url(../images/college.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.16)), url(../images/college.jpg); }
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.16)), url(../images/college.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  @media only screen and (max-width: 47.93em) {
+    .header_image-college {
+      height: 90vh; } }
 
 .college-container {
   display: -webkit-box;
@@ -1598,11 +1640,14 @@ h4 {
   border-radius: 4px;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  @media only screen and (max-width: 37.5em) {
+    .college {
+      margin: 2rem 1rem; } }
   .college__image {
     width: 100%; }
     .college__image-box {
       overflow: hidden;
-      height: 35rem;
+      max-height: 40rem;
       width: 100%; }
   .college__main {
     padding: 1rem 1rem; }
@@ -1613,9 +1658,20 @@ h4 {
     font-weight: 500;
     color: #151576;
     text-decoration: underline; }
+    @media only screen and (max-width: 37.5em) {
+      .college-link {
+        font-size: 1.3rem; } }
   .college-heading {
     margin: 2rem 0;
-    font-family: 'Anton',sans-serif; }
+    font-family: 'Anton', sans-serif; }
+    @media only screen and (max-width: 37.5em) {
+      .college-heading {
+        font-size: 1.8rem; } }
+  .college-showcase {
+    font-size: 1.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .college-showcase {
+        font-size: 1.2rem; } }
 
 .intern__intro {
   width: 100;

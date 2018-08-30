@@ -76,8 +76,8 @@ while ($row = mysqli_fetch_array($result)){
             </nav>
 
 
-            <div class="header_image header_image-college">
-                 <h1 class="main__heading noselect">COLLEGES</h1>
+            <div class="header_image-college">
+                 <h1 class="php__heading noselect">COLLEGES</h1>
             </div>
 
             <div class="college-container">
