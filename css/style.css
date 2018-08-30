@@ -1240,8 +1240,8 @@ h4 {
     background: #00bcd4;
     color: #fff !important; }
 
-.header_image-blog {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg); }
+.header_image-college {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.16)), url(../images/college.jpg); }
 
 .college-container {
   display: flex;
@@ -1321,7 +1321,8 @@ h4 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin: 11rem 0; }
 .intern__step {
   display: flex;
   flex-direction: row;
@@ -1330,13 +1331,64 @@ h4 {
   background: #fff;
   color: #424242;
   padding: 1rem 1.5rem;
-  font-family: 'Anton',sans-serif; }
+  font-family: 'Anton', sans-serif; }
 .intern__stepR {
   padding: 1rem 1.5rem;
   color: #fff;
-  font-family: 'cabin',sans-serif;
+  font-family: 'cabin', sans-serif;
   letter-spacing: 1.5px;
   background: #424242;
   width: 30rem; }
+
+.intern__type {
+  margin: 11rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+.intern__duration-block {
+  display: flex;
+  align-items: center; }
+.intern__duration-logo {
+  display: inline-block;
+  margin: 0; }
+.intern__duration-text {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Muli',sans-serif;
+  background: #424242;
+  padding: 1rem 2rem;
+  margin: 2rem 0; }
+.intern__time {
+  font-size: 2rem;
+  color: #424242;
+  margin-left: 2rem;
+  border-bottom: 2px dashed #424242;
+  font-family: 'brooklynBold',sans-serif; }
+
+.intern__perks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .intern__perks-container {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    width: 50%;
+    overflow: hidden;
+    border-radius: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/perks.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%);
+    clip-path: polygon(6% 0, 100% 0, 94% 100%, 0% 100%); }
+  .intern__perks-text {
+    margin: 3rem 4rem; }
+.intern__perk {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'cabin',sans-serif;
+  margin: 1.5rem 0;
+  letter-spacing: 2px; }
 
 /*# sourceMappingURL=style.css.map */

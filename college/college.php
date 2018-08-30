@@ -48,11 +48,11 @@ while ($row = mysqli_fetch_array($result)){
     <body onload="loaderFun()">
 
 
-        <!--LOADER
+      
         <div class="loader-container" id="loader-c">
-            <img src="images/logo.png" alt="loader" id="loader" class="shakeAnimate">
+            <img src="../images/logo.png" alt="loader" id="loader" class="shakeAnimate">
         </div>
--->
+
         <div id="myDiv">
             <div id="top"></div>
             <!--Navbar-->
@@ -80,7 +80,7 @@ while ($row = mysqli_fetch_array($result)){
             </nav>
 
 
-            <div class="header_image header_image-colllege">
+            <div class="header_image header_image-college">
 
                 <a href="../blog/admin_login.php" class="addBtn"><button class="btn btn-addBlog">ADD BLOG</button></a>
 
