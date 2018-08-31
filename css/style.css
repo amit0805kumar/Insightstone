@@ -1207,7 +1207,7 @@ hr {
     -webkit-transform: translateX(-45%);
             transform: translateX(-45%); } }
 .header_image {
-  min-height: 600px;
+  min-height: 90vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1223,13 +1223,13 @@ hr {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.header_image-colllege {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.53)), to(rgba(0, 0, 0, 0.16))), url(../images/colleges.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/colleges.jpg); }
-
 .header_image-blog {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.53)), to(rgba(0, 0, 0, 0.16))), url(../images/blog.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg); }
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg);
+  height: 100vh; }
+  @media only screen and (max-width: 47.93em) {
+    .header_image-blog {
+      height: 20rem; } }
 
 .blog-container {
   display: -webkit-box;

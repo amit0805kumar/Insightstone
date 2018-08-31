@@ -1,5 +1,5 @@
       .header_image {
-          min-height: 600px;
+          min-height: 90vh;
           background-attachment: fixed;
           background-position: center;
           background-repeat: no-repeat;
@@ -8,15 +8,18 @@
           display: flex;
           align-items: flex-end;
           justify-content: center;
+         
       }
 
-      .header_image-colllege {
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/colleges.jpg);
-      }
+   
 
 
       .header_image-blog {
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.16)), url(../images/blog.jpg);
+          height: 100vh;
+          @include respond(767){
+              height: 20rem;
+          }
       }
 
       .blog-container {
