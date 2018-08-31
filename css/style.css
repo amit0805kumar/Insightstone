@@ -1,5 +1,5 @@
 .heading-1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #424242;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1709,11 +1709,17 @@ h4 {
   border-left: 1rem solid #424242;
   margin: 4rem 2rem;
   padding-left: 1rem; }
+  @media only screen and (max-width: 47.93em) {
+    .intern__intro {
+      border-left: 0.5rem solid #424242; } }
 .intern__para {
   margin: 1rem 0;
   font-family: 'Cabin', sans-serif;
   font-size: 2rem;
   color: #424242; }
+  @media only screen and (max-width: 47.93em) {
+    .intern__para {
+      font-size: 1.6rem; } }
 .intern__list-container {
   margin: 7rem 4rem;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -1721,22 +1727,40 @@ h4 {
   border-radius: 3px;
   overflow: hidden;
   padding: 2rem; }
+  @media only screen and (max-width: 47.93em) {
+    .intern__list-container {
+      margin: 5rem 2.5rem;
+      padding: 1.5rem; } }
 .intern__list-main {
   font-size: 1.8rem;
   margin: 3rem 0; }
+  @media only screen and (max-width: 47.93em) {
+    .intern__list-main {
+      font-size: 1.5rem;
+      margin: 2rem 0; } }
 .intern__list-req {
   font-size: 1.8rem;
   margin: 3rem 0; }
+  @media only screen and (max-width: 47.93em) {
+    .intern__list-req {
+      font-size: 1.5rem;
+      margin: 2rem 0; } }
 .intern__list-heading {
   text-transform: uppercase;
   font-family: 'Anton', sans-serif;
   font-size: 2rem;
   margin: .5rem 0; }
+  @media only screen and (max-width: 47.93em) {
+    .intern__list-heading {
+      font-size: 1.8rem; } }
 .intern__list-subheading {
   font-family: 'Cabin', sans-serif;
   font-size: 2rem;
   margin: .5rem 0;
   font-weight: 500; }
+  @media only screen and (max-width: 47.93em) {
+    .intern__list-subheading {
+      font-size: 1.5rem; } }
 .intern__task {
   margin-left: 2rem;
   font-family: 'Barlow', sans-serif; }
@@ -1778,6 +1802,9 @@ h4 {
   letter-spacing: 1.5px;
   background: #424242;
   width: 30rem; }
+  @media only screen and (max-width: 37.5em) {
+    .intern__stepR {
+      width: 20rem; } }
 
 .intern__type {
   margin: 11rem 0;
@@ -1792,6 +1819,12 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%; }
+  @media only screen and (max-width: 47.93em) {
+    .intern__type {
+      font-size: 2rem; } }
+@media only screen and (max-width: 37.5em) {
+  .intern__duration {
+    margin: 0 .5rem; } }
 .intern__duration-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1806,16 +1839,26 @@ h4 {
   font-size: 2rem;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'Muli',sans-serif;
+  font-family: 'Muli', sans-serif;
   background: #424242;
   padding: 1rem 2rem;
   margin: 2rem 0; }
+  @media only screen and (max-width: 47.93em) {
+    .intern__duration-text {
+      padding: .8rem 2rem;
+      margin: 1.8rem 0;
+      font-size: 1.7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .intern__duration-text {
+      font-size: 1.5rem;
+      padding: .8rem 1.5rem;
+      margin: 2rem .6rem; } }
 .intern__time {
   font-size: 2rem;
   color: #424242;
   margin-left: 2rem;
   border-bottom: 2px dashed #424242;
-  font-family: 'brooklynBold',sans-serif; }
+  font-family: 'brooklynBold', sans-serif; }
 
 .intern__perks {
   width: 100%;
@@ -1841,14 +1884,37 @@ h4 {
     background-size: cover;
     -webkit-clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%);
     clip-path: polygon(6% 0, 100% 0, 94% 100%, 0% 100%); }
+    @media only screen and (max-width: 47.93em) {
+      .intern__perks-container {
+        width: 65%; } }
+    @media only screen and (max-width: 37.5em) {
+      .intern__perks-container {
+        width: 80%; } }
   .intern__perks-text {
-    margin: 3rem 4rem; }
+    margin: 3rem 4rem;
+    font-size: 1.5rem; }
+    @media only screen and (max-width: 47.93em) {
+      .intern__perks-text {
+        margin: 2.5rem 3.5;
+        font-size: 1rem;
+        letter-spacing: 1.2px; } }
 .intern__perk {
   color: #fff;
   text-transform: uppercase;
-  font-family: 'cabin',sans-serif;
+  font-family: 'cabin', sans-serif;
   margin: 1.5rem 0;
   letter-spacing: 2px; }
+
+.join-heading {
+  font-size: 2.8rem;
+  white-space: nowrap; }
+  @media only screen and (max-width: 47.93em) {
+    .join-heading {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .join-heading {
+      font-size: 1.3rem;
+      padding: 0.5rem; } }
 
 .events__container {
   background: #424242;
