@@ -19,10 +19,62 @@
         font-size: 1.8rem;
         text-align: center;
         padding: 1rem;
+        @include respond(1100) {
+            font-size: 1.5rem;
+        }
     }
 }
 
-.heading-details,
+.heading-details {
+    font-size: 2rem;
+    color: $color-grey-light-3;
+    letter-spacing: 3px;
+    display: inline-block;
+    font-family: "futur", sans-serif;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+    position: relative;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    @include respond(767) {
+
+        color: #fff;
+    }
+    @include respond(1000) {
+        font-size: 1.5rem;
+        list-style-position: 2px;
+        margin-bottom: 1.5rem;
+    }
+    @include respond(800) {
+        font-size: 1.5rem;
+        list-style-position: 2px;
+        margin-bottom: .8rem;
+        letter-spacing: .8px;
+
+    }
+    @include respond(phone) {
+        font-size: 1.2rem;
+        list-style-position: 2px;
+        margin-bottom: .6rem;
+        letter-spacing: .5px;
+        font-family: "futurmedium", sans-serif;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        height: .2rem;
+        width: 100%;
+        top: 100%;
+        transform: translateY(-50%);
+        background: $color-grey-light-2; //background-image: url(../images/border.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 0;
+    }
+}
+
 .container-1__heading {
 
     font-size: 2rem;
@@ -76,13 +128,26 @@
     flex-direction: row;
     align-items: stretch;
 
+    @include respond(767) {
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 0;
+        position: relative;
+    }
+
     &__image {
         width: 40%;
-        background-image: url(../images/details.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/details.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: contain;
+        background-size: cover;
         filter: grayscale(100);
+        @include respond(767) {
+            height: 100%;
+            width: 60%;
+            position: absolute;
+            z-index: -1;
+        }
     }
     &__text {
         width: 60%;
@@ -90,6 +155,11 @@
         font-family: 'futurBook', sans-serif;
         color: $color-grey-light-3;
         letter-spacing: 2px;
+        overflow: hidden;
+        @include respond(767) {
+            color: #fff;
+            font-size: 1.2rem;
+        }
         & ul {
             list-style: none;
             & li {
@@ -122,6 +192,15 @@
         flex-direction: column;
         border-radius: 3px;
         padding: 2rem 0;
+        font-size: 1.5rem;
+        @include respond(phone){
+            width: 45rem;
+               font-size: 1.2rem;
+        }
+          @include respond(500){
+            width: 35rem;
+               font-size: 1rem;
+        }
     }
     &__row {
         width: 100%;
@@ -134,6 +213,10 @@
         padding: .2rem;
         text-transform: uppercase;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        white-space: nowrap;
+          @include respond(phone){
+            padding: .1rem;
+        }
     }
     &__title {
         flex: 1;
@@ -160,30 +243,44 @@
     display: flex;
     align-items: stretch;
     flex-direction: row;
+     font-size: 1.5rem;
+      @include respond(phone){
+            font-size: 1.2rem;
+        }
 }
 
 .instruct__bar {
     width: .5rem;
     background: #00bcd4;
-    
+
 }
-.instruct__text{
+
+.instruct__text {
     padding: 0 2rem;
     color: #000000;
     letter-spacing: 2px;
 }
-.email{
+
+.email {
     color: #161688;
-    
+
 }
-.isp__join{
-width: 100;
+
+.isp__join {
+    width: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10rem 0;
-    &-button{
-        background:  #00bcd4;
+    &-button {
+        background: #00bcd4;
         color: #fff !important;
+    }
+    &-heading{
+        font-size: 2rem;
+        white-space: nowrap;
+         @include respond(phone){
+            font-size: 1.6rem;
+        }
     }
 }
