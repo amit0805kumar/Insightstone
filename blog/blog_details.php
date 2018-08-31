@@ -61,7 +61,7 @@ while ($row1 = mysqli_fetch_array($result1)){
         <div class="blogs_container">
 
             <div class="blogs__main">
-                <div class="blogs__image"> <img class="img-responsive" src="<?php echo($row['image']); ?>"></div>
+                <div class="blogs__image"> <img class="" src="<?php echo($row['image']); ?>"></div>
                 <h3 class="blogs__heading">
                     <?php echo $row['blog_name']; ?>
                 </h3>

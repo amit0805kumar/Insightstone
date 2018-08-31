@@ -1270,7 +1270,7 @@ hr {
     font-weight: 500;
     color: #424242; }
   .blog-heading {
-    font-family: 'Anton',sans-serif; }
+    font-family: 'Anton', sans-serif; }
 
 h2,
 h3,
@@ -1307,6 +1307,12 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem; }
+  @media only screen and (max-width: 68.75em) {
+    .blogs_container {
+      width: 80%; } }
+  @media only screen and (max-width: 37.5em) {
+    .blogs_container {
+      width: 90%; } }
 
 .blogs {
   background: #fff;
@@ -1316,6 +1322,10 @@ h4 {
   padding: 1rem;
   border-radius: 4px;
   overflow: hidden; }
+  @media only screen and (max-width: 37.5em) {
+    .blogs {
+      margin: 1rem 1rem;
+      padding: 0; } }
   .blogs__main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1328,6 +1338,9 @@ h4 {
         -ms-flex-align: center;
             align-items: center;
     margin: 3rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .blogs__main {
+        margin: 1rem 0; } }
   .blogs__image {
     overflow: hidden;
     width: 20rem;
@@ -1336,25 +1349,43 @@ h4 {
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     border-radius: 500px;
     border: 2px solid #00bcd4; }
+    @media only screen and (max-width: 43.75em) {
+      .blogs__image {
+        width: 15rem;
+        height: 15rem; } }
   .blogs__heading {
     display: inline-block;
     font-size: 4rem;
     margin: 2rem 0;
     white-space: nowrap; }
+    @media only screen and (max-width: 37.5em) {
+      .blogs__heading {
+        margin: 1.3rem 0;
+        font-size: 3rem; } }
   .blogs__headings {
     margin: 2rem 0;
-    font-family: 'Anton', sans-serif; }
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .blogs__headings {
+        margin: 1.3rem 0;
+        font-size: 1.5rem; } }
   .blogs__contents {
     margin: 2rem 0;
     font-family: 'cabin', sans-serif;
     font-size: 1.5rem;
     color: #424242;
     letter-spacing: 1.8px; }
+    @media only screen and (max-width: 37.5em) {
+      .blogs__contents {
+        margin: 1.3rem 0;
+        font-size: 1.4rem;
+        letter-spacing: 1.2px; } }
   .blogs__images {
     margin: 2rem 0;
     overflow: hidden;
     width: 100%;
-    height: 40rem;
+    max-height: 40rem;
     border-radius: 3px;
     background: #6befb2; }
   .blogs__imagesIn {
