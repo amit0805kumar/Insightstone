@@ -37,22 +37,24 @@ if (isset($_POST['submit'])) {
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/additional-methods.min.js"></script>
     <!--<link rel="stylesheet" href="css/style.css">-->
     <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script type="text/javascript" src="../js/wow.min.js"></script>
     <script type="text/javascript" src="../js/scroll.js"></script>
     <title>Insightone</title>
 </head>
-<body>
-    <div class="container">
-        <form id="admin_login_form" action=""  method="post" enctype="multipart/form-data">
-        <div class="form-group col-md-8">
+<body style="position:relative;">
+    <div class="container login__container">
+        <form id="admin_login_form" action="" class="login__form"  method="post" enctype="multipart/form-data">
+        <div class="login__heading">Admin Login</div>
+        <div class="form-group col-md-12">
             <label class="control-label"><h4>User Id:</h4></label>
-            <input type="text" id="user_id" name="user_id" class="form-control" value="admin">
+            <input type="text" id="user_id" name="user_id" class="form-control" >
         </div><br>
-        <div class="form-group col-md-8">
+        <div class="form-group col-md-12">
             <label class="control-label"><h4>Password:</h4></label>
-            <input type="password" id="password" name="password" class="form-control" value="admin">
+            <input type="password" id="password" name="password" class="form-control" >
         </div>
-        <div class="form-group col-md-8">
+        <div class="form-group col-md-12">
         <input type="submit" name="submit" value="Submit" id="submit" class="btn btn-success">
         </div>
         </form>

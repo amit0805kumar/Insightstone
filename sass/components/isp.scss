@@ -100,7 +100,7 @@
         letter-spacing: .8px;
     }
     @include respond(phone) {
-        font-size: 1rem;
+        font-size: .8rem;
         list-style-position: 2px;
         margin-bottom: .6rem;
         letter-spacing: .5px;
@@ -148,6 +148,9 @@
             position: absolute;
             z-index: -1;
         }
+        @include respond(phone) {
+            width: 70%;
+        }
     }
     &__text {
         width: 60%;
@@ -166,6 +169,14 @@
                 margin: .8rem 0;
 
             }
+        }
+           @include respond(767) {
+           
+            width: 60%;
+           
+        }
+        @include respond(phone) {
+            width: 70%;
         }
 
     }
@@ -193,13 +204,13 @@
         border-radius: 3px;
         padding: 2rem 0;
         font-size: 1.5rem;
-        @include respond(phone){
+        @include respond(phone) {
             width: 45rem;
-               font-size: 1.2rem;
+            font-size: 1.2rem;
         }
-          @include respond(500){
+        @include respond(500) {
             width: 35rem;
-               font-size: 1rem;
+            font-size: 1rem;
         }
     }
     &__row {
@@ -214,7 +225,7 @@
         text-transform: uppercase;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         white-space: nowrap;
-          @include respond(phone){
+        @include respond(phone) {
             padding: .1rem;
         }
     }
@@ -243,10 +254,10 @@
     display: flex;
     align-items: stretch;
     flex-direction: row;
-     font-size: 1.5rem;
-      @include respond(phone){
-            font-size: 1.2rem;
-        }
+    font-size: 1.5rem;
+    @include respond(phone) {
+        font-size: 1.2rem;
+    }
 }
 
 .instruct__bar {
@@ -276,10 +287,10 @@
         background: #00bcd4;
         color: #fff !important;
     }
-    &-heading{
+    &-heading {
         font-size: 2rem;
         white-space: nowrap;
-         @include respond(phone){
+        @include respond(phone) {
             font-size: 1.6rem;
         }
     }

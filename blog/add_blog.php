@@ -33,6 +33,7 @@ else{
         <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/additional-methods.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="../css/animate.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
         <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
         <title>Insightstone</title>
         <style type="text/css">
@@ -66,8 +67,8 @@ else{
                             <input type="text" name="blog_name" id="blog_name" class="form-control">
                         </div><br>
                         <div class="form-group blog_image">
-                            <label class="control-label"><h4>Choose Main Image:</h4></label>
-                            <input type="file" accept="image/*" name="blog_image" id="blog_image">
+                            <label class="control-label "><h4>Choose Main Image:</h4></label>
+                            <input type="file" accept="image/*" name="blog_image" id="blog_image" class="">
                         </div><br>
                         <div class="form-group blog_content">
                             <label class="control-label"><h4>Enter Content Of The Blog:</h4></label>

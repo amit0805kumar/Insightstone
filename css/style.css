@@ -44,6 +44,10 @@
     .heading-size-1 {
       font-size: 2.5rem !important;
       margin-bottom: 4rem !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-size-1 {
+      font-size: 2rem !important;
+      margin-bottom: 3rem !important; } }
 
 .heading-size-2 {
   font-size: 2rem !important;
@@ -329,7 +333,7 @@ a:link {
       margin: 0 1rem; }
       .main__icon-box .svg__icon:hover {
         cursor: pointer;
-        fill: rgba(252, 138, 6, 0.6);
+        fill: #ec407a;
         -webkit-transform: rotateY(360deg);
                 transform: rotateY(360deg); }
 
@@ -1529,7 +1533,7 @@ h4 {
       letter-spacing: .8px; } }
   @media only screen and (max-width: 37.5em) {
     .container-1__heading {
-      font-size: 1rem;
+      font-size: .8rem;
       list-style-position: 2px;
       margin-bottom: .6rem;
       letter-spacing: .5px;
@@ -1586,6 +1590,9 @@ h4 {
         width: 60%;
         position: absolute;
         z-index: -1; } }
+    @media only screen and (max-width: 37.5em) {
+      .isp__container-2__image {
+        width: 70%; } }
   .isp__container-2__text {
     width: 60%;
     padding: 1rem 3rem;
@@ -1601,6 +1608,12 @@ h4 {
       list-style: none; }
       .isp__container-2__text ul li {
         margin: .8rem 0; }
+    @media only screen and (max-width: 47.93em) {
+      .isp__container-2__text {
+        width: 60%; } }
+    @media only screen and (max-width: 37.5em) {
+      .isp__container-2__text {
+        width: 70%; } }
 
 .svg__listicon {
   width: 1.5rem !important;
@@ -2042,5 +2055,40 @@ h4 {
   @media only screen and (max-width: 37.5em) {
     .events__message {
       font-size: 3rem; } }
+
+.login__container {
+  position: absolute;
+  display: inline-block;
+  color: #fff;
+  background: #424242;
+  padding: 3rem 5rem;
+  width: 60%;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .login__container {
+      width: 80%;
+      padding: 2rem 3rem;
+      top: 8rem; } }
+.login__form {
+  display: inline-block;
+  width: 100%; }
+.login__heading {
+  text-transform: uppercase;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin: 2rem 0;
+  letter-spacing: 1.3px; }
+
+.input__upload {
+  background: #424242;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

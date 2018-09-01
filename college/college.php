@@ -69,7 +69,6 @@ while ($row = mysqli_fetch_array($result)){
                             <li><a href="../blog/blog.php" id="l3">BLOG</a></li>
                             <li><a href="../events.html" id="l4">EVENTS</a></li>
                             <li><a href="../internship.html" id="l5">INTERNSHIPS</a></li>
-                            <li><a id="l6">TEAM</a></li>
                         </ul>
                     </div>
                 </div>
