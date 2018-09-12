@@ -61,10 +61,11 @@
     transition: all .3s ease-in-out;
    // border-bottom: 2px solid white;
     margin: 0 .3rem;
-    width: 12rem;
+    width: 16rem;
     text-align: center;
     white-space: nowrap;
     position: relative;
+    padding: 1.8rem 0.5rem !important;
     &::after{
     content: "";
     position: absolute;
