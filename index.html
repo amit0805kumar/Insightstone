@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
-    <title>Insightstone</title>
+    <title>Insightst&oacute;ne</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,7 +37,7 @@
         <!--Navbar-->
         <nav class="navbar navbar-default" id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo" class="logo-img fadeIn animated delay1" id="logo"></a>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="logo-img fadeIn animated delay1" id="logo"></a>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle navbar-btn" data-toggle="collapse" data-target="#main" id="cmd">
                     <span class="icon-bar" id="bar1"></span>
@@ -48,12 +48,12 @@
                 <div class="collapse navbar-collapse" id="main">
                     <ul class="nav navbar-nav navbar-right" id="nav">
                         <li><a href="index.html" id="l1">HOME</a></li>
+                        <li><a id="l7">WHAT IS INSIGHT&Oacute;NE ?</a></li>
                         <li><a id="l2" href="college/college.php">COLLEGES</a></li>
                         <li><a href="blog/blog.php" id="l3">BLOG</a></li>
-                        <li><a href="events.html" id="l4">EVENTS</a></li>
                         <li><a href="internship.html" id="l5">INTERNSHIPS</a></li>
+                        <li><a href="events.html" id="l4">EVENTS</a></li>
                         <li><a id="l6">TEAM</a></li>
-                        <li><a id="l7">WHAT IS INSIGHTONE ?</a></li>
                     </ul>
                 </div>
             </div>
@@ -128,38 +128,17 @@
 
 
         <div class="section-form" id="form">
-            <div class="heading-1 wow fadeIn delay1">Influencer marketting programme</div>
+            <div class="heading-1 wow fadeIn delay1"><a href="isp.html" target="_blank">Influencer marketing program</a></div>
             <div class="section-form-container">
                 <div class="form-left wow slideInLeft delay1">
                     <div class="left-text">
-                        <div class="left-text__tag wow ">#InsightoneInfluencer</div>
+                        <div class="left-text__tag wow ">#Insight&oacute;neInfluencer</div>
                         <div class="left-text__quote">your culture is our brand!</div>
                         <a href="isp.html"><div class="left-text__btn noselect">Know More</div></a> 
                         <div class="left-text__btn noselect" onclick="active()">Join us today </div>
                     </div>
                 </div>
-                <div class="form-right wow slideInRight delay1">
-
-                    <div class="right__container">
-                        <form action="#" method="post" id="join_us_form" class="right__form">
-                            <div class="right__form-inputs">
-                                <div class="right__form-left">
-                                    <input type="text" placeholder="Name" name="name" id="name" class="right__form-input">
-                                    <input type="email" placeholder="E-Mail" name="email" id="email" class="right__form-input">
-                                    <input type="number" placeholder="Contact Number" name="contact_number" id="contact_number" class="right__form-input">
-                                </div>
-                                <div class="right__form-right">
-                                    <input type="text" placeholder="College" name="college" id="college" class="right__form-input">
-                                    <input type="text" placeholder="Instagram profile link" name="profile_link" id="profile_link" class="right__form-input">
-                                    <input type="number" placeholder="Number of followers on Instagram" name="followers" id="followers" class="right__form-input">
-                                </div>
-                            </div>
-                            <button class="register noselect" type="submit">Register</button>
-                        </form>
-                        <p id="success_msg"></p>
-                    </div>
-
-                </div>
+              
             </div>
         </div>
         <div class="section-clients">
@@ -222,7 +201,7 @@
             </div><br>
             <div class="csi"><a href="http://csiakgec.in" target="_blank"><img src="images/logocsi.png" class="csi__image animated infinite pulse delay-2s" alt="CSI"></a><span class="csi__text">Powered by <a class="csitext" href="http://csiakgec.in" target="_blank">csiakgec</a></span></div>
             <hr>
-            <p style="text-align: center;color:#C6C3C2;">&copy; 2018 Insightone, All rights reserved</p>
+            <p style="text-align: center;color:#C6C3C2;">&copy; 2018 Insight&oacute;ne, All rights reserved</p>
         </footer>
 
 
@@ -247,7 +226,7 @@
                     $('#l5').addClass('show2');
                     $('#l6').addClass('show2');
                     $('#l7').addClass('show2');
-                    $('#logo').attr("src", "images/logo.png");
+                   // $('#logo').attr("src", "images/logo.png");
                 }
                 $('#up').addClass('showUp');
             } else {
@@ -260,7 +239,7 @@
                     $('#l5').removeClass('show2');
                     $('#l6').removeClass('show2');
                     $('#l7').removeClass('show2');
-                    $('#logo').attr("src", "images/logo1.png");
+                    //$('#logo').attr("src", "images/logo1.png");
                 }
                 $('#up').removeClass('showUp');
             };
@@ -295,7 +274,7 @@
             scroll.toElement(section_about, {
                 duration: 1100
             }).then(function() {
-
+        
             });
         };
 

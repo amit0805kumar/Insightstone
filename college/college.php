@@ -37,14 +37,14 @@ while ($row = mysqli_fetch_array($result)){
         <script type="text/javascript" src="../js/wow.min.js"></script>
         <script type="text/javascript" src="../js/scroll.js"></script>
         <link rel="stylesheet" href="../css/style.css">
-        <title>Insightstone</title>
-      
+        <title>Insightst&oacute;ne</title>
+
     </head>
 
     <body onload="loaderFun()">
 
 
-      
+
         <div class="loader-container" id="loader-c">
             <img src="../images/logo.png" alt="loader" id="loader" class="shakeAnimate">
         </div>
@@ -65,10 +65,11 @@ while ($row = mysqli_fetch_array($result)){
                     <div class="collapse navbar-collapse" id="main">
                         <ul class="nav navbar-nav navbar-right" id="nav">
                             <li><a href="../index.html" id="l1">HOME</a></li>
+                            <li><a id="l7">WHAT IS INSIGHT&Oacute;NE ?</a></li>
                             <li><a href="college.php" id="l2">COLLEGES</a></li>
                             <li><a href="../blog/blog.php" id="l3">BLOG</a></li>
-                            <li><a href="../events.html" id="l4">EVENTS</a></li>
                             <li><a href="../internship.html" id="l5">INTERNSHIPS</a></li>
+                            <li><a href="../events.html" id="l4">EVENTS</a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,7 +77,7 @@ while ($row = mysqli_fetch_array($result)){
 
 
             <div class="header_image-college">
-                 <h1 class="php__heading noselect">COLLEGES</h1>
+                <h1 class="php__heading noselect">COLLEGES</h1>
             </div>
 
             <div class="college-container">
@@ -89,19 +90,19 @@ while ($row = mysqli_fetch_array($result)){
           ?>
                     <div class="college">
                         <div class="college__image-box">
-                        <img src="<?php echo($storeArray_college_image[$blog_no]); ?>"  class="college__image" alt="image">
+                            <img src="<?php echo($storeArray_college_image[$blog_no]); ?>" class="college__image" alt="image">
                         </div>
                         <div class="college__main">
                             <div class="college-link">
-                               <a href="http://<?php echo ($storeArray_link_to_college[$blog_no]);?>" target="_blank" >Link to College</a> 
+                                <a href="http://<?php echo ($storeArray_link_to_college[$blog_no]);?>" target="_blank">Link to College</a>
                             </div>
                             <h3 class="college-heading">
                                 <?php echo $storeArray_college_name[$blog_no];?>
                             </h3>
                             <p class="college-showcase">
-                              <?php echo $storeArray_about_college[$blog_no];?>
+                                <?php echo $storeArray_about_college[$blog_no];?>
                             </p>
-                            
+
                         </div>
                     </div>
 
@@ -117,29 +118,29 @@ while ($row = mysqli_fetch_array($result)){
 
 
 
-            
-            
-        <footer class="footer container-fluid">
-            <div class="social-media col-md-12" style="text-align: center; margin-bottom: 20px;">
-                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #fff;"></i></a>
-                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #fff;"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
-            </div>
 
-            <div class="container logo col-md-6">
-                <img src="../images/logo1.png" class="img-responsive" style="width: 350px;height: auto;margin-top: 40px ;">
-            </div>
-            <div class="mailsection col-md-6">
-                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px;padding-top:50px; padding-bottom: 10px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> info@insightone.in</a><span> - For Internship and Tie-Ups</span><br>
-                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> influencers@insightone.in</a><span> - For Influencers Marketing Programme</span>
-            </div><br>
-<div class="csi"><a href="http://csiakgec.in" target="_blank"><img src="../images/logocsi.png" class="csi__image animated infinite pulse delay-2s" alt="CSI"></a><span class="csi__text">Powered by <a class="csitext" href="http://csiakgec.in" target="_blank">csiakgec</a></span></div>
-            <hr>
-            <p style="text-align: center;color:#C6C3C2;">&copy; 2018 Insightone, All rights reserved</p>
-        </footer>
-           
-           
+
+            <footer class="footer container-fluid">
+                <div class="social-media col-md-12" style="text-align: center; margin-bottom: 20px;">
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #fff;"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #fff;"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
+                </div>
+
+                <div class="container logo col-md-6">
+                    <img src="../images/logo1.png" class="img-responsive" style="width: 350px;height: auto;margin-top: 40px ;">
+                </div>
+                <div class="mailsection col-md-6">
+                    <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px;padding-top:50px; padding-bottom: 10px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> info@insightone.in</a><span> - For Internship and Tie-Ups</span><br>
+                    <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> influencers@insightone.in</a><span> - For Influencers Marketing Programme</span>
+                </div><br>
+                <div class="csi"><a href="http://csiakgec.in" target="_blank"><img src="../images/logocsi.png" class="csi__image animated infinite pulse delay-2s" alt="CSI"></a><span class="csi__text">Powered by <a class="csitext" href="http://csiakgec.in" target="_blank">csiakgec</a></span></div>
+                <hr>
+                <p style="text-align: center;color:#C6C3C2;">&copy; 2018 Insight&oacute;ne, All rights reserved</p>
+            </footer>
+
+
             <div class="scrollUp" id="up" title="Back To Top">
                 <a href="#header"><i class="fafa-angle-double-up fa-2x scrollUp__icon"></i></a>
             </div>

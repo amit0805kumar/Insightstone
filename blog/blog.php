@@ -37,7 +37,7 @@ while ($row = mysqli_fetch_array($result)){
         <script type="text/javascript" src="../js/wow.min.js"></script>
         <script type="text/javascript" src="../js/scroll.js"></script>
         <link rel="stylesheet" href="../css/style.css">
-        <title>Insightstone</title>
+        <title>Insightst&oacute;ne</title>
         <style type="text/css">
 
 
@@ -47,7 +47,7 @@ while ($row = mysqli_fetch_array($result)){
     <body onload="loaderFun()">
 
 
-        
+
         <div class="loader-container" id="loader-c">
             <img src="../images/logo.png" alt="loader" id="loader" class="shakeAnimate">
         </div>
@@ -68,10 +68,11 @@ while ($row = mysqli_fetch_array($result)){
                     <div class="collapse navbar-collapse" id="main">
                         <ul class="nav navbar-nav navbar-right" id="nav">
                             <li><a href="../index.html" id="l1">HOME</a></li>
+                            <li><a id="l7">WHAT IS INSIGHT&Oacute;NE ?</a></li>
                             <li><a id="l2" href="../college/college.php">COLLEGES</a></li>
                             <li><a href="blog.php" id="l3">BLOG</a></li>
-                            <li><a href="../events.html" id="l4">EVENTS</a></li>
                             <li><a href="../internship.html" id="l5">INTERNSHIPS</a></li>
+                            <li><a href="../events.html" id="l4">EVENTS</a></li>
                         </ul>
                     </div>
                 </div>
@@ -94,7 +95,7 @@ while ($row = mysqli_fetch_array($result)){
           ?>
                     <div class="blog">
                         <div class="blog__image-box">
-                        <img src="<?php echo($storeArray_images[$blog_no]) ?>" class="blog__image" alt="image">
+                            <img src="<?php echo($storeArray_images[$blog_no]) ?>" class="blog__image" alt="image">
                         </div>
                         <div class="blog__main">
                             <div class="blog-date">Posted On:
@@ -104,11 +105,11 @@ while ($row = mysqli_fetch_array($result)){
                                 <?php echo $storeArray_blog_name[$blog_no];?>
                             </h3>
                             <p class="blog-showcase">
-                              <?php echo $storeArray_blog_content[$blog_no];?>
+                                <?php echo $storeArray_blog_content[$blog_no];?>
                             </p>
                             <form id="blog_name_form" method="post" action="blog_details.php" target="_blank">
                                 <input type="hidden" name="hidden_blog_name" value="<?php echo ($storeArray_blog_name[$blog_no]);?>">
-                            <button type="submit" name="read_about_button" class="btn btn-info read_about_button">Read About It...</button>
+                                <button type="submit" name="read_about_button" class="btn btn-info read_about_button">Read About It...</button>
                             </form>
                         </div>
                     </div>
@@ -122,29 +123,29 @@ while ($row = mysqli_fetch_array($result)){
 
 
             </div>
-            
-            
-        <footer class="footer container-fluid">
-            <div class="social-media col-md-12" style="text-align: center; margin-bottom: 20px;">
-                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #fff;"></i></a>
-                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #fff;"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
-            </div>
 
-            <div class="container logo col-md-6">
-                <img src="../images/logo1.png" class="img-responsive" style="width: 350px;height: auto;margin-top: 40px ;">
-            </div>
-            <div class="mailsection col-md-6">
-                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px;padding-top:50px; padding-bottom: 10px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> info@insightone.in</a><span> - For Internship and Tie-Ups</span><br>
-                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> influencers@insightone.in</a><span> - For Influencers Marketing Programme</span>
-            </div><br>
 
-            <hr>
-            <p style="text-align: center;color:#C6C3C2;">&copy; 2018 Insightone, All rights reserved</p>
-        </footer>
-           
-           
+            <footer class="footer container-fluid">
+                <div class="social-media col-md-12" style="text-align: center; margin-bottom: 20px;">
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #fff;"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #fff;"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
+                </div>
+
+                <div class="container logo col-md-6">
+                    <img src="../images/logo1.png" class="img-responsive" style="width: 350px;height: auto;margin-top: 40px ;">
+                </div>
+                <div class="mailsection col-md-6">
+                    <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px;padding-top:50px; padding-bottom: 10px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> info@insightone.in</a><span> - For Internship and Tie-Ups</span><br>
+                    <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> influencers@insightone.in</a><span> - For Influencers Marketing Programme</span>
+                </div><br>
+
+                <hr>
+                <p style="text-align: center;color:#C6C3C2;">&copy; 2018 Insight&oacute;ne, All rights reserved</p>
+            </footer>
+
+
             <div class="scrollUp" id="up" title="Back To Top">
                 <a href="#header"><i class="fa fa-angle-double-up fa-2x scrollUp__icon"></i></a>
             </div>
