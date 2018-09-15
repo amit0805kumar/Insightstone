@@ -69,7 +69,7 @@
   color: #fff;
   font-family: "brooklynBold",sans-serif;
   font-weight: 600;
-  font-size: 6rem;
+  font-size: 9rem;
   z-index: 200;
   animation-name: moveDown;
   animation-duration: 2s;
@@ -77,11 +77,11 @@
   letter-spacing: 4px; }
   @media only screen and (max-width: 50em) {
     .php__heading {
-      font-size: 4rem;
+      font-size: 5rem;
       letter-spacing: 3px; } }
   @media only screen and (max-width: 37.5em) {
     .php__heading {
-      font-size: 2.5rem;
+      font-size: 3rem;
       letter-spacing: 2px; } }
 
 * {
@@ -251,7 +251,7 @@ a:link {
     color: #fff;
     font-family: "brooklynBold",sans-serif;
     font-weight: 600;
-    font-size: 6rem;
+    font-size: 9rem;
     margin-top: 25rem;
     z-index: 200;
     animation-name: moveDown;

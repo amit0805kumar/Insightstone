@@ -72,7 +72,7 @@
          color: #fff;
         font-family: "brooklynBold",sans-serif;
         font-weight: 600;
-        font-size: 6rem;
+        font-size: 9rem;
         z-index: 200;
         animation-name: moveDown;
         animation-duration: 2s;
@@ -80,13 +80,13 @@
         letter-spacing: 4px;
    
         @include respond(800) {
-            font-size: 4rem;
+            font-size:5rem;
             letter-spacing: 3px;
 
         }
 
         @include respond(phone) {
-            font-size: 2.5rem;
+            font-size: 3rem;
             letter-spacing: 2px;
         }
 }
