@@ -49,7 +49,7 @@ while ($row = mysqli_fetch_array($result)){
 
 
         <div class="loader-container" id="loader-c">
-            <img src="../images/logo.png" alt="loader" id="loader" class="shakeAnimate">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
 
         <div id="myDiv">

@@ -1,3 +1,20 @@
+
+.main {
+
+    &__isp-image::before {
+        background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/influence.jpg);
+    }
+     &__internship-image::before {
+        background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/internship.jpg);
+    }
+
+     &__event-image::before {
+        background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/events.jpg);
+    }
+
+
+}
+
 .heading-1 {
     font-size: 3.5rem;
     color: #002073;
