@@ -1,6 +1,16 @@
 <?php
 include 'db.php';
 $hidden_blog_name = $_POST['hidden_blog_name'];
+include 'db.php';
+$hidden_blog_name = $_POST['hidden_blog_name'];
+session_start();
+if (isset($hidden_blog_name)) {
+  # code...
+
+}
+else{
+  header("Location: blog.php");
+}
 $no_space_hidden_blog_name = str_replace(' ', '_', $hidden_blog_name);
 $query = "SELECT * FROM blog_data WHERE blog_name='".$hidden_blog_name."'";
 $result = mysqli_query($connect,$query);
