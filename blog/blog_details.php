@@ -1,6 +1,16 @@
 <?php
 include 'db.php';
 $hidden_blog_name = $_POST['hidden_blog_name'];
+include 'db.php';
+$hidden_blog_name = $_POST['hidden_blog_name'];
+session_start();
+if (isset($hidden_blog_name)) {
+  # code...
+
+}
+else{
+  header("Location: blog.php");
+}
 $no_space_hidden_blog_name = str_replace(' ', '_', $hidden_blog_name);
 $query = "SELECT * FROM blog_data WHERE blog_name='".$hidden_blog_name."'";
 $result = mysqli_query($connect,$query);
@@ -48,6 +58,7 @@ while ($row1 = mysqli_fetch_array($result1)){
         <link rel="stylesheet" href="../css/style.css">
     </head>
 
+    <script src="//platform-api.sharethis.com/js/sharethis.js#property=5b9cc608df87bb0011f9f22f&product=inline-share-buttons"></script>
     <body onload="loaderFun()" style="background-image:url(../images/minimal.jpg); background-repeat:no-repeat; background-attachment:fixed; background-size:cover;">
 
         <!--LOADER-->
@@ -64,7 +75,7 @@ while ($row1 = mysqli_fetch_array($result1)){
             </div>
         </div>
 
-
+          <div class="sharethis-inline-share-buttons"></div>
 
         <div class="blogBack"></div>
         <div class="blogs_container">

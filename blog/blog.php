@@ -46,7 +46,7 @@ while ($row = mysqli_fetch_array($result)){
 
     <body onload="loaderFun()">
 
-
+ <script src="//platform-api.sharethis.com/js/sharethis.js#property=5b9cc608df87bb0011f9f22f&product=inline-share-buttons"></script>
 
         <div class="loader-container" id="loader-c">
             <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -78,7 +78,7 @@ while ($row = mysqli_fetch_array($result)){
                 </div>
             </nav>
 
-
+              <div class="sharethis-inline-share-buttons"></div>
             <div class="header_image header_image-blog">
 
                 <a href="admin_login.php" class="addBtn"><button class="btn btn-addBlog">ADD BLOG</button></a>
