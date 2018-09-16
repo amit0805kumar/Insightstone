@@ -52,7 +52,16 @@ while ($row1 = mysqli_fetch_array($result1)){
 
         <!--LOADER-->
         <div class="loader-container" id="loader-c">
-            <img src="../images/logo.png" alt="loader" id="loader" class="shakeAnimate">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
 
 
@@ -66,7 +75,7 @@ while ($row1 = mysqli_fetch_array($result1)){
                     <?php echo $row['blog_name']; ?>
                 </h3>
             </div>
-                <div class="break"></div>
+            <div class="break"></div>
             <?php
          $blog_no = 0;
         for ($i=0; $i < $counter; $i++) { 
