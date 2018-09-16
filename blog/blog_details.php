@@ -48,6 +48,7 @@ while ($row1 = mysqli_fetch_array($result1)){
         <link rel="stylesheet" href="../css/style.css">
     </head>
 
+    <script src="//platform-api.sharethis.com/js/sharethis.js#property=5b9cc608df87bb0011f9f22f&product=inline-share-buttons"></script>
     <body onload="loaderFun()" style="background-image:url(../images/minimal.jpg); background-repeat:no-repeat; background-attachment:fixed; background-size:cover;">
 
         <!--LOADER-->
@@ -55,7 +56,7 @@ while ($row1 = mysqli_fetch_array($result1)){
             <img src="../images/logo.png" alt="loader" id="loader" class="shakeAnimate">
         </div>
 
-
+          <div class="sharethis-inline-share-buttons"></div>
 
         <div class="blogBack"></div>
         <div class="blogs_container">
