@@ -487,7 +487,8 @@ hr {
   @media only screen and (max-width: 47.93em) {
     .navbar {
       position: relative;
-      background: #2c2b2b;
+      background: #fff;
+      color: #000;
       -webkit-box-shadow: 0 1px 2px rgba(119, 119, 119, 0.3);
       -moz-box-shadow: 0 2px 1px rgba(119, 119, 119, 0.3);
       box-shadow: 0 2px 1px rgba(119, 119, 119, 0.3);
@@ -546,7 +547,7 @@ hr {
       text-align: left; } }
   @media only screen and (max-width: 47.93em) {
     #nav li a {
-      color: #fff !important; } }
+      color: #000 !important; } }
 
 #nav li:hover a:after {
   width: 80%; }
@@ -747,7 +748,7 @@ hr {
   .left-text__btn {
     font-size: 2rem;
     font-family: "brooklynBold", sans-serif;
-    color: #ff9100;
+    color: #ff9100 !important;
     background: #fff;
     padding: 1rem 2rem;
     display: inline-block;

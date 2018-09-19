@@ -26,7 +26,8 @@
     position: fixed;
     @include respond(767) {
         position: relative;
-        background:$color-grey-light-4;
+        background:#fff;
+        color: #000;
         -webkit-box-shadow: 0 1px 2px rgba(119, 119, 119, 0.3);
         -moz-box-shadow: 0 2px 1px rgba(119, 119, 119, 0.3);
         box-shadow: 0 2px 1px rgba(119, 119, 119, 0.3);
@@ -102,7 +103,7 @@
         text-align: left;
     }
     @include respond(767) {
-        color: #fff !important;
+        color: #000 !important;
      //   border-bottom: 2px solid transparent !important;
     }
 }
