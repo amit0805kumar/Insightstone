@@ -8,7 +8,8 @@
 
     <link rel="shotcut icon" type="img/png" href="images/icon.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700|Anton|Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700|Caveat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700|Caveat:400,700" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,7 +17,6 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/additional-methods.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <script type="text/javascript" src="js/wow.min.js"></script>
@@ -30,7 +30,16 @@
 
     <!--LOADER-->
     <div class="loader-container" id="loader-c">
-        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
     <div id="myDiv">
@@ -48,7 +57,7 @@
                 <div class="collapse navbar-collapse" id="main">
                     <ul class="nav navbar-nav navbar-right" id="nav">
                         <li><a href="index.html" id="l1">HOME</a></li>
-                        <li><a href="about.html">WHAT IS INSIGHT&Oacute;NE ?</a></li>
+                        <li><a id="l7">WHAT IS INSIGHT&Oacute;NE ?</a></li>
                         <li><a href="college/college.php" id="l2">COLLEGES</a></li>
                         <li><a href="blog/blog.php" id="l3">BLOG</a></li>
                         <li><a href="internship.html" id="l5">INTERNSHIPS</a></li>
@@ -57,18 +66,31 @@
                 </div>
             </div>
         </nav>
-
-         <header class="header" id="header">
+        <header class="header" id="header">
 
             <!--Intro-->
-            <div class="main img-responsive main__event-image">
-                <h1 class="main__heading noselect">EVENTS</h1>
+            <div class="main img-responsive main__about-image">
+             <!--   <h1 class="main__heading noselect"><img class="main__heading-image" src="images/logo.png" alt=""></h1>
+-->
+
             </div>
         </header>
 
-        <div class="events__container">
-            <div class="events__message">Will come soon...</div>
+
+
+        <div class="intro__container">
+            <div class="container-1__heading heading-size-1">WHAT IS INSIGHT&Oacute;NE ?</div>
+            
+            
+            <p class="isp__intro"> INSIGHTONE is your one stop destination for anything and everything that comes under the big umbrella of our youth. We are a media agency and a youth organisation which provides insights into the world of College life, helping you keep up with all the events and happenings in and around Delhi.</p>
+            <p class="isp__intro">
+
+                It sets a stage for writers, vloggers, photographers to explore deep reaches into the world of youth and propagate their talents. Insightone profusely presents you with internship/job opportunities through several brand integrations which trains you in soft skills such as Management, Marketing etc and gives you that gold dust of an experience. With a team of well established influencers/bloggers with hundreds of thousands of followers throughout the country and a network of well known brands we provide sponsorships for your events in our city. The sponsorship maybe strictly Media sponsorship or a monetary sponsorship. We even provide social media and influencer marketing for any and every type of business/organisation. We organise our own events/workshops in collaboration with various brands and organisations.
+            </p>
+
+
         </div>
+
 
 
 
@@ -114,7 +136,7 @@
                     $('#l5').addClass('show2');
                     $('#l6').addClass('show2');
                     $('#l7').addClass('show2');
-                    //$('#logo').attr("src", "images/logo.png");
+                    // $('#logo').attr("src", "images/logo.png");
                 }
                 $('#up').addClass('showUp');
             } else {

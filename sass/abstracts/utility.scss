@@ -11,6 +11,9 @@
      &__event-image::before {
         background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/events.jpg);
     }
+      &__about-image::before {
+        background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/about.jpg);
+    }
 
 
 }

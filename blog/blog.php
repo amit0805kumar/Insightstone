@@ -68,7 +68,7 @@ while ($row = mysqli_fetch_array($result)){
                     <div class="collapse navbar-collapse" id="main">
                         <ul class="nav navbar-nav navbar-right" id="nav">
                             <li><a href="../index.html" id="l1">HOME</a></li>
-                            <li><a id="l7">WHAT IS INSIGHT&Oacute;NE ?</a></li>
+                            <li><a href="../about.html">WHAT IS INSIGHT&Oacute;NE ?</a></li>
                             <li><a id="l2" href="../college/college.php">COLLEGES</a></li>
                             <li><a href="blog.php" id="l3">BLOG</a></li>
                             <li><a href="../internship.html" id="l5">INTERNSHIPS</a></li>

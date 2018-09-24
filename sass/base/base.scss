@@ -49,3 +49,12 @@ position: relative;}
 #myDiv{
  
 }
+
+.intro
+{
+    &__container{
+background: #fff;
+        padding: 2rem;
+        margin: 10rem 0;
+    }
+}

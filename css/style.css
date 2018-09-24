@@ -4,6 +4,8 @@
   background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/internship.jpg); }
 .main__event-image::before {
   background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/events.jpg); }
+.main__about-image::before {
+  background-image: linear-gradient(to right, rgba(142, 36, 170, 0.5), rgba(26, 35, 126, 0.5)), url(../images/about.jpg); }
 
 .heading-1 {
   font-size: 3.5rem;
@@ -137,6 +139,11 @@ input[type=number]::-webkit-outer-spin-button {
 body {
   position: relative; }
 
+.intro__container {
+  background: #fff;
+  padding: 2rem;
+  margin: 10rem 0; }
+
 @font-face {
   font-family: brooklyn;
   src: url(../fonts/TheBrooklyn.otf); }
@@ -260,7 +267,7 @@ a:link {
     font-weight: 600;
     font-size: 9rem;
     margin-top: 25rem;
-    z-index: 200;
+    z-index: 0;
     animation-name: moveDown;
     animation-duration: 2s;
     white-space: nowrap;
