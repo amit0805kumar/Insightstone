@@ -121,13 +121,12 @@ while ($row = mysqli_fetch_array($result)){
 
 
             <footer class="footer container-fluid">
-                <div class="social-media col-md-12" style="text-align: center; margin-bottom: 20px;">
-                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #fff;"></i></a>
-                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #fff;"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
-                </div>
-
+                    <div class="social-media col-md-12" style="text-align: center; margin-bottom: 20px;">
+                <a href=" https://www.youtube.com/channel/UCuhGyDTLN4oA9S5OZvZeEDw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #fff;"></i></a>
+                <a href="https://www.facebook.com/insightone1/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #fff;"></i></a>
+                <a href=" https://www.linkedin.com/company/insightone01" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
+                <a href="https://www.instagram.com/_insightone/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
+            </div>
                 <div class="container logo col-md-6">
                     <img src="../images/logo1.png" class="img-responsive" style="width: 350px;height: auto;margin-top: 40px ;">
                 </div>

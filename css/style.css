@@ -29,7 +29,7 @@
       letter-spacing: 1px; } }
   @media only screen and (max-width: 37.5em) {
     .heading-1 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       list-style-position: 2px;
       margin-bottom: 2rem;
       letter-spacing: 1px;
@@ -611,6 +611,11 @@ hr {
   @media only screen and (max-width: 62.5em) {
     .services__box {
       margin: 3rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .services__box {
+      width: 24rem;
+      height: 28rem;
+      padding: .5rem; } }
   .services__box-image {
     width: 28rem;
     height: 28rem;
@@ -618,6 +623,10 @@ hr {
     transition: all 0.3s;
     z-index: 2;
     backface-visibility: hidden; }
+    @media only screen and (max-width: 37.5em) {
+      .services__box-image {
+        width: 22rem;
+        height: 22rem; } }
   .services__box-heading {
     font-size: 1.5rem;
     font-family: "cabin", sans-serif;
