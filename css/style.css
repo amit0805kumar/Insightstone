@@ -79,7 +79,7 @@
   font-family: "brooklynBold",sans-serif;
   font-weight: 600;
   font-size: 9rem;
-  z-index: 200;
+  z-index: 0;
   animation-name: moveDown;
   animation-duration: 2s;
   white-space: nowrap;
@@ -760,6 +760,9 @@ hr {
     @media only screen and (max-width: 50em) {
       .left-text__tag {
         font-size: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .left-text__tag {
+        font-size: 1.8rem; } }
   .left-text__quote {
     text-transform: uppercase;
     font-size: 3.5rem;
@@ -768,6 +771,9 @@ hr {
     @media only screen and (max-width: 50em) {
       .left-text__quote {
         font-size: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .left-text__quote {
+        font-size: 1.3rem; } }
   .left-text__btn {
     font-size: 2rem;
     font-family: "brooklynBold", sans-serif;
