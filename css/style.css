@@ -379,8 +379,7 @@ a:link {
 span {
   font-size: 15px;
   color: grey;
-  text-decoration: none;
-  white-space: nowrap; }
+  text-decoration: none; }
   @media only screen and (max-width: 37.5em) {
     .mailsection a,
     span {
@@ -1198,12 +1197,17 @@ h4 {
     width: 20rem;
     height: 20rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    border-radius: 500px;
-    border: 2px solid #00bcd4; }
+    border: 2px solid #00bcd4;
+    border-radius: 200px; }
     @media only screen and (max-width: 43.75em) {
       .blogs__image {
         width: 15rem;
         height: 15rem; } }
+    .blogs__image-content {
+      width: 20rem; }
+      @media only screen and (max-width: 43.75em) {
+        .blogs__image-content {
+          width: 15rem; } }
   .blogs__heading {
     display: inline-block;
     font-size: 4rem;

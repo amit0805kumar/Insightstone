@@ -90,8 +90,7 @@ while ($row = mysqli_fetch_array($result)){
             <div class="sharethis-inline-share-buttons"></div>
             <div class="header_image header_image-blog">
 
-                <a href="admin_login.php" class="addBtn"><button class="btn btn-addBlog">ADD BLOG</button></a>
-
+        
             </div>
 
             <div class="blog-container">

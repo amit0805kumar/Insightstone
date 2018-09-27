@@ -12,7 +12,6 @@ span {
     font-size: 15px;
     color: grey;
     text-decoration: none;
-    white-space: nowrap;
       @include respond(phone){
             font-size: 1.2rem;
         }
@@ -24,7 +23,7 @@ span {
 }
 
 .social-media {
-    margin-top: 20px;
+    margin-top: 20px; 
     text-align: center;
 }
 
