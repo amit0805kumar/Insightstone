@@ -57,4 +57,27 @@ background: #fff;
         padding: 2rem;
         margin: 10rem 0;
     }
+    
+}
+.about__heading{
+    font-size: 3.5rem;
+    color: #002073;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 4rem 0;
+    
+    
+        @include respond(1000){
+          font-size: 3rem;
+        margin: 3.8rem 0;
+        }
+      @include respond(800){
+          font-size: 2rem;
+        margin: 3.5rem 0;
+        }
+     @include respond(phone){
+          font-size: 1.5rem;
+        margin: 3rem 0;
+        }
 }
