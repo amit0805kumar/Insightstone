@@ -171,7 +171,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem 0; }
+  margin: 10rem 0; }
 
 a,
 a:visited,
@@ -379,33 +379,33 @@ a:link {
 span {
   font-size: 15px;
   color: grey;
-  text-decoration: none; }
+  text-decoration: none;
+  white-space: nowrap; }
+  @media only screen and (max-width: 37.5em) {
+    .mailsection a,
+    span {
+      font-size: 1.2rem; } }
 
 .mailsection a:hover {
   color: #D1CFCE;
   transition-duration: .6s; }
 
 .social-media {
-  margin-top: 20px; }
+  margin-top: 20px;
+  text-align: center; }
 
-.fa-facebook-square,
-.fa-youtube-play,
-.fa-linkedin-square,
-.fa-instagram {
+.class {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transform-origin: center; }
 
-.fa-facebook-square:hover {
-  transform: translateY(-3px) scale(1.05); }
+.social_icon {
+  color: #fff;
+  margin: 0 1.2rem;
+  font-size: 2.5rem;
+  transition: all .2s ease-in; }
 
-.fa-youtube-play:hover {
-  transform: translateY(-3px) scale(1.05); }
-
-.fa-linkedin-square:hover {
-  transform: translateY(-3px) scale(1.05); }
-
-.fa-instagram:hover {
-  transform: translateY(-3px) scale(1.05); }
+.social_icon:hover {
+  transform: translateY(-5px); }
 
 hr {
   display: block;
@@ -434,10 +434,13 @@ hr {
   .csi__text {
     color: white;
     text-transform: uppercase;
-    font-family: 'cabin',ans-serif;
+    font-family: 'cabin', sans-serif;
     font-weight: 500;
     letter-spacing: 3px;
     position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .csi__text {
+        font-size: 1rem; } }
     .csi__text::after {
       content: "";
       left: 50%;
@@ -448,6 +451,9 @@ hr {
       background: #fff;
       border-radius: 200px;
       transition: all .3s ease-in-out; }
+      @media only screen and (max-width: 37.5em) {
+        .csi__text::after {
+          height: .15rem; } }
 
 .csi__text:hover {
   color: #bdbdbd; }

@@ -26,7 +26,7 @@ while ($row = mysqli_fetch_array($result)){
         <meta name="viewport" content="width=device-width initial-scale=1">
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="icon" type="img/png" href="../images/icon.png">
         <link href="https://fonts.googleapis.com/css?family=Anton|Barlow:100,300,400,500,600,700,800,900|Cabin:400,400i,500,600,700|Caveat:400,700" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -38,7 +38,6 @@ while ($row = mysqli_fetch_array($result)){
         <script type="text/javascript" src="../js/scroll.js"></script>
         <link rel="stylesheet" href="../css/style.css">
         <title>Insightst&oacute;ne</title>
-
     </head>
 
     <body onload="loaderFun()">
@@ -46,7 +45,16 @@ while ($row = mysqli_fetch_array($result)){
 
 
         <div class="loader-container" id="loader-c">
-             <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
 
         <div id="myDiv">
@@ -121,12 +129,12 @@ while ($row = mysqli_fetch_array($result)){
 
 
             <footer class="footer container-fluid">
-                    <div class="social-media col-md-12" style="text-align: center; margin-bottom: 20px;">
-                <a href=" https://www.youtube.com/channel/UCuhGyDTLN4oA9S5OZvZeEDw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px; color: #fff;"></i></a>
-                <a href="https://www.facebook.com/insightone1/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px; padding-left:8px; color: #fff;"></i></a>
-                <a href=" https://www.linkedin.com/company/insightone01" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
-                <a href="https://www.instagram.com/_insightone/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px; padding-left: 8px; color: #fff;"></i></a>
-            </div>
+                <div class="social-media col-md-12">
+                    <a href="https://www.youtube.com/channel/UCuhGyDTLN4oA9S5OZvZeEDw" target="_blank"><i class="fab fa-youtube social_icon" ></i></a>
+                    <a href="https://www.facebook.com/insightone1/" target="_blank"><i class="fab fa-facebook-square social_icon"></i></a>
+                    <a href="https://www.linkedin.com/company/insightone01" target="_blank"><i class="fab fa-linkedin  social_icon"></i></a>
+                    <a href="https://www.instagram.com/_insightone/" target="_blank"><i class="fab fa-instagram social_icon"></i></a>
+                </div>
                 <div class="container logo col-md-6">
                     <img src="../images/logo1.png" class="img-responsive" style="width: 350px;height: auto;margin-top: 40px ;">
                 </div>
@@ -161,7 +169,7 @@ while ($row = mysqli_fetch_array($result)){
                         $('#l5').addClass('show2');
                         $('#l6').addClass('show2');
                         $('#l7').addClass('show2');
-                       // $('#logo').attr("src", "../images/logo.png");
+                        // $('#logo').attr("src", "../images/logo.png");
                     }
                     $('#up').addClass('showUp');
                 } else {
