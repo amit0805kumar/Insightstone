@@ -514,8 +514,6 @@ hr {
   border-radius: 0px; }
   .navbar-nav li:hover {
     cursor: pointer; }
-  .navbar-nav li:hover {
-    cursor: pointer; }
   @media only screen and (max-width: 47.93em) {
     .navbar {
       position: relative;
@@ -544,17 +542,6 @@ hr {
   white-space: nowrap;
   position: relative;
   padding: 1.8rem 0.5rem !important; }
-  #nav li a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    border-radius: 400px;
-    background: #fff;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all .3s ease-in-out; }
   @media only screen and (max-width: 68.75em) {
     #nav li a {
       margin: 0 .2rem;
@@ -581,8 +568,8 @@ hr {
     #nav li a {
       color: #000 !important; } }
 
-#nav li:hover a:after {
-  width: 80%; }
+#nav li:hover a {
+  color: #002073 !important; }
 
 .show2 {
   color: black !important;
