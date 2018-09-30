@@ -36,8 +36,7 @@ while ($row = mysqli_fetch_array($result)){
         <link rel="stylesheet" type="text/css" href="../css/animate.css">
         <script type="text/javascript" src="../js/wow.min.js"></script>
         <script type="text/javascript" src="../js/scroll.js"></script>
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Insightst&oacute;ne</title>
+        <link rel="stylesheet" href="../css/style.css"influencers@insightone.in&oacute;ne</title>
     </head>
 
     <body onload="loaderFun()">
@@ -139,8 +138,8 @@ while ($row = mysqli_fetch_array($result)){
                     <img src="../images/logo1.png" class="img-responsive" style="width: 350px;height: auto;margin-top: 40px ;">
                 </div>
                 <div class="mailsection col-md-6">
-                    <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px;padding-top:50px; padding-bottom: 10px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> info@insightone.in</a><span> - For Internship and Tie-Ups</span><br>
-                    <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px; color: grey;"></i><a href="mailto:shashwatvats10@gmail.com"> influencers@insightone.in</a><span> - For Influencers Marketing Programme</span>
+                    <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px;padding-top:50px; padding-bottom: 10px; color: grey;"></i><a href="mailto:influencers@insightone.in"> info@insightone.in</a><span> - For Internship and Tie-Ups</span><br>
+                    <i class="fa fa-envelope" aria-hidden="true" style="font-size: 21px; padding-right: 7px; color: grey;"></i><a href="mailto:influencers@insightone.in"> influencers@insightone.in</a><span> - For Influencers Marketing Programme</span>
                 </div><br>
                 <div class="csi"><a href="http://csiakgec.in" target="_blank"><img src="../images/logocsi.png" class="csi__image animated infinite pulse delay-2s" alt="CSI"></a><span class="csi__text">Powered by <a class="csitext" href="http://csiakgec.in" target="_blank">csiakgec</a></span></div>
                 <hr>
