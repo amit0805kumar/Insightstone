@@ -23,12 +23,12 @@
     font-size: 2rem;
     color: #002073;
     letter-spacing: 3px;
-    display: inline-block;
+    display: block;
     font-family: "futur", sans-serif;
-    white-space: nowrap;
+   // white-space: nowrap;
     margin-bottom: 2rem;
     position: relative;
-
+    width: 100%;
     margin-left: 50%;
     transform: translateX(-50%);
 
@@ -62,7 +62,7 @@
         width: 100%;
         top: 100%;
         transform: translateY(-50%);
-        background: #002073; //background-image: url(../images/border.png);
+       background: #fff; //background-image: url(../images/border.png);
         background-size: cover;
         background-repeat: no-repeat;
         left: 0;
@@ -76,7 +76,7 @@
     letter-spacing: 3px;
     display: inline-block;
     font-family: "futur", sans-serif;
-    white-space: nowrap;
+   // white-space: nowrap;
     margin-bottom: 2rem;
     position: relative;
 
@@ -203,7 +203,7 @@
             font-size: 1.2rem;
         }
         @include respond(500) {
-            width: 35rem;
+            width: 30rem;
             font-size: 1rem;
         }
     }

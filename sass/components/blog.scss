@@ -1,5 +1,5 @@
       .header_image {
-          min-height: 90vh;
+          min-height: 50vh;
           background-attachment: fixed;
           background-position: center;
           background-repeat: no-repeat;
@@ -8,6 +8,10 @@
           display: flex;
           align-items: flex-end;
           justify-content: center;
+          @include respond(767) {
+              min-height: 40vh;
+
+          }
 
       }
 
@@ -127,7 +131,7 @@
               height: 20rem;
               box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); //  border-radius: 500px;
               border: 2px solid #00bcd4;
-                border-radius: 200px;
+              border-radius: 200px;
               @include respond(700) {
                   width: 15rem;
                   height: 15rem;

@@ -8,76 +8,89 @@ body {
     box-sizing: border-box;
     position: relative;
 }
-html
-{
+
+html {
     font-size: 62.5%; //1rem = 10px def font size of browser = 16px; 10/16 = 62.5%
     font-family: "futurBook";
 }
 
-a{
+a {
     text-decoration: none;
     padding: 0;
 }
 
-h1{
+h1 {
     margin: 0;
     padding: 0;
-    
+
 }
-::selection
-{
-    
+
+::selection {
+    //  background: #3d85e6;
+    //  color: #fff;
 }
+
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin: 0; 
-}
-body{
-position: relative;}
-#myDiv{
- 
+    margin: 0;
 }
 
-.intro
-{
-    &__container{
-background: #fff;
+body {
+    position: relative;
+}
+
+#myDiv {}
+
+.intro {
+    &__container {
+        background: #fff;
         padding: 2rem;
         margin: 10rem 0;
+        @include respond(767) {
+            margin: 3rem 0;
+        }
     }
-    
+
 }
-.about__heading{
+
+.about__heading {
     font-size: 3.5rem;
     color: #002073;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
     margin: 4rem 0;
-    
-    
-        @include respond(1000){
-          font-size: 3rem;
+
+
+    @include respond(1000) {
+        font-size: 3rem;
         margin: 3.8rem 0;
-        }
-      @include respond(800){
-          font-size: 2rem;
+    }
+    @include respond(800) {
+        font-size: 2rem;
         margin: 3.5rem 0;
-        }
-     @include respond(phone){
-          font-size: 1.5rem;
-        margin: 3rem 0;
-        }
+    }
+    @include respond(767) {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+    }
 }
