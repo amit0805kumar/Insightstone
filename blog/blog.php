@@ -36,7 +36,8 @@ while ($row = mysqli_fetch_array($result)){
         <link rel="stylesheet" type="text/css" href="../css/animate.css">
         <script type="text/javascript" src="../js/wow.min.js"></script>
         <script type="text/javascript" src="../js/scroll.js"></script>
-        <link rel="stylesheet" href="../css/style.css"influencers@insightone.in&oacute;ne</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>influencers@insightone.in&oacute;ne</title>
         <style type="text/css">
 
 
