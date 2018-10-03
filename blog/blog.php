@@ -66,7 +66,7 @@ while ($row = mysqli_fetch_array($result)){
             <!--Navbar-->
             <nav class="navbar navbar-default" id="navbar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="logo" class="logo-img fadeIn animated delay1" id="logo"></a>
+                    <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="logo" class="logo-img fadeIn animated delay1" id="logo"></a>
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle navbar-btn" data-toggle="collapse" data-target="#main" id="cmd">
                     <span class="icon-bar" id="bar1"></span>
