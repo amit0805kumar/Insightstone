@@ -8,13 +8,18 @@
     flex-direction: column;
     align-items: center;
     margin: 10rem 0;
+    @include respond(phone) {
+        margin: 5rem 0;
+    }
 }
+
 a,
 a:visited,
-a:link{
+a:link {
     text-decoration: none;
     color: inherit;
 }
+
 .section-form-container {
     background-image: url(../images/form-pic.jpg);
     background-repeat: no-repeat;
