@@ -53,7 +53,7 @@ while ($row1 = mysqli_fetch_array($result1)){
         <link rel="stylesheet" type="text/css" href="../css/animate.css">
         <script type="text/javascript" src="../js/wow.min.js"></script>
         <script type="text/javascript" src="../js/scroll.js"></script>
-        <title>Insightstone</title>
+        <title>Insightone</title>
 
         <link rel="stylesheet" href="../css/style.css">
     </head>
